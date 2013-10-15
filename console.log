@@ -1,0 +1,148 @@
+//-------------------------- 10/14/2013 -- 09:47:31 -----
+Console trace is off.
+--------------------------------------------------------------------------------
+Video Initialization:
+--------------------------------------------------------------------------------
+Video initialization:
+   Accelerated OpenGL display device detected.
+
+Activating the OpenGL display device...
+Activating the OpenGL display device...
+Setting screen mode to 800x480x32 (w)...
+Creating a new window...
+Acquiring a new device context...
+Pixel format set:
+  32 color bits, 24 depth bits, 8 stencil bits
+Creating a new rendering context...
+Making the new rendering context current...
+OpenGL driver information:
+  Vendor: NVIDIA Corporation
+  Renderer: GeForce GTS 450/PCIe/SSE2
+  Version: 4.2.0
+OpenGL Init: Enabled Extensions
+  ARB_multitexture (Max Texture Units: 4)
+  EXT_blend_color
+  EXT_blend_minmax
+  EXT_compiled_vertex_array
+  NV_vertex_array_range
+  EXT_texture_env_combine
+  EXT_packed_pixels
+  EXT_fog_coord
+  ARB_texture_compression
+  EXT_texture_compression_s3tc
+  (ARB|EXT)_texture_env_add
+  EXT_texture_filter_anisotropic (Max anisotropy: 16)
+  WGL_EXT_swap_control
+OpenGL Init: Disabled Extensions
+  EXT_paletted_texture
+  3DFX_texture_compression_FXT1
+
+Max Texture Size reported as: 16384
+OpenAL Driver Init
+OpenAL Driver Init Success
+player class initialized
+Loaded Client
+Binding server port to default IP
+UDP initialized on port 9002
+Connecting to the local master server for query.
+Adding a pending connection
+Sending Connect challenge Request
+Binding server port to default IP
+UDP initialized on port 9000
+Game connection dropped. reason: 
+Game connection request timed out.
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1249
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1249
+Client 1249 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9001
+Got Connect Request
+Game onConnected. info: 1250
+Dots & Crits Server Server 0             
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1251
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1251
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1251 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1252
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1252
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1252 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1253
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1253
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1253 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1254
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1254
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1254 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+goodbye world
+modules/Player_Sprites/Ayn/assets/scripts/Player_Sprite/Ass_Unload.cs (4): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+popDialog(): Invalid control: Gui_Server
+Dots_and_Crits: Created scene but no window available.
+popDialog(): Invalid control: Gui_Master_Server
+Dots_and_Crits: Created scene but no window available.
+popDialog(): Invalid control: Gui_Chat_Box
+Dots_and_Crits: Created scene but no window available.
+popDialog(): Invalid control: Gui_Server_Menu
+Dots_and_Crits: Created scene but no window available.
+modules/Gui_Deck_Builder/assets/scripts/Scene/Scene_Unload.cs (4): Unable to find object: 'Gui_Deck_Builder' attempting to call function 'getCount'
+popDialog(): Invalid control: Gui_Deck_Builder
+Dots_and_Crits: Created scene but no window available.
+popDialog(): Invalid control: Gui_Config_Menu
+Dots_and_Crits: Created scene but no window available.
+Dots_and_Crits: Created scene but no window available.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (4): Unable to find object: '1185' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (5): Unable to find object: '1186' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (6): Unable to find object: '1187' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (7): Unable to find object: '1188' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (8): Unable to find object: '1189' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (9): Unable to find object: '1190' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (11): Unable to find object: '1191' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (13): Unable to find object: '1192' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (15): Unable to find object: '1193' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+Dots_and_Crits: Created scene but no window available.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...
