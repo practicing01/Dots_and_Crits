@@ -1,4 +1,4 @@
-function Module_Card_Teleport::onAction(%this)
+function Module_Card_Stealth::onAction(%this)
 {
 
 %this.Bool_Waiting_For_Target=true;

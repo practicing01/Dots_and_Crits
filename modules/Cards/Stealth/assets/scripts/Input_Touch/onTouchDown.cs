@@ -1,4 +1,4 @@
-function Scene_Object_Module_Card_Teleport_Input_Capture::onTouchDown(%this,%Touch_ID,%World_Position,%Mouse_Clicks)
+function Scene_Object_Module_Card_Stealth_Input_Capture::onTouchDown(%this,%Touch_ID,%World_Position,%Mouse_Clicks)
 {
 /**************************************************/
 
@@ -42,7 +42,7 @@ else if (%this.Module_ID_Parent.Bool_Waiting_For_Cast)
 
 %this.Module_ID_Parent.Bool_Waiting_For_Cast=false;
 
-%this.Module_ID_Parent.Card_Cast(%this.Module_ID_Parent.Card_Target.Script_Object_Parent,%World_Position);
+%this.Module_ID_Parent.Card_Cast(%this.Module_ID_Parent.Card_Target.Script_Object_Parent);
 
 }
 

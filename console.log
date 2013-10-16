@@ -1,4 +1,4 @@
-//-------------------------- 10/14/2013 -- 09:47:31 -----
+//-------------------------- 10/16/2013 -- 10:54:28 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -47,43 +47,27 @@ UDP initialized on port 9002
 Connecting to the local master server for query.
 Adding a pending connection
 Sending Connect challenge Request
+Sending Connect challenge Request
 Binding server port to default IP
 UDP initialized on port 9000
 Game connection dropped. reason: 
-Game connection request timed out.
-Got Connect challenge Request from IP:127.0.0.1:9002
-Got Connect Request
-Game onConnected. info: 1249
-Dots & Crits Client Client Ayn             
-Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1249
-Client 1249 disconnected.
-Issuing Disconnect packet.
-Game connection dropped. reason: 
-Got Connect challenge Request from IP:127.0.0.1:9001
-Got Connect Request
-Game onConnected. info: 1250
-Dots & Crits Server Server 0             
+Sending Connect challenge Request
+Sending Connect challenge Request
+Sending Connect challenge Request
 Got Connect challenge Request from IP:127.0.0.1:9002
 Got Connect Request
 Game onConnected. info: 1251
 Dots & Crits Client Client Ayn             
 Mapping string: Master_Server_Query_Request to index: 0
 Got query request from: 1251
-Dots & Crits Server IP:127.0.0.1:9001 Server
+Game connection request timed out.
 Client 1251 disconnected.
 Issuing Disconnect packet.
 Game connection dropped. reason: 
-Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect challenge Request from IP:127.0.0.1:9001
 Got Connect Request
 Game onConnected. info: 1252
-Dots & Crits Client Client Ayn             
-Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1252
-Dots & Crits Server IP:127.0.0.1:9001 Server
-Client 1252 disconnected.
-Issuing Disconnect packet.
-Game connection dropped. reason: 
+Dots & Crits Server Server 0             
 Got Connect challenge Request from IP:127.0.0.1:9002
 Got Connect Request
 Game onConnected. info: 1253
@@ -104,6 +88,96 @@ Dots & Crits Server IP:127.0.0.1:9001 Server
 Client 1254 disconnected.
 Issuing Disconnect packet.
 Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1255
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1255
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1255 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1256
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1256
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1256 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1257
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1257
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1257 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1258
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1258
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1258 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1259
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1259
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1259 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1260
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1260
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1260 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1261
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1261
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1261 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1262
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1262
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1262 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1263
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1263
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1263 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
 goodbye world
 modules/Player_Sprites/Ayn/assets/scripts/Player_Sprite/Ass_Unload.cs (4): Unable to find object: '' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
@@ -121,23 +195,23 @@ Dots_and_Crits: Created scene but no window available.
 popDialog(): Invalid control: Gui_Config_Menu
 Dots_and_Crits: Created scene but no window available.
 Dots_and_Crits: Created scene but no window available.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (4): Unable to find object: '1185' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (4): Unable to find object: '1187' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (5): Unable to find object: '1186' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (5): Unable to find object: '1188' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (6): Unable to find object: '1187' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (6): Unable to find object: '1189' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (7): Unable to find object: '1188' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (7): Unable to find object: '1190' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (8): Unable to find object: '1189' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (8): Unable to find object: '1191' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (9): Unable to find object: '1190' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (9): Unable to find object: '1192' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (11): Unable to find object: '1191' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (11): Unable to find object: '1193' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (13): Unable to find object: '1192' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (13): Unable to find object: '1194' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (15): Unable to find object: '1193' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (15): Unable to find object: '1195' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
 Dots_and_Crits: Created scene but no window available.
 Issuing Disconnect packet.

@@ -7,7 +7,7 @@ exec("./Card_Cast.cs");
 exec("./Input_Touch/Input_Touch.cs");
 exec("./onAction/Actions.cs");
 
-function Module_Card_Teleport::Card_Load(%this)
+function Module_Card_Stealth::Card_Load(%this)
 {
 
 %this.Ass_Load();

@@ -16,7 +16,7 @@ for (%x=0;%x<Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards.getCount();%x++)
 
 %Card=Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards.getObject(%x);
 
-if (%Card.Module_ID_Card==%Module_ID_Card)
+if (%Card.Module_ID_Card$=%Module_ID_Card)
 {
 
 return;
