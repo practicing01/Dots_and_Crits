@@ -78,6 +78,18 @@ Window_Dots_and_Crits.addInputListener(%Script_Object_Player_Sprite.Composite_Sp
 
 /************************************************************************/
 
+%Script_Object_Player_Sprite.Scene_Object_Mount=new SceneObject()
+{
+
+BodyType="static";
+size=%Script_Object_Player_Sprite.Composite_Sprite.getSpriteSize();
+Position="0 0";
+Angle="180";
+
+};
+
+/************************************************************************/
+
 %Script_Object_Player_Sprite.Simset_Animation_Stand_Up=new SimSet();
 %Script_Object_Player_Sprite.Simset_Animation_Stand_Up_Right=new SimSet();
 %Script_Object_Player_Sprite.Simset_Animation_Stand_Right=new SimSet();

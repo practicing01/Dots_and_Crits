@@ -10,6 +10,8 @@ if ((%Angle>=337.5&&%Angle<=360)||(%Angle>=0&&%Angle<22.5))//Left
 
 %Player_Information.Vector_2D_Direction.Y=0;
 
+%Player_Information.Scene_Object_Mount.setAngle(90);
+
 }
 else if ((%Angle>=22.5&&%Angle<67.5))//Down-Left
 {
@@ -17,6 +19,8 @@ else if ((%Angle>=22.5&&%Angle<67.5))//Down-Left
 %Player_Information.Vector_2D_Direction.X=-1;
 
 %Player_Information.Vector_2D_Direction.Y=-1;
+
+%Player_Information.Scene_Object_Mount.setAngle(135);
 
 }
 else if ((%Angle>=67.5&&%Angle<112.5))//Down
@@ -26,6 +30,8 @@ else if ((%Angle>=67.5&&%Angle<112.5))//Down
 
 %Player_Information.Vector_2D_Direction.Y=-1;
 
+%Player_Information.Scene_Object_Mount.setAngle(180);
+
 }
 else if ((%Angle>=112.5&&%Angle<157.5))//Down-Right
 {
@@ -33,6 +39,8 @@ else if ((%Angle>=112.5&&%Angle<157.5))//Down-Right
 %Player_Information.Vector_2D_Direction.X=1;
 
 %Player_Information.Vector_2D_Direction.Y=-1;
+
+%Player_Information.Scene_Object_Mount.setAngle(225);
 
 }
 else if ((%Angle>=157.5&&%Angle<202.5))//Right
@@ -42,6 +50,8 @@ else if ((%Angle>=157.5&&%Angle<202.5))//Right
 
 %Player_Information.Vector_2D_Direction.Y=0;
 
+%Player_Information.Scene_Object_Mount.setAngle(270);
+
 }
 else if ((%Angle>=202.5&&%Angle<247.5))//Up-Right
 {
@@ -49,6 +59,8 @@ else if ((%Angle>=202.5&&%Angle<247.5))//Up-Right
 %Player_Information.Vector_2D_Direction.X=1;
 
 %Player_Information.Vector_2D_Direction.Y=1;
+
+%Player_Information.Scene_Object_Mount.setAngle(315);
 
 }
 else if ((%Angle>=247.5&&%Angle<292.5))//Up
@@ -58,6 +70,8 @@ else if ((%Angle>=247.5&&%Angle<292.5))//Up
 
 %Player_Information.Vector_2D_Direction.Y=1;
 
+%Player_Information.Scene_Object_Mount.setAngle(0);
+
 }
 else if ((%Angle>=292.5&&%Angle<337.5))//Up-Left
 {
@@ -65,6 +79,8 @@ else if ((%Angle>=292.5&&%Angle<337.5))//Up-Left
 %Player_Information.Vector_2D_Direction.X=-1;
 
 %Player_Information.Vector_2D_Direction.Y=1;
+
+%Player_Information.Scene_Object_Mount.setAngle(45);
 
 }
 

@@ -5,4 +5,7 @@
     <ScriptObject
         Card_Slot_Position="328 430"
         Module_ID_Card="Module_Card_Stealth" />
+    <ScriptObject
+        Card_Slot_Position="378 430"
+        Module_ID_Card="Module_Card_Flashlight" />
 </SimSet>
