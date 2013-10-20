@@ -8,4 +8,7 @@
     <ScriptObject
         Card_Slot_Position="378 430"
         Module_ID_Card="Module_Card_Flashlight" />
+    <ScriptObject
+        Card_Slot_Position="428 430"
+        Module_ID_Card="Module_Card_Heal" />
 </SimSet>
