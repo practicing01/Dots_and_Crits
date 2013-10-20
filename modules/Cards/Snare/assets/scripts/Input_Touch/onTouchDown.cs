@@ -1,4 +1,4 @@
-function Scene_Object_Module_Card_Teleport_Input_Capture::onTouchDown(%this,%Touch_ID,%World_Position,%Mouse_Clicks)
+function Scene_Object_Module_Card_Snare_Input_Capture::onTouchDown(%this,%Touch_ID,%World_Position,%Mouse_Clicks)
 {
 /**************************************************/
 
@@ -33,7 +33,7 @@ if (%this.Module_ID_Parent.Card_Target==0){return;}
 
 %this.Module_ID_Parent.Bool_Waiting_For_Cast=true;
 
-commandToServer('Relay_Module_Function',Module_Card_Teleport,"Action_Animate_Cast",
+commandToServer('Relay_Module_Function',Module_Card_Snare,"Action_Animate_Cast",
 %this.Module_ID_Parent.Card_Target.Script_Object_Parent.Game_Connection_Handle);
 
 }

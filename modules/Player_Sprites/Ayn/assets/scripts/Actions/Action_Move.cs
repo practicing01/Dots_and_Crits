@@ -231,6 +231,17 @@ getRandom(0,%Player_Information.Simset_Animation_Run_Down_Left.getCount()-1)
 
 %Player_Information.Bool_Is_Mobile=true;
 
+if (%Player_Information.Current_Speed>0)
+{
+
 %Player_Information.Composite_Sprite.moveTo(%Vector_2D_Position,%Player_Information.Current_Speed,true,false);
+
+}
+else
+{
+
+%this.onMoveToComplete(%Player_Information.Composite_Sprite);
+
+}
 
 }

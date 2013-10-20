@@ -11,4 +11,7 @@
     <ScriptObject
         Card_Slot_Position="428 430"
         Module_ID_Card="Module_Card_Heal" />
+    <ScriptObject
+        Card_Slot_Position="478 430"
+        Module_ID_Card="Module_Card_Snare" />
 </SimSet>

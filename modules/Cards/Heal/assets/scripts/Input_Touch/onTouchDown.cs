@@ -33,7 +33,7 @@ if (%this.Module_ID_Parent.Card_Target==0){return;}
 
 %this.Module_ID_Parent.Bool_Waiting_For_Cast=true;
 
-commandToServer('Relay_Module_Function',Module_Card_Stealth,"Action_Animate_Cast",
+commandToServer('Relay_Module_Function',Module_Card_Heal,"Action_Animate_Cast",
 %this.Module_ID_Parent.Card_Target.Script_Object_Parent.Game_Connection_Handle);
 
 }
