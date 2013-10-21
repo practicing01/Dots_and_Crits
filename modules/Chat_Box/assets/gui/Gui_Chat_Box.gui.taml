@@ -52,6 +52,50 @@
 		groupNum="-1"
 		useMouseEvents="1"
 		Delete_Me="0"/>
+
+	<!-- End Turn Button -->
+	<GuiButtonCtrl
+		Name="Gui_Button_Chat_Box_End_Turn"
+		Profile="BlueButtonProfile"
+		Text="End Turn"
+		ButtonType="PushButton"
+		command="Gui_Chat_Box.End_Turn();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="211 420"
+		Extent="70 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1"
+		Delete_Me="0"/>
+
+	<!-- Roll Dice Button -->
+	<GuiButtonCtrl
+		Name="Gui_Button_Chat_Box_Roll_Dice"
+		Profile="BlueButtonProfile"
+		Text="Roll Dice"
+		ButtonType="PushButton"
+		command="Gui_Chat_Box.Roll_Dice();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="211 390"
+		Extent="70 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1"
+		Delete_Me="0"/>
 		
 	<!-- chat box -->
 	<GuiScrollCtrl
@@ -130,7 +174,7 @@
 					Visible="1"
 					Active="1"
 					colCount="1"
-					colSize="200"
+					colSize="210"
 					colSpacing="0"
 					rowSize="60"
 					rowSpacing="0"

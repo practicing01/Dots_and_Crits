@@ -27,7 +27,7 @@ HorizSizing="relative";
 VertSizing="relative";
 Text=%text; 
 Extent="200 60";
-isContainer="0";
+isContainer="1";
 Profile="GuiTextProfile";
 hovertime="1000";
 MaxLength="255";
@@ -45,6 +45,10 @@ Gui_List_Previous_Text.remove(Gui_List_Previous_Text.getObject(0));
 Gui_Scroller_Previous_Text.computeSizes();
 
 Gui_Scroller_Previous_Text.scrollToBottom();
+
+%Gui_ScrollCtrl.computeSizes();
+
+%Gui_ScrollCtrl.setScrollPosition(0,0);
 
 }
 
