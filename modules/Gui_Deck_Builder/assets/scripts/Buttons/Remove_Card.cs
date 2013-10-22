@@ -10,6 +10,8 @@ if (Gui_List_Deck_Builder_Deck_Cards.getSelectedItem()!=-1)
 %Script_Object_Card=Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards.getObject
 (Gui_List_Deck_Builder_Deck_Cards.getSelectedItem());
 
+ModuleDatabase.unloadExplicit(%Script_Object_Card.Module_ID_Card);
+
 Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards.remove(%Script_Object_Card);
 
 /*************************/

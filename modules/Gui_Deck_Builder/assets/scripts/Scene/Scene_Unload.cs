@@ -33,6 +33,15 @@ if (isObject(%this.Simset_ModuleID_Cards))
 if (isObject(%this.Simset_ModuleID_Deck_Cards))
 {
 
+for (%x=0;%x<%this.Simset_ModuleID_Deck_Cards.getCount();%x++)
+{
+
+%Script_Object_Card=Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards.getObject(%x);
+
+ModuleDatabase.unloadExplicit(%Script_Object_Card.Module_ID_Card);
+
+}
+
 %this.Simset_ModuleID_Deck_Cards.deleteObjects();
 
 %this.Simset_ModuleID_Deck_Cards.delete();

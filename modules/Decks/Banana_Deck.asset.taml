@@ -15,6 +15,6 @@
         Card_Slot_Position="478 430"
         Module_ID_Card="Module_Card_Snare" />
     <ScriptObject
-        Card_Slot_Position="528 430"
+        Card_Slot_Position="528 428"
         Module_ID_Card="Module_Card_Speedboof" />
 </SimSet>

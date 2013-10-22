@@ -44,6 +44,10 @@ for (%x=0;%x<Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards.getCount();%x++)
 
 Gui_List_Deck_Builder_Deck_Cards.addItem(%Module_Definition.Description);
 
+ModuleDatabase.LoadExplicit(%Script_Object_Card.Module_ID_Card);
+
+%Script_Object_Card.Module_ID_Card.Card_Preload();
+
 /*******************************/
 
 %GuiDragAndDropControl=new GuiDragAndDropControl()
