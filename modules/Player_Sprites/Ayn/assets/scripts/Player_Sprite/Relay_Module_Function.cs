@@ -29,6 +29,18 @@ else if (%Module_Function$="Action_Attack")
 %this.Action_Attack(%Player_Information,%Parameter_0,%Parameter_1);
 
 }
+else if (%Module_Function$="Action_Update_Health")
+{
+
+%this.Action_Update_Health(%Player_Information,%Parameter_0);
+
+}
+else if (%Module_Function$="Action_Position")
+{
+
+%this.Action_Position(%Player_Information,%Parameter_0);
+
+}
 
 break;
 

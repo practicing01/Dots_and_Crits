@@ -1,4 +1,4 @@
-//-------------------------- 10/24/2013 -- 10:09:54 -----
+//-------------------------- 10/25/2013 -- 06:36:20 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -47,10 +47,10 @@ UDP initialized on port 9002
 Connecting to the local master server for query.
 Adding a pending connection
 Sending Connect challenge Request
-Game connection request timed out.
 Binding server port to default IP
 UDP initialized on port 9000
 Game connection dropped. reason: 
+Game connection request timed out.
 Got Connect challenge Request from IP:127.0.0.1:9002
 Got Connect Request
 Game onConnected. info: 1259
@@ -72,6 +72,46 @@ Mapping string: Master_Server_Query_Request to index: 0
 Got query request from: 1261
 Dots & Crits Server IP:127.0.0.1:9001 Server
 Client 1261 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1262
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1262
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1262 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1263
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1263
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1263 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1264
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1264
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1264 disconnected.
+Issuing Disconnect packet.
+Game connection dropped. reason: 
+Got Connect challenge Request from IP:127.0.0.1:9002
+Got Connect Request
+Game onConnected. info: 1265
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1265
+Dots & Crits Server IP:127.0.0.1:9001 Server
+Client 1265 disconnected.
 Issuing Disconnect packet.
 Game connection dropped. reason: 
 goodbye world

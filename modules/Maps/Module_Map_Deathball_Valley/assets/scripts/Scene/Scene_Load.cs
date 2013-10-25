@@ -2,7 +2,7 @@ exec("./Ass_Load.cs");
 exec("./Ass_Unload.cs");
 exec("./Initialize_Variables.cs");
 exec("./Scene_Initialize.cs");
-exec("./Map_Functions/Map_Functions.cs");
+exec("./../Map_Functions/Map_Functions.cs");
 exec("./../../gui/Gui_Scroll_Arrows.cs");
 exec("./../Buttons/Buttons.cs");
 

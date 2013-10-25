@@ -8,6 +8,6 @@
 <OpenFiles>
 <File ScrollX="0" ScrollY="33">modules\Dots_and_Crits\scripts\Load_Play\Load_Cards.cs</File>
 <File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Load_Play\Load_Play.cs</File>
-<File ScrollX="0" ScrollY="51" Active="true">modules\Player_Sprites\Ayn\assets\scripts\Player_Sprite\Player_Sprite_Spawn.cs</File>
+<File ScrollX="0" ScrollY="0" Active="true">modules\Player_Sprites\Ayn\assets\scripts\Player_Sprite\Player_Sprite_Spawn.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>
