@@ -6,6 +6,13 @@ exec("./Scene_Initialize.cs");
 function Splashes::Scene_Load(%this)
 {
 
+if ($platform$="Android")
+{
+
+hideSplashScreen();//Android specific.
+
+}
+
 %this.Ass_Load();
 
 Cancel_All_Schedules();
