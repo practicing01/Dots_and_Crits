@@ -11,6 +11,7 @@ exec("./Relay_Module_Function.cs");
 exec("./../Actions/Actions.cs");
 exec("./../Input_Touch/Input_Touch.cs");
 exec("./../Movement/onMoveToComplete.cs");
+exec("./../onCollision/onCollision.cs");
 
 function Module_Player_Sprite_Ayn::Player_Sprite_Load(%this)
 {

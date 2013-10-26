@@ -58,7 +58,7 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 %Script_Object_Player_Sprite.Base_Speed=10;
 %Script_Object_Player_Sprite.Current_Speed=10;
 
-%Script_Object_Player_Sprite.Linear_Damping=0;
+%Script_Object_Player_Sprite.Linear_Damping=1;
 %Script_Object_Player_Sprite.Composite_Sprite.setLinearDamping(%Script_Object_Player_Sprite.Linear_Damping);
 
 %Script_Object_Player_Sprite.Bool_Is_Mobile=false;

@@ -5,6 +5,8 @@ function Module_Player_Sprite_Ayn::onMoveToComplete(%this,%Composite_Sprite_Play
 
 %Player_Information.Bool_Is_Mobile=false;
 
+%Player_Information.Composite_Sprite.setLinearDamping(%Player_Information.Linear_Damping);
+
 if (%Player_Information.Vector_2D_Direction.X==0&&%Player_Information.Vector_2D_Direction.Y==0)
 {
 

@@ -66,6 +66,11 @@ function androidBackButton(%val)
 {
 	//You will want to change this for your game.  Android users expect the 
 	//back button to go back until you reach main menu then it should quit app
+	if (%val)
+	{
+   
 	quit();
-
+   
+	}
+	
 }

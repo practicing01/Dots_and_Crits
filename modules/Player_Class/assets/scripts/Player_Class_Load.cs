@@ -5,6 +5,7 @@ exec("./Player_Data/Player_Data.cs");
 exec("./Player_Class_Initialize.cs");
 exec("./Input_Touch/Input_Touch.cs");
 exec("./Movement/onMoveToComplete.cs");
+exec("./onCollision/onCollision.cs");
 
 function Module_Player_Class::Player_Class_Load(%this)
 {
