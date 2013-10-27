@@ -1,7 +1,7 @@
 function Gui_Chat_Box::Roll_Dice(%this)
 {
 
-if ($GameConnection_Connection!=0)
+if ($GameConnection_Serverside_Connection!=0)
 {
 
 %Text=$String_Client_Name SPC "rolls" SPC getRandom(1,20) @ "/20";

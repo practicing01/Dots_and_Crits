@@ -57,7 +57,7 @@ $String_Client_Name,//Connector Name
 $String_Player_Sprite//Player Sprite
 );
 
-echo("connecting to server:" SPC %Object_Server.Connector_Name);
+echo("Connecting to server:" SPC %Object_Server.Connector_Name SPC "at:" SPC %Object_Server.IP_Address);
 
 $GameConnection_Connection.connect(%Object_Server.IP_Address);
 

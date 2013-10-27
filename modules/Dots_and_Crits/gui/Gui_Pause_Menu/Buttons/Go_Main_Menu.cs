@@ -8,6 +8,8 @@ if (isObject($GameConnection_Connection)){$GameConnection_Connection.delete();}
 
 $GameConnection_Connection=0;
 
+$GameConnection_Serverside_Connection=0;
+
 }
 
 Module_Player_Class.Player_Data_Clear();

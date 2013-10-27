@@ -1,6 +1,13 @@
-function clientCmdRegister_Player_Information(%Game_Connection_Handle,%Connector_Name,%String_Player_Sprite_Description)
+function clientCmdRegister_Player_Information(%Bool_Is_My_Initializer,%Game_Connection_Handle,%Connector_Name,%String_Player_Sprite_Description)
 {
 echo("Registered Player Information:" SPC %Game_Connection_Handle SPC %Connector_Name SPC %String_Player_Sprite_Description);
+
+if (%Bool_Is_My_Initializer)
+{
+
+$GameConnection_Serverside_Connection=%Game_Connection_Handle;
+echo($GameConnection_Serverside_Connection);//banana
+}
 
 for (%x=0;%x<$Simset_Players_Information.getCount();%x++)
 {

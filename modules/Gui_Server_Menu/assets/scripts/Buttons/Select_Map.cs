@@ -1,7 +1,7 @@
 function Gui_Server_Menu::Select_Map(%this)
 {
 
-if ($GameConnection_Connection!=0)
+if ($GameConnection_Serverside_Connection!=0)
 {
 
 if (Gui_List_Server_Menu_Maps.getSelectedItem()!=-1)

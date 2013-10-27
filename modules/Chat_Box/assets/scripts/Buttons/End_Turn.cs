@@ -1,7 +1,7 @@
 function Gui_Chat_Box::End_Turn(%this)
 {
 
-if ($GameConnection_Connection!=0)
+if ($GameConnection_Serverside_Connection!=0)
 {
 
 %Text=$String_Client_Name SPC "ends the turn.";

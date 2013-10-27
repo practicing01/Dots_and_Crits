@@ -1,5 +1,5 @@
 function Dots_and_Crits::create(%this)/*Clusterfuck of Core code, needs to be redesigned*/
-{
+{//Need to seriously clean up this entire clusterfuck that is The Core :P
 
 /*Core Misc*/
 exec("./scripts/Misc/Init_Misc.cs");

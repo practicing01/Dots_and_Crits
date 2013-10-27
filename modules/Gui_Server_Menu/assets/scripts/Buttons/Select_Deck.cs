@@ -1,7 +1,7 @@
 function Gui_Server_Menu::Select_Deck(%this)
 {
 
-if ($GameConnection_Connection!=0)
+if ($GameConnection_Serverside_Connection!=0)
 {
 
 if (Gui_List_Server_Menu_Decks.getSelectedItem()!=-1)

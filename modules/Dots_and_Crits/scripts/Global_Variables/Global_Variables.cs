@@ -1,3 +1,4 @@
+//Global variables are noobish, need to get rid of them eventually
 /*Simset to hold schedules so that they can be cancelled*/
 $Simset_Cancelable_Schedules_Global=new SimSet();
 $Simset_Cancelable_Schedules_Skills=new SimSet();
@@ -30,3 +31,5 @@ $Simset_Deck_To_Load=0;
 $Module_ID_Map_Loaded=0;
 
 $Simset_Unfocused_Guis_To_Pop=new SimSet();
+
+$Simset_Module_ID_Loaded_Player_Sprites=0;

@@ -1,8 +1,8 @@
-function clientCmdRegister_Play(%Game_Connection_Server_Side,%Game_Connection_Client_Side)
+function clientCmdRegister_Play(%Game_Connection_Server_Side)
 {
 
 %Player_Name=0;
-
+echo("Simset_Player_Information.getCount():" SPC $Simset_Players_Information.getCount());//banana
 for (%x=0;%x<$Simset_Players_Information.getCount();%x++)
 {
 
@@ -10,7 +10,8 @@ for (%x=0;%x<$Simset_Players_Information.getCount();%x++)
 
 if (%Player_Information.Game_Connection_Handle==%Game_Connection_Server_Side)
 {
-
+echo("%Player_Information.Game_Connection_Handle==%Game_Connection_Server_Side"
+SPC %Player_Information.Game_Connection_Handle SPC %Game_Connection_Server_Side);//banana
 %Player_Information.Is_Playing=true;
 
 %Player_Name=%Player_Information.Connector_Name;
@@ -21,17 +22,15 @@ if ($Bool_Is_Playing)
 Module_Player_Class.Player_Data_Add(%Player_Information);
 
 }
-else if (%Game_Connection_Client_Side==$GameConnection_Connection)
+else if (%Game_Connection_Server_Side==$GameConnection_Serverside_Connection)
 {
-
-$GameConnection_Serverside_Connection=%Game_Connection_Server_Side;
 
 $Bool_Is_Playing=true;
 
 Dots_and_Crits.Load_Play();
 
 }
-
+echo("this clients gameconnection:" SPC $GameConnection_Serverside_Connection);//banana
 break;
 
 }

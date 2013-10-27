@@ -5,7 +5,11 @@ echo("Unloaded Client");
 
 if (isObject($GameConnection_Connection))
 {
+
 $GameConnection_Connection.delete();
+
+$GameConnection_Serverside_Connection=0;
+
 }
 
 }

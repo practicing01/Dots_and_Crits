@@ -32,6 +32,9 @@ for (%x=0;%x<getWordCount(%String_List_Picked_Objects);%x++)
 {
 
 %Object=getWord(%String_List_Picked_Objects,%x);
+echo(%x);
+echo(%Composite_Sprite_Player SPC %Object);
+echo(%Object.Script_Object_Parent.Game_Connection_Handle SPC $GameConnection_Serverside_Connection);
 
 if (%Object==%Composite_Sprite_Player&&%Object.Script_Object_Parent.Game_Connection_Handle==$GameConnection_Serverside_Connection)
 {

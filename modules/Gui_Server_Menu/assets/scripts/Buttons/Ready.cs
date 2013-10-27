@@ -3,7 +3,7 @@ function Gui_Server_Menu::Ready(%this)
 
 Module_Gui_Server_Menu.Bool_Client_Ready=!Module_Gui_Server_Menu.Bool_Client_Ready;
 
-if ($GameConnection_Connection!=0)
+if ($GameConnection_Serverside_Connection!=0)
 {
 
 if (Module_Gui_Server_Menu.Bool_Client_Ready)
