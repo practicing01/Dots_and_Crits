@@ -2,12 +2,12 @@ function Module_Player_Sprite_Ayn::Relay_Module_Function(%this,%Client,%Module_F
 %Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5,%Parameter_6,
 %Parameter_7,%Parameter_8,%Parameter_9,%Parameter_10,%Parameter_11,%Parameter_12)
 {
-echo("ayn player information simset count:" SPC %this.Simset_Player_Information.getCount());//banana
+
 for (%x=0;%x<%this.Simset_Player_Information.getCount();%x++)
 {
 
 %Player_Information=%this.Simset_Player_Information.getObject(%x);
-echo("ayn relay module function:" SPC %Client SPC %Player_Information.Game_Connection_Handle);//banana
+
 if (%Player_Information.Game_Connection_Handle==%Client)
 {
 

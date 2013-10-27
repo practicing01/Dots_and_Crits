@@ -6,7 +6,7 @@ if (%Bool_Is_My_Initializer)
 {
 
 $GameConnection_Serverside_Connection=%Game_Connection_Handle;
-echo($GameConnection_Serverside_Connection);//banana
+
 }
 
 for (%x=0;%x<$Simset_Players_Information.getCount();%x++)

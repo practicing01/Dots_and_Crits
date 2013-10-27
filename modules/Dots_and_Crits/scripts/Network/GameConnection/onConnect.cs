@@ -22,7 +22,7 @@ if (%this.Connector_Type$="Client")
 
 if (!$Bool_Is_Master_Server)
 {
-echo("ClientGroup.getCount():" SPC ClientGroup.getCount());//banana
+
 for (%x=0;%x<ClientGroup.getCount();%x++)
 {
 
@@ -30,21 +30,20 @@ for (%x=0;%x<ClientGroup.getCount();%x++)
 
 if (%Object.Connector_Type$="Client")
 {
-echo("Server relaying player info:" SPC %Object SPC %Object.Connector_Name SPC %Object.String_Player_Sprite_Description);//banana
+
 if (%Object!=%this)
 {
 
 commandToClient(%Object,'Register_Player_Information',false,%this,%this.Connector_Name,%this.String_Player_Sprite_Description);
-echo("sent old client" SPC %Object SPC "the new client" SPC %this);//banana
 
 commandToClient(%this,'Register_Player_Information',false,%Object,%Object.Connector_Name,%Object.String_Player_Sprite_Description);
-echo("sent the new client" SPC %this SPC "the old client" SPC %Object);//banana
+
 }
 else
 {
 
 commandToClient(%this,'Register_Player_Information',true,%Object,%Object.Connector_Name,%Object.String_Player_Sprite_Description);
-echo("sent the new client" SPC %this SPC "the old client" SPC %Object);//banana
+
 }
 
 }

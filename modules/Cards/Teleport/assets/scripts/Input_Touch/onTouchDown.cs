@@ -1,7 +1,7 @@
 function Scene_Object_Module_Card_Teleport_Input_Capture::onTouchDown(%this,%Touch_ID,%World_Position,%Mouse_Clicks)
 {
 /**************************************************/
-
+echo("waiting for target:" SPC %this.Module_ID_Parent.Bool_Waiting_For_Target SPC "waiting for cast" SPC %this.Module_ID_Parent.Bool_Waiting_For_Cast);//banana
 if (%this.Module_ID_Parent.Bool_Waiting_For_Target)
 {
 
@@ -32,7 +32,7 @@ break;
 if (%this.Module_ID_Parent.Card_Target==0){return;}
 
 %this.Module_ID_Parent.Bool_Waiting_For_Cast=true;
-
+echo("relaying animate cast");//banana
 commandToServer('Relay_Module_Function',Module_Card_Teleport,"Action_Animate_Cast",
 %this.Module_ID_Parent.Card_Target.Script_Object_Parent.Game_Connection_Handle);
 

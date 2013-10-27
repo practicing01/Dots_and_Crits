@@ -3,7 +3,7 @@ function Dots_and_Crits::Client_Load(%this)
 
 echo("Loaded Client");
 
-setNetPort(9003);
+setNetPort(9002);
 
 allowConnections(false);
 

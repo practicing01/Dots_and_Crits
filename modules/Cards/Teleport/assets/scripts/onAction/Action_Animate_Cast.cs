@@ -1,6 +1,6 @@
 function Module_Card_Teleport::Action_Animate_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle)
 {
-
+echo("animate cast" SPC %Player_Sprite_Target_Game_Connection_Handle);//banana
 %Target_Player=0;
 
 for (%x=0;%x<Module_Player_Class.Simset_Player_Data.getCount();%x++)
@@ -318,8 +318,8 @@ getRandom(0,%Target_Player.Simset_Animation_Stand_Cast_Self_Down_Left.getCount()
 
 //Schedule animation reset.
 
-cancel(%Player_Information.Schedule_Animation_Reset);
+cancel(%Target_Player.Schedule_Animation_Reset);
 
-%Player_Information.Schedule_Animation_Reset=schedule(2000,0,%Player_Information.Module_ID_Parent@"::Animation_Reset",%Player_Information.Module_ID_Parent,%Player_Information);
+%Target_Player.Schedule_Animation_Reset=schedule(2000,0,%Target_Player.Module_ID_Parent@"::Animation_Reset",%Target_Player.Module_ID_Parent,%Target_Player);
 
 }

@@ -1,6 +1,6 @@
 function Module_Player_Class::Player_Data_Add(%this,%Player_Information)
 {
-echo(%Player_Information.Game_Connection_Handle);//banana
+
 %Script_Object_Player_Data=new ScriptObject()
 {
 
