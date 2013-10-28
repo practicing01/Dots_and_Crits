@@ -1,6 +1,6 @@
 function Module_Card_Teleport::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,%Vector_2D_Position)
 {
-echo("cast" SPC %Player_Sprite_Target_Game_Connection_Handle SPC %Vector_2D_Position);//banana
+
 %Target_Player=0;
 
 for (%x=0;%x<Module_Player_Class.Simset_Player_Data.getCount();%x++)

@@ -34,7 +34,7 @@ for (%z=0;%z<$Simset_Module_ID_Loaded_Player_Sprites.getCount();%z++)
 {
 
 %Module_ID_Loaded_Sprite=$Simset_Module_ID_Loaded_Player_Sprites.getObject(%z);
-echo("checking if sprite already loaded" SPC %Module_ID_Loaded_Sprite.Module_ID_Player_Sprite SPC %Module_ID_Player_Sprite.Module_ID_Player_Sprite);//banana
+
 if (%Module_ID_Loaded_Sprite.Module_ID_Player_Sprite$=%Module_ID_Player_Sprite.Module_ID_Player_Sprite)
 {
 
