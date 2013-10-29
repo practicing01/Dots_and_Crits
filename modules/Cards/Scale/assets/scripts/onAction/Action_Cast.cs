@@ -23,16 +23,18 @@ if (%Target_Player==0){return;}
 
 //Use player info to play animations.
 
-%New_Size="0 0";
+%Vector_2D_New_Size="0 0";
 
-%New_Size.X=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.X-%Vector_2D_Position.X);
+%Vector_2D_New_Size.X=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.X-%Vector_2D_Position.X);
 
-%New_Size.Y=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.Y-%Vector_2D_Position.Y);
+%Vector_2D_New_Size.Y=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.Y-%Vector_2D_Position.Y);
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteSize(%New_Size);
+%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteSize(%Vector_2D_New_Size);
 
 %Target_Player.Player_Sprite_Data.Composite_Sprite.clearCollisionShapes();
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.createPolygonBoxCollisionShape(%New_Size);
+%Target_Player.Player_Sprite_Data.Composite_Sprite.createPolygonBoxCollisionShape(%Vector_2D_New_Size);
+
+%Target_Player.Player_Sprite_Data.Composite_Sprite.Position=%Target_Player.Player_Sprite_Data.Composite_Sprite.Position;
 
 }

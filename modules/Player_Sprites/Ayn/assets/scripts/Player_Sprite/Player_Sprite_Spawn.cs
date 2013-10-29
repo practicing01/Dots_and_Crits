@@ -18,7 +18,6 @@ class="Class_Composite_Sprite_Player";
 CollisionCallback="true";
 SceneGroup=0;//0=players
 SceneLayer=15;
-DefaultFriction="0.0";
 
 Asset_ID_Animation_Emote="";
 

@@ -6,9 +6,10 @@
 <Breakpoints/>
 <Bookmarks/>
 <OpenFiles>
-<File ScrollX="0" ScrollY="18" Active="true">modules\Dots_and_Crits\scripts\Load_Play\Load_Cards.cs</File>
+<File ScrollX="0" ScrollY="18">modules\Dots_and_Crits\scripts\Load_Play\Load_Cards.cs</File>
 <File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Load_Play\Load_Play.cs</File>
-<File ScrollX="0" ScrollY="0">modules\Player_Sprites\Ayn\assets\scripts\Player_Sprite\Player_Sprite_Spawn.cs</File>
+<File ScrollX="0" ScrollY="21">modules\Player_Sprites\Ayn\assets\scripts\Player_Sprite\Player_Sprite_Spawn.cs</File>
 <File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Network\Client\Client_Load.cs</File>
+<File ScrollX="0" ScrollY="8" Active="true">modules\Cards\Scale\assets\scripts\onAction\Action_Cast.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

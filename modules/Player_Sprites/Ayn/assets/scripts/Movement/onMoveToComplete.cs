@@ -7,6 +7,13 @@ function Module_Player_Sprite_Ayn::onMoveToComplete(%this,%Composite_Sprite_Play
 
 %Player_Information.Composite_Sprite.setLinearDamping(%Player_Information.Linear_Damping);
 
+if (%Player_Information.Game_Connection_Handle==$GameConnection_Serverside_Connection)
+{
+
+commandToServer('Relay_Module_Function',%Player_Information.Composite_Sprite.Module_ID_Parent,"Action_Position",%Player_Information.Composite_Sprite.Position);
+
+}
+
 if (%Player_Information.Vector_2D_Direction.X==0&&%Player_Information.Vector_2D_Direction.Y==0)
 {
 
