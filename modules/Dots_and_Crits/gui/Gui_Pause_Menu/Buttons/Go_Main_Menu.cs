@@ -4,7 +4,7 @@ function Gui_Pause_Menu::Go_Main_Menu(%this)
 if ($GameConnection_Connection!=0)
 {
 
-if (isObject($GameConnection_Connection)){$GameConnection_Connection.delete();}
+Dots_and_Crits.Game_Connection_Delete($GameConnection_Connection);
 
 $GameConnection_Connection=0;
 

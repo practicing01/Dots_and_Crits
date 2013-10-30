@@ -1,3 +1,4 @@
+exec("./Game_Connection_Delete.cs");
 exec("./onConnectRequestRejected.cs");
 exec("./onConnectionDropped.cs");
 exec("./onConnectRequestTimedOut.cs");

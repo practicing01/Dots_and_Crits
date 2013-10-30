@@ -3,13 +3,10 @@ function Dots_and_Crits::Client_Unload(%this)
 
 echo("Unloaded Client");
 
-if (isObject($GameConnection_Connection))
-{
+Dots_and_Crits.Game_Connection_Delete($GameConnection_Connection);
 
-$GameConnection_Connection.delete();
+$GameConnection_Connection=0;
 
 $GameConnection_Serverside_Connection=0;
-
-}
 
 }
