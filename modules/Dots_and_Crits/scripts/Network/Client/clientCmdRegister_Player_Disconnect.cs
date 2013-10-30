@@ -17,6 +17,8 @@ Module_Player_Class.Player_Data_Remove(%Player_Information);
 
 }
 
+$Simset_Players_Information.remove(%Player_Information);
+
 %Player_Information.delete();
 
 return;
