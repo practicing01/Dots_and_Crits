@@ -7,11 +7,26 @@ function Module_Player_Class::Player_Data_Add(%this,%Player_Information)
 Game_Connection_Handle=%Player_Information.Game_Connection_Handle;
 Connector_Name=%Player_Information.Connector_Name;
 String_Player_Sprite_Description=%Player_Information.String_Player_Sprite_Description;
-Module_ID_Player_Sprite=%Player_Information.Module_ID_Player_Sprite;
 
 };
 
 %this.Simset_Player_Data.add(%Script_Object_Player_Data);
+
+for (%x=0;%x<$Simset_ModuleID_Player_Sprites.getCount();%x++)
+{
+
+%Module_ID_Player_Sprite=$Simset_ModuleID_Player_Sprites.getObject(%x);
+
+if (%Module_ID_Player_Sprite.String_Description$=%Player_Information.String_Player_Sprite_Description)
+{
+
+%Script_Object_Player_Data.Module_ID_Player_Sprite=%Module_ID_Player_Sprite.Module_ID_Player_Sprite;
+
+break;
+
+}
+
+}
 
 %Script_Object_Player_Data.Player_Sprite_Data=%Script_Object_Player_Data.Module_ID_Player_Sprite.Player_Sprite_Spawn(%Script_Object_Player_Data.Game_Connection_Handle);
 

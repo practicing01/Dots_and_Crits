@@ -1,17 +1,6 @@
 function Dots_and_Crits::Load_Player_Data(%this)
 {
 
-if (isObject($Simset_Module_ID_Loaded_Player_Sprites))
-{
-
-$Simset_Module_ID_Loaded_Player_Sprites.delete();
-
-}
-
-$Simset_Module_ID_Loaded_Player_Sprites=new SimSet();
-
-Module_Player_Class.Player_Data_Clear();
-
 for (%x=0;%x<$Simset_Players_Information.getCount();%x++)
 {
 
@@ -26,7 +15,6 @@ for (%y=0;%y<$Simset_ModuleID_Player_Sprites.getCount();%y++)
 
 if (%Module_ID_Player_Sprite.String_Description$=%Player_To_Load.String_Player_Sprite_Description)
 {
-//loading each loop deletes the previous entries, fix this bug
 
 %Bool_Sprite_Already_Loaded=false;
 
@@ -62,8 +50,6 @@ $Simset_Module_ID_Loaded_Player_Sprites.add(%Module_ID_Loaded_Sprite);
 
 }
 
-%Player_To_Load.Module_ID_Player_Sprite=%Module_ID_Player_Sprite.Module_ID_Player_Sprite;
-
 if (%Player_To_Load.Is_Playing)
 {
 
@@ -81,15 +67,13 @@ break;
 
 if (!%Bool_Found_Sprite)
 {
-//need to fix this by checking for already loaded sprites
+//need to fix this by checking for already loaded sprites//banana
 //Set random sprite.
 %Module_ID_Player_Sprite=$Simset_ModuleID_Player_Sprites.getObject(getRandom(0,$Simset_ModuleID_Player_Sprites.getCount()-1));
 
 ModuleDatabase.LoadExplicit(%Module_ID_Player_Sprite.Module_ID_Player_Sprite);
 
 %Module_ID_Player_Sprite.Module_ID_Player_Sprite.Player_Sprite_Load();
-
-%Player_To_Load.Module_ID_Player_Sprite=%Module_ID_Player_Sprite.Module_ID_Player_Sprite;
 
 if (%Player_To_Load.Is_Playing)
 {

@@ -34,15 +34,15 @@ if (%Object.Connector_Type$="Client")
 if (%Object!=%this)
 {
 
-commandToClient(%Object,'Register_Player_Information',false,%this,%this.Connector_Name,%this.String_Player_Sprite_Description);
+commandToClient(%Object,'Register_Player_Information',false,%this,%this.Connector_Name,%this.String_Player_Sprite_Description,%this.Is_Playing);
 
-commandToClient(%this,'Register_Player_Information',false,%Object,%Object.Connector_Name,%Object.String_Player_Sprite_Description);
+commandToClient(%this,'Register_Player_Information',false,%Object,%Object.Connector_Name,%Object.String_Player_Sprite_Description,%Object.Is_Playing);
 
 }
 else
 {
 
-commandToClient(%this,'Register_Player_Information',true,%Object,%Object.Connector_Name,%Object.String_Player_Sprite_Description);
+commandToClient(%this,'Register_Player_Information',true,%Object,%Object.Connector_Name,%Object.String_Player_Sprite_Description,%Object.Is_Playing);
 
 }
 

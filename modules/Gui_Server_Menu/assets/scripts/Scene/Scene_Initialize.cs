@@ -86,4 +86,17 @@ $Simset_Cards_To_Load.delete();
 
 $Simset_Cards_To_Load=new SimSet();
 
+/*Clear loaded player sprites simset.*/
+
+if (isObject($Simset_Module_ID_Loaded_Player_Sprites))
+{
+
+$Simset_Module_ID_Loaded_Player_Sprites.delete();
+
+}
+
+$Simset_Module_ID_Loaded_Player_Sprites=new SimSet();
+
+Module_Player_Class.Player_Data_Clear();
+
 }

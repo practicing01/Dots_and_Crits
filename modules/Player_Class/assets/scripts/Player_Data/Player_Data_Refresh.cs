@@ -48,7 +48,7 @@ if (%Dynamic_Field.getClassName()$="Simset")
 %Dynamic_Field.deleteObjects();
 %Dynamic_Field.delete();
 
-%y=0;
+%y=-1;
 
 }
 
@@ -109,7 +109,7 @@ if (%Dynamic_Field.getClassName()$="Simset")
 %Dynamic_Field.deleteObjects();
 %Dynamic_Field.delete();
 
-%y=0;
+%y=-1;
 
 }
 

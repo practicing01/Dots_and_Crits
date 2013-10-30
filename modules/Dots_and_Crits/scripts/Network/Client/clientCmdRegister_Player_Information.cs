@@ -1,6 +1,6 @@
-function clientCmdRegister_Player_Information(%Bool_Is_My_Initializer,%Game_Connection_Handle,%Connector_Name,%String_Player_Sprite_Description)
+function clientCmdRegister_Player_Information(%Bool_Is_My_Initializer,%Game_Connection_Handle,%Connector_Name,%String_Player_Sprite_Description,%Bool_Is_Playing)
 {
-echo("Registered Player Information:" SPC %Game_Connection_Handle SPC %Connector_Name SPC %String_Player_Sprite_Description);
+echo("Registered Player Information:" SPC %Game_Connection_Handle SPC %Connector_Name SPC %String_Player_Sprite_Description SPC %Bool_Is_Playing);
 
 if (%Bool_Is_My_Initializer)
 {
@@ -40,7 +40,7 @@ return;
 Game_Connection_Handle=%Game_Connection_Handle;
 Connector_Name=%Connector_Name;
 String_Player_Sprite_Description=%String_Player_Sprite_Description;
-Is_Playing=false;
+Is_Playing=%Bool_Is_Playing;
 
 };
 
