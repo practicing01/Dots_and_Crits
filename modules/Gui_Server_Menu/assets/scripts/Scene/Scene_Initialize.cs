@@ -76,16 +76,6 @@ Gui_List_Server_Menu_Decks.addItem(fileBase(fileBase(%File_Name_Deck)));
 
 }
 
-if (isObject($Simset_Cards_To_Load))
-{
-
-$Simset_Cards_To_Load.deleteObjects();
-$Simset_Cards_To_Load.delete();
-
-}
-
-$Simset_Cards_To_Load=new SimSet();
-
 /*Clear loaded player sprites simset.*/
 
 if (isObject($Simset_Module_ID_Loaded_Player_Sprites))

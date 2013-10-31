@@ -51,6 +51,20 @@ Gui_List_Main_Menu_Player_Sprites.addItem(%Module_ID_Player_Sprite.Description);
 
 }
 
+/*Clear cards.*/
+
+if (isObject($Simset_Cards_To_Load))
+{
+
+$Simset_Cards_To_Load.deleteObjects();
+$Simset_Cards_To_Load.delete();
+
+}
+
+$Simset_Already_Loaded_Card_Modules.deleteObjects();
+
+$Simset_Cards_To_Load=new SimSet();
+
 Dots_and_Crits.Client_Load();
 
 }

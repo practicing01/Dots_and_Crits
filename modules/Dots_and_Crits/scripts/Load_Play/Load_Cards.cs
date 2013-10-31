@@ -3,7 +3,12 @@ function Dots_and_Crits::Load_Cards(%this)
 
 if (!isObject($Simset_Cards_To_Load)){return;}
 
-%Simset_Already_Loaded_Modules=new SimSet();
+if (!isObject($Simset_Already_Loaded_Card_Modules))
+{
+
+$Simset_Already_Loaded_Card_Modules=new SimSet();
+
+}
 
 for (%x=0;%x<$Simset_Cards_To_Load.getCount();%x++)
 {
@@ -12,10 +17,10 @@ for (%x=0;%x<$Simset_Cards_To_Load.getCount();%x++)
 
 %Bool_Already_Loaded=false;
 
-for (%y=0;%y<%Simset_Already_Loaded_Modules.getCount();%y++)
+for (%y=0;%y<$Simset_Already_Loaded_Card_Modules.getCount();%y++)
 {
 
-%Already_Loaded_Module=%Simset_Already_Loaded_Modules.getObject(%y);
+%Already_Loaded_Module=$Simset_Already_Loaded_Card_Modules.getObject(%y);
 
 if (%Already_Loaded_Module.Module_ID_Card$=%Object.Module_ID_Card)
 {
@@ -35,7 +40,7 @@ Module_ID_Card=%Object.Module_ID_Card;
 
 };
 
-%Simset_Already_Loaded_Modules.add(%Already_Loaded_Module);
+$Simset_Already_Loaded_Card_Modules.add(%Already_Loaded_Module);
 
 ModuleDatabase.LoadExplicit(%Object.Module_ID_Card);
 

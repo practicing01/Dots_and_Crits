@@ -15,7 +15,9 @@ for (%x=0;%x<$Simset_Deck_To_Load.getCount();%x++)
 
 %Script_Object_Card=$Simset_Deck_To_Load.getObject(%x);
 
-commandToServer('Unregister_Card_To_Load',%Script_Object_Card.Module_ID_Card);
+//Need to reimplement the unloading of cards
+
+//commandToServer('Unregister_Card_To_Load',%Script_Object_Card.Module_ID_Card);
 
 }
 
@@ -43,9 +45,6 @@ for (%x=0;%x<%Card_List.getCount();%x++)
 commandToServer('Register_Card_To_Load',%Card.Module_ID_Card);
 
 }
-
-/*%Card_List.deleteObjects();
-%Card_List.delete();*/
 
 $Simset_Deck_To_Load=%Card_List;
 

@@ -14,7 +14,7 @@ $All_Bits="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 2
 
 $String_Client_Name="Dots & Crits Client";
 
-$Simset_Cards_To_Load=0;
+$Simset_Cards_To_Load=new SimSet();
 
 $String_Map_To_Load="Deathball Valley";
 
@@ -33,3 +33,5 @@ $Module_ID_Map_Loaded=0;
 $Simset_Unfocused_Guis_To_Pop=new SimSet();
 
 $Simset_Module_ID_Loaded_Player_Sprites=0;
+
+$Simset_Already_Loaded_Card_Modules=new SimSet();

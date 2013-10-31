@@ -30,9 +30,6 @@ $Simset_ModuleID_Player_Sprites.deleteObjects();
 
 $Module_ID_Map_Loaded=0;
 
-if (isObject($Simset_Deck_To_Load))
-{
-
 for (%x=0;%x<$Simset_Cards_To_Load.getCount();%x++)
 {
 
@@ -43,8 +40,6 @@ ModuleDatabase.unloadExplicit(%Object.Module_ID_Card);
 }
 
 $Simset_Deck_To_Load.deleteObjects();
-
-}
 
 /***********************************************/
 /************ Delete Gui's **********************/

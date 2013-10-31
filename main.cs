@@ -64,13 +64,16 @@ echo("goodbye world");
 
 function androidBackButton(%val)
 {
-	//You will want to change this for your game.  Android users expect the 
-	//back button to go back until you reach main menu then it should quit app
-	if (%val)
-	{
-   
-	quit();
-   
+	if (%val) {
+		if (isAndroidKeyboardShowing())
+		{
+			toggleAndroidKeyboard(false);
+			return;
+		}
+
+		//Add code here for other options the back button can do like going back a screen.  the quit should happen at your main menu.
+
+		quit();
 	}
-	
+
 }

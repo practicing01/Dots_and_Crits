@@ -17,6 +17,7 @@ if (%this.Connector_Type$="Client")
 
 %this.String_Player_Sprite_Description=%arg2;
 %this.Is_Playing=false;
+%this.Simset_Cards_To_Load=new SimSet();
 
 }
 
