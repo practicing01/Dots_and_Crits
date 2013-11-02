@@ -11,3 +11,4 @@ exec("./clientCmdRegister_Player_Disconnect.cs");
 exec("./clientCmdRegister_Play.cs");
 exec("./clientCmdUnregister_Card_To_Load.cs");
 exec("./clientCmdRelay_Module_Function.cs");
+exec("./clientCmdHeartbeat.cs");

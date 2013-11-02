@@ -1,4 +1,4 @@
-//-------------------------- 10/31/2013 -- 12:10:41 -----
+//-------------------------- 11/2/2013 -- 05:00:11 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -43,7 +43,7 @@ OpenAL Driver Init Success
 player class initialized
 Loaded Client
 Binding server port to default IP
-UDP initialized on port 9002
+UDP initialized on port 9003
 Connecting to the local master server for query.
 Adding a pending connection
 Sending Connect challenge Request
@@ -51,7 +51,7 @@ Binding server port to default IP
 UDP initialized on port 9000
 1249 Game connection dropped. reason: 
 Game connection request timed out.
-Got Connect challenge Request from IP:192.168.1.104:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1267
 Dots & Crits Client Client Ayn             
@@ -60,47 +60,47 @@ Got query request from: 1267
 Client 1267 disconnected.
 Issuing Disconnect packet.
 1267 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.104:9001
+Got Connect challenge Request from IP:192.168.1.103:9001
 Got Connect Request
 Game onConnected. info: 1269
 Dots & Crits Server Server 0             
-Got Connect challenge Request from IP:192.168.1.104:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1270
 Dots & Crits Client Client Ayn             
 Mapping string: Master_Server_Query_Request to index: 0
 Got query request from: 1270
-Dots & Crits Server IP:192.168.1.104:9001 Server
+Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1270 disconnected.
 Issuing Disconnect packet.
 1270 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.104:9003
+Got Connect challenge Request from IP:192.168.1.103:9004
 Got Connect Request
 Game onConnected. info: 1272
 Dots & Crits Client Client Ayn             
 Mapping string: Master_Server_Query_Request to index: 0
 Got query request from: 1272
-Dots & Crits Server IP:192.168.1.104:9001 Server
+Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1272 disconnected.
 Issuing Disconnect packet.
 1272 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.104:9002
+Got Connect challenge Request from IP:192.168.1.103:9005
 Got Connect Request
 Game onConnected. info: 1274
 Dots & Crits Client Client Ayn             
 Mapping string: Master_Server_Query_Request to index: 0
 Got query request from: 1274
-Dots & Crits Server IP:192.168.1.104:9001 Server
+Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1274 disconnected.
 Issuing Disconnect packet.
 1274 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.104:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1276
 Dots & Crits Client Client Ayn             
 Mapping string: Master_Server_Query_Request to index: 0
 Got query request from: 1276
-Dots & Crits Server IP:192.168.1.104:9001 Server
+Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1276 disconnected.
 Issuing Disconnect packet.
 1276 Game connection dropped. reason: 
