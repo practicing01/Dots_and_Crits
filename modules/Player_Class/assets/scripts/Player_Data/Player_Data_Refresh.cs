@@ -35,6 +35,10 @@ if (%Player_Data.Is_Playing)
 
 %Sprite_Position=%Player_Data.Player_Sprite_Data.Composite_Sprite.Position;
 
+%Player_Data.Player_Sprite_Data.Scene_Object_Mount.dismount();
+
+%Player_Data.Player_Sprite_Data.Scene_Object_Mount.safeDelete();
+
 %Player_Data.Player_Sprite_Data.Composite_Sprite.safeDelete();
 
 for (%y=0;%y<%Player_Data.getDynamicFieldCount();%y++)
@@ -95,6 +99,10 @@ if (%Player_Data.Is_Playing)
 //Delete old sprite.
 
 %Sprite_Position=%Player_Data.Player_Sprite_Data.Composite_Sprite.Position;
+
+%Player_Data.Player_Sprite_Data.Scene_Object_Mount.dismount();
+
+%Player_Data.Player_Sprite_Data.Scene_Object_Mount.safeDelete();
 
 %Player_Data.Player_Sprite_Data.Composite_Sprite.safeDelete();
 

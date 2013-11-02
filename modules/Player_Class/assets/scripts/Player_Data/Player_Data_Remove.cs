@@ -38,6 +38,8 @@ if (%Dynamic_Field.getClassName()$="Simset")
 
 %this.Simset_Player_Data.remove(%Player_Data);
 
+%Player_Data.Player_Sprite_Data.Scene_Object_Mount.dismount();
+
 %Player_Data.Player_Sprite_Data.Scene_Object_Mount.safeDelete();
 
 %Player_Data.Player_Sprite_Data.Composite_Sprite.safeDelete();
