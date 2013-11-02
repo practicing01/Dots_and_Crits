@@ -1,4 +1,4 @@
-function Module_Card_Deathball::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,%Vector_2D_Position,%Deathball_Index)
+function Module_Card_Deathball::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,%Vector_2D_Position,%Object_Index)
 {
 
 %Target_Player=0;
@@ -42,7 +42,7 @@ Module_ID_Parent=%this;
 
 GameConnection_Handle=%Player_Sprite_Target_Game_Connection_Handle;
 
-Deathball_Index=%Deathball_Index;
+Object_Index=%Object_Index;
 
 Health=100;
 
@@ -62,11 +62,13 @@ if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Squar
 
 %Vector_2D_Mount_Offset="0 0";
 
-%Vector_2D_Error_Offset=Scale_Vector_To_Camera("10 10");
-
 %Vector_2D_Mount_Offset.Y=(%Vector_2D_Target_Player_Sprite_Size.Y/2)+(%Square_Size.Y/2);
 
-%Vector_2D_Mount_Offset.Y+=%Vector_2D_Error_Offset.Y;
+%Vector_2D_Rotated_Square_Offset=%Square_Size;
+
+%Vector_2D_Rotated_Square_Offset.Y=%Vector_2D_Rotated_Square_Offset.Y/4;
+
+%Vector_2D_Mount_Offset.Y+=%Vector_2D_Rotated_Square_Offset.Y;
 
 Scene_Dots_and_Crits.add(%Sprite_Deathball);
 
@@ -74,6 +76,6 @@ Scene_Dots_and_Crits.add(%Sprite_Deathball);
 
 %Sprite_Deathball.dismount();
 
-%this.Simset_Deathballs.add(%Sprite_Deathball);
+%this.Simset_Objects.add(%Sprite_Deathball);
 
 }

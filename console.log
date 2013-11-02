@@ -1,4 +1,4 @@
-//-------------------------- 11/2/2013 -- 05:00:11 -----
+//-------------------------- 11/2/2013 -- 07:53:39 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -43,38 +43,28 @@ OpenAL Driver Init Success
 player class initialized
 Loaded Client
 Binding server port to default IP
-UDP initialized on port 9003
+UDP initialized on port 9002
 Connecting to the local master server for query.
 Adding a pending connection
 Sending Connect challenge Request
 Binding server port to default IP
 UDP initialized on port 9000
-1249 Game connection dropped. reason: 
+1251 Game connection dropped. reason: 
 Game connection request timed out.
-Got Connect challenge Request from IP:192.168.1.103:9003
-Got Connect Request
-Game onConnected. info: 1267
-Dots & Crits Client Client Ayn             
-Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1267
-Client 1267 disconnected.
-Issuing Disconnect packet.
-1267 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9001
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1269
-Dots & Crits Server Server 0             
-Got Connect challenge Request from IP:192.168.1.103:9003
-Got Connect Request
-Game onConnected. info: 1270
 Dots & Crits Client Client Ayn             
 Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1270
-Dots & Crits Server IP:192.168.1.103:9001 Server
-Client 1270 disconnected.
+Got query request from: 1269
+Client 1269 disconnected.
 Issuing Disconnect packet.
-1270 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9004
+1269 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9001
+Got Connect Request
+Game onConnected. info: 1271
+Dots & Crits Server Server 0             
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1272
 Dots & Crits Client Client Ayn             
@@ -84,7 +74,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1272 disconnected.
 Issuing Disconnect packet.
 1272 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9005
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1274
 Dots & Crits Client Client Ayn             
@@ -104,6 +94,286 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1276 disconnected.
 Issuing Disconnect packet.
 1276 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1278
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1278
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1278 disconnected.
+Issuing Disconnect packet.
+1278 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1280
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1280
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1280 disconnected.
+Issuing Disconnect packet.
+1280 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1282
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1282
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1282 disconnected.
+Issuing Disconnect packet.
+1282 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1284
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1284
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1284 disconnected.
+Issuing Disconnect packet.
+1284 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1286
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1286
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1286 disconnected.
+Issuing Disconnect packet.
+1286 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1288
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1288
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1288 disconnected.
+Issuing Disconnect packet.
+1288 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1290
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1290
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1290 disconnected.
+Issuing Disconnect packet.
+1290 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1292
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1292
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1292 disconnected.
+Issuing Disconnect packet.
+1292 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1294
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1294
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1294 disconnected.
+Issuing Disconnect packet.
+1294 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1296
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1296
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1296 disconnected.
+Issuing Disconnect packet.
+1296 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1298
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1298
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1298 disconnected.
+Issuing Disconnect packet.
+1298 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1300
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1300
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1300 disconnected.
+Issuing Disconnect packet.
+1300 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1302
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1302
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1302 disconnected.
+Issuing Disconnect packet.
+1302 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1304
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1304
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1304 disconnected.
+Issuing Disconnect packet.
+1304 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1306
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1306
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1306 disconnected.
+Issuing Disconnect packet.
+1306 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1308
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1308
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1308 disconnected.
+Issuing Disconnect packet.
+1308 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1310
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1310
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1310 disconnected.
+Issuing Disconnect packet.
+1310 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1312
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1312
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1312 disconnected.
+Issuing Disconnect packet.
+1312 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1314
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1314
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1314 disconnected.
+Issuing Disconnect packet.
+1314 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1316
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1316
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1316 disconnected.
+Issuing Disconnect packet.
+1316 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1318
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1318
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1318 disconnected.
+Issuing Disconnect packet.
+1318 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1320
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1320
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1320 disconnected.
+Issuing Disconnect packet.
+1320 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1322
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1322
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1322 disconnected.
+Issuing Disconnect packet.
+1322 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1324
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1324
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1324 disconnected.
+Issuing Disconnect packet.
+1324 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1326
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1326
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1326 disconnected.
+Issuing Disconnect packet.
+1326 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1328
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1328
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1328 disconnected.
+Issuing Disconnect packet.
+1328 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1330
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1330
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1330 disconnected.
+Issuing Disconnect packet.
+1330 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1332
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1332
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1332 disconnected.
+Issuing Disconnect packet.
+1332 Game connection dropped. reason: 
 goodbye world
 modules/Player_Sprites/Ayn/assets/scripts/Player_Sprite/Ass_Unload.cs (4): Unable to find object: '' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
@@ -123,28 +393,28 @@ Dots_and_Crits: Created scene but no window available.
 popDialog(): Invalid control: Gui_Config_Menu
 Dots_and_Crits: Created scene but no window available.
 Dots_and_Crits: Created scene but no window available.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (4): Unable to find object: '1201' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (4): Unable to find object: '1203' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (5): Unable to find object: '1202' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (5): Unable to find object: '1204' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (6): Unable to find object: '1203' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (6): Unable to find object: '1205' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (7): Unable to find object: '1204' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (7): Unable to find object: '1206' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (8): Unable to find object: '1205' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (8): Unable to find object: '1207' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (9): Unable to find object: '1206' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (9): Unable to find object: '1208' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (11): Unable to find object: '1207' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (11): Unable to find object: '1209' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (13): Unable to find object: '1208' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (13): Unable to find object: '1210' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (15): Unable to find object: '1209' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (15): Unable to find object: '1211' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
 Dots_and_Crits: Created scene but no window available.
-1266 Game connection dropped. reason: 
+1268 Game connection dropped. reason: 
 Issuing Disconnect packet.
-1269 Game connection dropped. reason: 
+1271 Game connection dropped. reason: 
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
 Deleting the GL rendering context...
