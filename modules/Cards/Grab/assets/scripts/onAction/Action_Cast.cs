@@ -92,6 +92,22 @@ if (isObject(%Player_Object.Sprite_Grab))
 
 %Player_Object.Sprite_Grab.dismount();
 
+for (%y=0;%y<%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getCount();%y++)
+{
+
+%Mounted_Object=%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getObject(%y);
+
+if (%Mounted_Object==%Player_Object.Sprite_Grab)
+{
+
+%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.remove(%Mounted_Object);
+
+break;
+
+}
+
+}
+
 if (%Player_Object.Sprite_Grab==%Scene_Object_Second_Target)
 {
 
@@ -122,5 +138,30 @@ return;
 %Vector_2D_Mount_Offset.Y+=%Vector_2D_Rotated_Square_Offset.Y;
 
 %Player_Object.Sprite_Grab.mount(%Target_Player.Player_Sprite_Data.Scene_Object_Mount,%Vector_2D_Mount_Offset,0,true,%Scene_Object_Second_Target.Angle);
+
+%Bool_Already_Registered_For_Dismount=false;
+
+for (%y=0;%y<%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getCount();%y++)
+{
+
+%Mounted_Object=%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getObject(%y);
+
+if (%Mounted_Object==%Player_Object.Sprite_Grab)
+{
+
+%Bool_Already_Registered_For_Dismount=true;
+
+break;
+
+}
+
+}
+
+if (!%Bool_Already_Registered_For_Dismount)
+{
+
+%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.add(%Player_Object.Sprite_Grab);
+
+}
 
 }

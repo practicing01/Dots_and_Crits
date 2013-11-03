@@ -6,11 +6,11 @@
 <Breakpoints/>
 <Bookmarks/>
 <OpenFiles>
-<File ScrollX="0" ScrollY="0">modules\Player_Sprites\Ayn\assets\scripts\Player_Sprite\Player_Sprite_Spawn.cs</File>
+<File ScrollX="0" ScrollY="9">modules\Player_Sprites\Ayn\assets\scripts\Player_Sprite\Player_Sprite_Spawn.cs</File>
 <File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Network\Client\Client_Load.cs</File>
 <File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Network\Client\clientCmdRegister_Player_Information.cs</File>
 <File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Network\Client\clientCmdRegister_Play.cs</File>
-<File ScrollX="0" ScrollY="9">modules\Player_Class\assets\scripts\Player_Data\Player_Data_Add.cs</File>
+<File ScrollX="0" ScrollY="11">modules\Player_Class\assets\scripts\Player_Data\Player_Data_Add.cs</File>
 <File ScrollX="0" ScrollY="0" Active="true">modules\Dots_and_Crits\scripts\Load_Play\Load_Player_Data.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

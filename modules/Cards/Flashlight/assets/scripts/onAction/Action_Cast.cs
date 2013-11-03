@@ -84,6 +84,31 @@ Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Sprite_Flashlight);
 
 %Script_Object_Player_Information.Sprite_Flashlight.mount(%Target_Player.Player_Sprite_Data.Scene_Object_Mount,%Vector_2D_Mount_Offset,0,true,mDegToRad(0));
 
+%Bool_Already_Registered_For_Dismount=false;
+
+for (%y=0;%y<%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getCount();%y++)
+{
+
+%Mounted_Object=%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getObject(%y);
+
+if (%Mounted_Object==%Script_Object_Player_Information.Sprite_Flashlight)
+{
+
+%Bool_Already_Registered_For_Dismount=true;
+
+break;
+
+}
+
+}
+
+if (!%Bool_Already_Registered_For_Dismount)
+{
+
+%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.add(%Script_Object_Player_Information.Sprite_Flashlight);
+
+}
+
 }
 else
 {

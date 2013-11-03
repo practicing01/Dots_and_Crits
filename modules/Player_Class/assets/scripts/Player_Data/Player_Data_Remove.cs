@@ -9,6 +9,11 @@ for (%x=0;%x<%this.Simset_Player_Data.getCount();%x++)
 if (%Player.Game_Connection_Handle==%Player_Data.Game_Connection_Handle)
 {
 
+//Dismount objects before reseting module.
+%Player_Data.Module_ID_Player_Sprite.Player_Dismount_Objects(%Player_Data.Player_Sprite_Data);
+
+%Player_Data.Player_Sprite_Data.Simset_Objects_To_Dismount.delete();
+
 %Player_Data.Player_Sprite_Data.Composite_Sprite.Module_ID_Parent.Player_Sprite_Data_Remove(%Player_Data.Player_Sprite_Data);
 
 /*Delete animation simsets.*/

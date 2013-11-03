@@ -22,6 +22,11 @@ for (%y=0;%y<$Simset_ModuleID_Player_Sprites.getCount();%y++)
 if (%Module_ID_Player_Sprite.String_Description$=%Player_Data.String_Player_Sprite_Description)
 {
 
+//Dismount objects before reseting module.
+%Player_Data.Module_ID_Player_Sprite.Player_Dismount_Objects(%Player_Data.Player_Sprite_Data);
+
+%Player_Data.Player_Sprite_Data.Simset_Objects_To_Dismount.delete();
+
 ModuleDatabase.LoadExplicit(%Module_ID_Player_Sprite.Module_ID_Player_Sprite);
 
 %Module_ID_Player_Sprite.Module_ID_Player_Sprite.Player_Sprite_Load();
@@ -82,6 +87,11 @@ break;
 
 if (!%Bool_Found_Sprite)
 {
+
+//Dismount objects before reseting module.
+%Player_Data.Module_ID_Player_Sprite.Player_Dismount_Objects(%Player_Data.Player_Sprite_Data);
+
+%Player_Data.Player_Sprite_Data.Simset_Objects_To_Dismount.delete();
 
 //Set random sprite.
 

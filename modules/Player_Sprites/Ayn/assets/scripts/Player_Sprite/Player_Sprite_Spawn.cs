@@ -87,6 +87,8 @@ Angle="180";
 
 };
 
+%Script_Object_Player_Sprite.Simset_Objects_To_Dismount=new SimSet();
+
 /************************************************************************/
 
 %Script_Object_Player_Sprite.Simset_Animation_Stand_Up=new SimSet();

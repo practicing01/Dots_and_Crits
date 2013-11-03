@@ -1,4 +1,4 @@
-//-------------------------- 11/3/2013 -- 08:42:40 -----
+//-------------------------- 11/3/2013 -- 11:29:00 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -43,15 +43,15 @@ OpenAL Driver Init Success
 player class initialized
 Loaded Client
 Binding server port to default IP
-UDP initialized on port 9003
+UDP initialized on port 9002
 Connecting to the local master server for query.
 Adding a pending connection
 Sending Connect challenge Request
+Game connection request timed out.
 Binding server port to default IP
 UDP initialized on port 9000
 1253 Game connection dropped. reason: 
-Game connection request timed out.
-Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1271
 Dots & Crits Client Client Ayn             
@@ -64,7 +64,7 @@ Got Connect challenge Request from IP:192.168.1.103:9001
 Got Connect Request
 Game onConnected. info: 1273
 Dots & Crits Server Server 0             
-Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1274
 Dots & Crits Client Client Ayn             
@@ -74,7 +74,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1274 disconnected.
 Issuing Disconnect packet.
 1274 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1276
 Dots & Crits Client Client Ayn             
@@ -84,6 +84,26 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1276 disconnected.
 Issuing Disconnect packet.
 1276 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect Request
+Game onConnected. info: 1278
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1278
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1278 disconnected.
+Issuing Disconnect packet.
+1278 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1280
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1280
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1280 disconnected.
+Issuing Disconnect packet.
+1280 Game connection dropped. reason: 
 goodbye world
 modules/Player_Sprites/Ayn/assets/scripts/Player_Sprite/Ass_Unload.cs (4): Unable to find object: '' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
