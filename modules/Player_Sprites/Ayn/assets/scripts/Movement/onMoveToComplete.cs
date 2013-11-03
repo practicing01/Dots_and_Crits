@@ -10,7 +10,7 @@ function Module_Player_Sprite_Ayn::onMoveToComplete(%this,%Composite_Sprite_Play
 if (%Player_Information.Game_Connection_Handle==$GameConnection_Serverside_Connection)
 {
 
-commandToServer('Relay_Module_Function',%Player_Information.Composite_Sprite.Module_ID_Parent,"Action_Position",%Player_Information.Composite_Sprite.Position);
+commandToServer('Relay_Module_Function',%Player_Information.Composite_Sprite.Module_ID_Parent,"Action_Position",%Player_Information.Game_Connection_Handle,%Player_Information.Composite_Sprite.Position);
 
 }
 

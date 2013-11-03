@@ -317,10 +317,10 @@ for (%x=0;%x<%Object_Module_ID.Simset_Player_Information.getCount();%x++)
 
 %Object=%Object_Module_ID.Simset_Player_Information.getObject(%x);
 
-if ((%Object.Game_Connection_Handle==%Object_Game_Connection_Handle)&&(%Object.Game_Connection_Handle==$GameConnection_Serverside_Connection))
+if (%Object.Game_Connection_Handle==%Object_Game_Connection_Handle)
 {
 
-%Object_Module_ID.Action_Update_Health(%Object,-10);
+%Object_Module_ID.Action_Update_Health(%Object,%Object.Game_Connection_Handle,1,10);
 
 break;
 

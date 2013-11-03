@@ -32,13 +32,13 @@ else if (%Module_Function$="Action_Attack")
 else if (%Module_Function$="Action_Update_Health")
 {
 
-%this.Action_Update_Health(%Player_Information,%Parameter_0);
+%this.Action_Update_Health(%Player_Information,%Parameter_0,%Parameter_1,%Parameter_2);
 
 }
 else if (%Module_Function$="Action_Position")
 {
 
-%this.Action_Position(%Player_Information,%Parameter_0);
+%this.Action_Position(%Player_Information,%Parameter_0,%Parameter_1);
 
 }
 

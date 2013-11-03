@@ -23,6 +23,6 @@ if (%Target_Player==0){return;}
 
 //Use player info to play animations.
 
-%Target_Player.Player_Sprite_Data.Health+=100;
+%Target_Player.Player_Sprite_Data.Health+=100;//Need to fix this to use Action_Update_Health//banana
 
 }

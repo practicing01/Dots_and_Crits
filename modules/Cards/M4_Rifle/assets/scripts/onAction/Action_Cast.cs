@@ -84,10 +84,10 @@ Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Sprite_M4_Rifle);
 
 %Script_Object_Player_Information.Sprite_M4_Rifle.mount(%Player_Information.Player_Sprite_Data.Scene_Object_Mount,%Vector_2D_Mount_Offset,0,true,mDegToRad(0));
 
-if ((%Target_Player.Game_Connection_Handle!=%Player_Information.Game_Connection_Handle)&&(%Target_Player.Game_Connection_Handle==$GameConnection_Serverside_Connection))
+if (%Target_Player.Game_Connection_Handle!=%Player_Information.Game_Connection_Handle)
 {
 
-%Target_Player.Module_ID_Player_Sprite.Action_Update_Health(%Target_Player.Player_Sprite_Data,-100);
+%Target_Player.Module_ID_Player_Sprite.Action_Update_Health(%Target_Player.Player_Sprite_Data,%Target_Player.Game_Connection_Handle,1,100);
 
 }
 
@@ -104,10 +104,10 @@ if (%Target_Player.Game_Connection_Handle==%Player_Information.Game_Connection_H
 %Player_Object.Sprite_M4_Rifle.Visible=false;
 
 }
-else if (%Target_Player.Game_Connection_Handle==$GameConnection_Serverside_Connection)
+else
 {
 
-%Target_Player.Module_ID_Player_Sprite.Action_Update_Health(%Target_Player.Player_Sprite_Data,-100);
+%Target_Player.Module_ID_Player_Sprite.Action_Update_Health(%Target_Player.Player_Sprite_Data,%Target_Player.Game_Connection_Handle,1,100);
 
 }
 
@@ -117,10 +117,10 @@ else
 
 %Player_Object.Sprite_M4_Rifle.Visible=true;
 
-if ((%Target_Player.Game_Connection_Handle!=%Player_Information.Game_Connection_Handle)&&(%Target_Player.Game_Connection_Handle==$GameConnection_Serverside_Connection))
+if (%Target_Player.Game_Connection_Handle!=%Player_Information.Game_Connection_Handle)
 {
 
-%Target_Player.Module_ID_Player_Sprite.Action_Update_Health(%Target_Player.Player_Sprite_Data,-100);
+%Target_Player.Module_ID_Player_Sprite.Action_Update_Health(%Target_Player.Player_Sprite_Data,%Target_Player.Game_Connection_Handle,1,100);
 
 }
 
