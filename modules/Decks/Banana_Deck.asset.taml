@@ -26,4 +26,7 @@
     <ScriptObject
         Card_Slot_Position="678 430"
         Module_ID_Card="Module_Card_Grab" />
+    <ScriptObject
+        Card_Slot_Position="728 430"
+        Module_ID_Card="Module_Card_M4_Rifle" />
 </SimSet>

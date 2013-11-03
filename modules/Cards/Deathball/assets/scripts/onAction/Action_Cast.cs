@@ -64,9 +64,9 @@ if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Squar
 
 %Vector_2D_Mount_Offset.Y=(%Vector_2D_Target_Player_Sprite_Size.Y/2)+(%Square_Size.Y/2);
 
-%Vector_2D_Rotated_Square_Offset=%Square_Size;
+%Vector_2D_Rotated_Square_Offset=%Vector_2D_Target_Player_Sprite_Size;
 
-%Vector_2D_Rotated_Square_Offset.Y=%Vector_2D_Rotated_Square_Offset.Y/4;
+%Vector_2D_Rotated_Square_Offset.Y=%Vector_2D_Rotated_Square_Offset.Y/3;
 
 %Vector_2D_Mount_Offset.Y+=%Vector_2D_Rotated_Square_Offset.Y;
 

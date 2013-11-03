@@ -7,6 +7,7 @@ function Module_Player_Class::Player_Data_Add(%this,%Player_Information)
 Game_Connection_Handle=%Player_Information.Game_Connection_Handle;
 Connector_Name=%Player_Information.Connector_Name;
 String_Player_Sprite_Description=%Player_Information.String_Player_Sprite_Description;
+Player_Sprite_Data=0;
 
 };
 

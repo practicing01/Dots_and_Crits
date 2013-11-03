@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_M4_Rifle"
+    Image="@asset=Module_Card_M4_Rifle:Image_M4_Rifle"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

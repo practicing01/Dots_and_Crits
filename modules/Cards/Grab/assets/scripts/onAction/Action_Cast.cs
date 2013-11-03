@@ -115,9 +115,9 @@ return;
 
 %Vector_2D_Mount_Offset.Y=(%Vector_2D_Player_Size.Y/2)+(%Vector_2D_Grab_Size.Y/2);
 
-%Vector_2D_Rotated_Square_Offset=%Vector_2D_Grab_Size;
+%Vector_2D_Rotated_Square_Offset=%Vector_2D_Player_Size;
 
-%Vector_2D_Rotated_Square_Offset.Y=%Vector_2D_Rotated_Square_Offset.Y/4;
+%Vector_2D_Rotated_Square_Offset.Y=%Vector_2D_Rotated_Square_Offset.Y/3;
 
 %Vector_2D_Mount_Offset.Y+=%Vector_2D_Rotated_Square_Offset.Y;
 
