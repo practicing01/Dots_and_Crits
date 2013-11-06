@@ -40,7 +40,6 @@ else//Set
 
 }
 
-echo(%Target_Player.Game_Connection_Handle SPC %Target_Player.Health);//banana
 $Module_ID_Map_Loaded.Player_Health(%Target_Player);
 
 }

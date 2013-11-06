@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Projectile"
+    Image="@asset=Module_Card_Projectile:Image_Projectile"
+    AnimationFrames="0 1 2"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

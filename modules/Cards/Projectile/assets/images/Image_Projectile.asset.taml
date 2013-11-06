@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Projectile"
+    ImageFile="Image_Projectile.png"
+	CellCountX="3"
+    CellCountY="1"
+    CellWidth="16"
+    CellHeight="20"
+	Optimal_Resolution="1280 800"/>

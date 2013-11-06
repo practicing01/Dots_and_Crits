@@ -29,4 +29,7 @@
     <ScriptObject
         Card_Slot_Position="728 430"
         Module_ID_Card="Module_Card_M4_Rifle" />
+    <ScriptObject
+        Card_Slot_Position="728 380"
+        Module_ID_Card="Module_Card_Projectile" />
 </SimSet>
