@@ -58,7 +58,9 @@ Health=100;
 
 if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Square_Size.Y/2;}
 
-%Sprite_Deathball.createCircleCollisionShape(%Radius);
+%Collision_Shape_Index=%Sprite_Deathball.createCircleCollisionShape(%Radius);
+
+%Sprite_Deathball.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Vector_2D_Mount_Offset="0 0";
 

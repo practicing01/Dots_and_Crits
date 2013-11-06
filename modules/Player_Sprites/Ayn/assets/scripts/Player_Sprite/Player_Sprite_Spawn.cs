@@ -46,7 +46,11 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 /************************************************************************/
 
 %Script_Object_Player_Sprite.Composite_Sprite.clearCollisionShapes();
-%Script_Object_Player_Sprite.Composite_Sprite.createPolygonBoxCollisionShape(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Ayn));
+
+%Collision_Shape_Index=%Script_Object_Player_Sprite.Composite_Sprite.createPolygonBoxCollisionShape(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Ayn));
+
+%Script_Object_Player_Sprite.Composite_Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+
 %Script_Object_Player_Sprite.Composite_Sprite.setFixedAngle(true);
 %Script_Object_Player_Sprite.Composite_Sprite.Position="0 0";
 %Script_Object_Player_Sprite.Composite_Sprite.setUpdateCallback(true);
