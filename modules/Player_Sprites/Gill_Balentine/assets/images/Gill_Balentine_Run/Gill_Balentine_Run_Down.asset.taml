@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Gill_Balentine_Run_Down"
+    ImageFile="Gill_Balentine_Run_Down.png"
+	CellCountX="8"
+    CellCountY="3"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

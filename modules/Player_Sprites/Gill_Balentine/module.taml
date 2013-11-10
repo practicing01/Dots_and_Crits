@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Player_Sprite_Gill_Balentine"
+	Type="Player_Sprite"
+	VersionId="1"
+	Description="Gill_Balentine"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

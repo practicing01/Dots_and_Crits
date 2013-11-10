@@ -23,6 +23,42 @@ if (%Module_ID_Player_Sprite.String_Description$=%Player_Information.String_Play
 
 %Script_Object_Player_Data.Module_ID_Player_Sprite=%Module_ID_Player_Sprite.Module_ID_Player_Sprite;
 
+/*Load the player sprite module if it hasn't already been.*/
+
+%Bool_Sprite_Already_Loaded=false;
+
+for (%z=0;%z<$Simset_Module_ID_Loaded_Player_Sprites.getCount();%z++)
+{
+
+%Module_ID_Loaded_Sprite=$Simset_Module_ID_Loaded_Player_Sprites.getObject(%z);
+
+if (%Module_ID_Loaded_Sprite.Module_ID_Player_Sprite$=%Module_ID_Player_Sprite.Module_ID_Player_Sprite)
+{
+
+%Bool_Sprite_Already_Loaded=true;break;
+
+}
+
+}
+
+if (!%Bool_Sprite_Already_Loaded)
+{
+
+ModuleDatabase.LoadExplicit(%Module_ID_Player_Sprite.Module_ID_Player_Sprite);
+
+%Module_ID_Player_Sprite.Module_ID_Player_Sprite.Player_Sprite_Load();
+
+%Module_ID_Loaded_Sprite=new ScriptObject()
+{
+
+Module_ID_Player_Sprite=%Module_ID_Player_Sprite.Module_ID_Player_Sprite;
+
+};
+
+$Simset_Module_ID_Loaded_Player_Sprites.add(%Module_ID_Loaded_Sprite);
+
+}
+
 break;
 
 }

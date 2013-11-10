@@ -1,4 +1,4 @@
-//-------------------------- 11/6/2013 -- 05:43:37 -----
+//-------------------------- 11/10/2013 -- 08:24:10 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -47,43 +47,23 @@ UDP initialized on port 9002
 Connecting to the local master server for query.
 Adding a pending connection
 Sending Connect challenge Request
-Game connection request timed out.
 Binding server port to default IP
 UDP initialized on port 9000
-1255 Game connection dropped. reason: 
+1259 Game connection dropped. reason: 
+Game connection request timed out.
 Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
-Game onConnected. info: 1273
+Game onConnected. info: 1277
 Dots & Crits Client Client Ayn             
 Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1273
-Client 1273 disconnected.
+Got query request from: 1277
+Client 1277 disconnected.
 Issuing Disconnect packet.
-1273 Game connection dropped. reason: 
+1277 Game connection dropped. reason: 
 Got Connect challenge Request from IP:192.168.1.103:9001
 Got Connect Request
-Game onConnected. info: 1275
+Game onConnected. info: 1279
 Dots & Crits Server Server 0             
-Got Connect challenge Request from IP:192.168.1.103:9002
-Got Connect Request
-Game onConnected. info: 1276
-Dots & Crits Client Client Ayn             
-Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1276
-Dots & Crits Server IP:192.168.1.103:9001 Server
-Client 1276 disconnected.
-Issuing Disconnect packet.
-1276 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
-Got Connect Request
-Game onConnected. info: 1278
-Dots & Crits Client Client Ayn             
-Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1278
-Dots & Crits Server IP:192.168.1.103:9001 Server
-Client 1278 disconnected.
-Issuing Disconnect packet.
-1278 Game connection dropped. reason: 
 Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1280
@@ -114,7 +94,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1284 disconnected.
 Issuing Disconnect packet.
 1284 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1286
 Dots & Crits Client Client Ayn             
@@ -124,7 +104,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1286 disconnected.
 Issuing Disconnect packet.
 1286 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1288
 Dots & Crits Client Client Ayn             
@@ -134,7 +114,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1288 disconnected.
 Issuing Disconnect packet.
 1288 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1290
 Dots & Crits Client Client Ayn             
@@ -144,7 +124,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1290 disconnected.
 Issuing Disconnect packet.
 1290 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1292
 Dots & Crits Client Client Ayn             
@@ -164,7 +144,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1294 disconnected.
 Issuing Disconnect packet.
 1294 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1296
 Dots & Crits Client Client Ayn             
@@ -174,8 +154,122 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1296 disconnected.
 Issuing Disconnect packet.
 1296 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1298
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1298
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1298 disconnected.
+Issuing Disconnect packet.
+1298 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1300
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1300
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1300 disconnected.
+Issuing Disconnect packet.
+1300 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1302
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1302
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1302 disconnected.
+Issuing Disconnect packet.
+1302 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1304
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1304
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1304 disconnected.
+Issuing Disconnect packet.
+1304 Game connection dropped. reason: 
+Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect Request
+Game onConnected. info: 1306
+Dots & Crits Client Client Ayn             
+Mapping string: Master_Server_Query_Request to index: 0
+Got query request from: 1306
+Dots & Crits Server IP:192.168.1.103:9001 Server
+Client 1306 disconnected.
+Issuing Disconnect packet.
+1306 Game connection dropped. reason: 
 goodbye world
 modules/Player_Sprites/Ayn/assets/scripts/Player_Sprite/Ass_Unload.cs (4): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (4): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (5): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (6): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (7): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (8): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (9): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (10): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (11): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (13): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (14): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (15): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (16): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (17): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (18): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (19): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (20): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (22): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (23): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (24): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (25): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (26): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (27): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (28): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (29): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (31): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (32): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (33): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (34): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (35): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (36): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (37): Unable to find object: '' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/Player_Sprites/Gill_Balentine/assets/scripts/Player_Sprite/Ass_Unload.cs (38): Unable to find object: '' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
 modules/Server/assets/scripts/Scene/Scene_Unload.cs (8): Unable to find object: 'Dots_and_Crits' attempting to call function 'Game_Connection_Delete'
 popDialog(): Invalid control: Gui_Server
@@ -193,28 +287,28 @@ Dots_and_Crits: Created scene but no window available.
 popDialog(): Invalid control: Gui_Config_Menu
 Dots_and_Crits: Created scene but no window available.
 Dots_and_Crits: Created scene but no window available.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (4): Unable to find object: '1207' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (4): Unable to find object: '1209' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (5): Unable to find object: '1208' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (5): Unable to find object: '1210' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (6): Unable to find object: '1209' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (6): Unable to find object: '1211' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (7): Unable to find object: '1210' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (7): Unable to find object: '1212' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (8): Unable to find object: '1211' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (8): Unable to find object: '1213' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (9): Unable to find object: '1212' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (9): Unable to find object: '1214' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (11): Unable to find object: '1213' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (11): Unable to find object: '1215' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (13): Unable to find object: '1214' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (13): Unable to find object: '1216' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (15): Unable to find object: '1215' attempting to call function 'getAssetId'
+modules/Splashes/assets/scripts/Scene/Ass_Unload.cs (15): Unable to find object: '1217' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.
 Dots_and_Crits: Created scene but no window available.
-1272 Game connection dropped. reason: 
+1276 Game connection dropped. reason: 
 Issuing Disconnect packet.
-1275 Game connection dropped. reason: 
+1279 Game connection dropped. reason: 
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
 Deleting the GL rendering context...

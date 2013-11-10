@@ -320,6 +320,6 @@ getRandom(0,%Target_Player.Simset_Animation_Stand_Cast_Self_Down_Left.getCount()
 
 cancel(%Target_Player.Schedule_Animation_Reset);
 
-%Target_Player.Schedule_Animation_Reset=schedule(2000,0,%Target_Player.Module_ID_Parent@"::Animation_Reset",%Target_Player.Module_ID_Parent,%Target_Player);
+%Target_Player.Schedule_Animation_Reset=schedule(2000,0,%Target_Player.Composite_Sprite.Module_ID_Parent@"::Animation_Reset",%Target_Player.Composite_Sprite.Module_ID_Parent,%Target_Player);
 
 }
