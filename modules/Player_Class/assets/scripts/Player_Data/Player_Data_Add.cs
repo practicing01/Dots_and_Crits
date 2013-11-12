@@ -35,7 +35,9 @@ for (%z=0;%z<$Simset_Module_ID_Loaded_Player_Sprites.getCount();%z++)
 if (%Module_ID_Loaded_Sprite.Module_ID_Player_Sprite$=%Module_ID_Player_Sprite.Module_ID_Player_Sprite)
 {
 
-%Bool_Sprite_Already_Loaded=true;break;
+%Bool_Sprite_Already_Loaded=true;
+
+break;
 
 }
 

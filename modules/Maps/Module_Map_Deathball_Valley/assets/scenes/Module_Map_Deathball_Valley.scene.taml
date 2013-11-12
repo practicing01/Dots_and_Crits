@@ -97,6 +97,21 @@
     <SceneObject
         class="Class_Portal_Spawn"
         Size="10 10"
-        Position="10 10"
+        Position="0 0"
+        BodyType="Static"/>
+    <SceneObject
+        class="Class_Portal_Spawn"
+        Size="10 10"
+        Position="100 0"
+        BodyType="Static"/>
+    <SceneObject
+        class="Class_Portal_Spawn"
+        Size="10 10"
+        Position="100 -75"
+        BodyType="Static"/>
+    <SceneObject
+        class="Class_Portal_Spawn"
+        Size="10 10"
+        Position="0 -75"
         BodyType="Static"/>
 </Scene>

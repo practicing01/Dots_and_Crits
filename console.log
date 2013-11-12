@@ -1,4 +1,4 @@
-//-------------------------- 11/10/2013 -- 08:24:10 -----
+//-------------------------- 11/12/2013 -- 03:35:53 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -74,7 +74,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1280 disconnected.
 Issuing Disconnect packet.
 1280 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1282
 Dots & Crits Client Client Ayn             
@@ -84,7 +84,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1282 disconnected.
 Issuing Disconnect packet.
 1282 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1284
 Dots & Crits Client Client Ayn             
@@ -94,7 +94,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1284 disconnected.
 Issuing Disconnect packet.
 1284 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1286
 Dots & Crits Client Client Ayn             
@@ -114,7 +114,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1288 disconnected.
 Issuing Disconnect packet.
 1288 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1290
 Dots & Crits Client Client Ayn             
@@ -124,7 +124,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1290 disconnected.
 Issuing Disconnect packet.
 1290 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9003
+Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1292
 Dots & Crits Client Client Ayn             
@@ -134,7 +134,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1292 disconnected.
 Issuing Disconnect packet.
 1292 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1294
 Dots & Crits Client Client Ayn             
@@ -144,7 +144,7 @@ Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1294 disconnected.
 Issuing Disconnect packet.
 1294 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
+Got Connect challenge Request from IP:192.168.1.103:9003
 Got Connect Request
 Game onConnected. info: 1296
 Dots & Crits Client Client Ayn             
@@ -177,33 +177,13 @@ Issuing Disconnect packet.
 Got Connect challenge Request from IP:192.168.1.103:9002
 Got Connect Request
 Game onConnected. info: 1302
-Dots & Crits Client Client Ayn             
+Dots & Crits Client Client Gill_Balentine             
 Mapping string: Master_Server_Query_Request to index: 0
 Got query request from: 1302
 Dots & Crits Server IP:192.168.1.103:9001 Server
 Client 1302 disconnected.
 Issuing Disconnect packet.
 1302 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
-Got Connect Request
-Game onConnected. info: 1304
-Dots & Crits Client Client Ayn             
-Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1304
-Dots & Crits Server IP:192.168.1.103:9001 Server
-Client 1304 disconnected.
-Issuing Disconnect packet.
-1304 Game connection dropped. reason: 
-Got Connect challenge Request from IP:192.168.1.103:9002
-Got Connect Request
-Game onConnected. info: 1306
-Dots & Crits Client Client Ayn             
-Mapping string: Master_Server_Query_Request to index: 0
-Got query request from: 1306
-Dots & Crits Server IP:192.168.1.103:9001 Server
-Client 1306 disconnected.
-Issuing Disconnect packet.
-1306 Game connection dropped. reason: 
 goodbye world
 modules/Player_Sprites/Ayn/assets/scripts/Player_Sprite/Ass_Unload.cs (4): Unable to find object: '' attempting to call function 'getAssetId'
 Asset Manager: Failed to release asset Id '' as it does not exist.

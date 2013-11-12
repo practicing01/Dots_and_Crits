@@ -25,7 +25,9 @@ for (%y=0;%y<$Simset_Already_Loaded_Card_Modules.getCount();%y++)
 if (%Already_Loaded_Module.Module_ID_Card$=%Object.Module_ID_Card)
 {
 
-%Bool_Already_Loaded=true;break;
+%Bool_Already_Loaded=true;
+
+break;
 
 }
 

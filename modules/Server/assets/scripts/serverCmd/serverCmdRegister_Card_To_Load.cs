@@ -11,7 +11,9 @@ for (%x=0;%x<%Client.Simset_Cards_To_Load.getCount();%x++)
 if (%Card.Module_ID_Card$=%Module_ID_Card)
 {
 
-%Bool_Has_Card=true;break;
+%Bool_Has_Card=true;
+
+break;
 
 }
 
