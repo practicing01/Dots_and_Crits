@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Capture_Object_Idle"
+    Image="@asset=Module_Card_Capture_Object:Image_Capture_Object_Capture_Object"
+    AnimationFrames="0 1 2 3 4 5"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

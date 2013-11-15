@@ -78,6 +78,8 @@ Scene_Dots_and_Crits.add(%Sprite_Deathball);
 
 %Sprite_Deathball.dismount();
 
+%Sprite_Deathball.Position=%Sprite_Deathball.Position;
+
 %this.Simset_Objects.add(%Sprite_Deathball);
 
 }

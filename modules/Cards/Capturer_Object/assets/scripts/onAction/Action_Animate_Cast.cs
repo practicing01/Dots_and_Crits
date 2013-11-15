@@ -1,7 +1,5 @@
-function Module_Card_M4_Rifle::Action_Animate_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle)
+function Module_Card_Capturer_Object::Action_Animate_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle)
 {
-
-return;
 
 %Target_Player=0;
 

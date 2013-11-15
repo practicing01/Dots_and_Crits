@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Capturer_Object"
+    ImageFile="Capturer_Object.png"
+	CellCountX="16"
+    CellCountY="5"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

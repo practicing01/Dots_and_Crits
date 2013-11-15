@@ -92,6 +92,8 @@ if (isObject(%Player_Object.Sprite_Grab))
 
 %Player_Object.Sprite_Grab.dismount();
 
+%Player_Object.Sprite_Grab.Position=%Player_Object.Sprite_Grab.Position;
+
 for (%y=0;%y<%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getCount();%y++)
 {
 
