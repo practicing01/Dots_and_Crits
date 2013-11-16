@@ -1,6 +1,8 @@
 function Module_Card_Kingless_Hill::Score(%this,%Hill,%Player_Score)
 {
 
+if (!isObject(%Hill)||!isObject(%Player_Score)){return;}
+
 %Player_Score.Score++;
 
 %Player_Score.Gui_Score.setText(%Player_Score.Connector_Name SPC %Player_Score.Score);
