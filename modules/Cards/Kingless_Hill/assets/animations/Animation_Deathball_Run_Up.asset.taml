@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Kingless_Hill"
+    Image="@asset=Module_Card_Kingless_Hill:Image_Kingless_Hill"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />

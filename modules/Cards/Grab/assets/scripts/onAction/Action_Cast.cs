@@ -141,6 +141,8 @@ return;
 
 %Player_Object.Sprite_Grab.mount(%Target_Player.Player_Sprite_Data.Scene_Object_Mount,%Vector_2D_Mount_Offset,0,true,%Scene_Object_Second_Target.Angle);
 
+%Player_Object.Sprite_Grab.setPosition(%Player_Object.Sprite_Grab.Position);
+
 %Bool_Already_Registered_For_Dismount=false;
 
 for (%y=0;%y<%Target_Player.Player_Sprite_Data.Simset_Objects_To_Dismount.getCount();%y++)

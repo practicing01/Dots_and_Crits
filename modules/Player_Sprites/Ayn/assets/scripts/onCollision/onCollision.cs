@@ -3,6 +3,6 @@ function Module_Player_Sprite_Ayn::onCollision(%this,%Composite_Sprite_Player,%C
 
 %Player_Information=%Composite_Sprite_Player.Script_Object_Parent;
 
-%Player_Information.Composite_Sprite.setLinearDamping(%Player_Information.Linear_Damping);
+//%Player_Information.Composite_Sprite.setLinearDamping(%Player_Information.Linear_Damping);
 
 }

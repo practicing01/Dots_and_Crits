@@ -38,4 +38,7 @@
     <ScriptObject
         Card_Slot_Position="728 280"
         Module_ID_Card="Module_Card_Capturer_Object" />
+    <ScriptObject
+        Card_Slot_Position="728 230"
+        Module_ID_Card="Module_Card_Kingless_Hill" />
 </SimSet>
