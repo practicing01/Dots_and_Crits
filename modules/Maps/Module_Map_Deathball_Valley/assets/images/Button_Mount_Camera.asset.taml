@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Button_Mount_Camera"
+    ImageFile="Button_Mount_Camera.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="48"
+    CellHeight="48"
+	Optimal_Resolution="1280 800"/>
