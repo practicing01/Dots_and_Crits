@@ -320,7 +320,7 @@ for (%x=0;%x<%Object_Module_ID.Simset_Player_Information.getCount();%x++)
 if (%Object.Game_Connection_Handle==%Object_Game_Connection_Handle)
 {
 
-%Object_Module_ID.Action_Update_Health(%Object,%Object.Game_Connection_Handle,1,10);
+%Object_Module_ID.Action_Update_Health(%Object,%Object.Game_Connection_Handle,1,%Player_Information.Current_Attack);
 
 break;
 

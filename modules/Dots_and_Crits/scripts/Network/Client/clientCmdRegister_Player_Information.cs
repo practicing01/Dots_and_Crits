@@ -1,7 +1,8 @@
 function clientCmdRegister_Player_Information(%Bool_Is_My_Initializer,%Game_Connection_Handle,%Connector_Name,%String_Player_Sprite_Description,%Bool_Is_Playing)
 {
 echo("Registered Player Information:" SPC %Game_Connection_Handle SPC %Connector_Name SPC %String_Player_Sprite_Description SPC %Bool_Is_Playing);
-
+//At this point, player sprite modules should be loaded, since the server might send rpc's from already loaded clients
+//Need to fix this//banana
 if (%Bool_Is_My_Initializer)
 {
 

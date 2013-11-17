@@ -49,11 +49,11 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 
 %Collision_Shape_Index=%Script_Object_Player_Sprite.Composite_Sprite.createPolygonBoxCollisionShape(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Gill_Balentine_Stand_Down));
 
-%Script_Object_Player_Sprite.Composite_Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Script_Object_Player_Sprite.Composite_Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Script_Object_Player_Sprite.Composite_Sprite.setFixedAngle(true);
 %Script_Object_Player_Sprite.Composite_Sprite.Position="0 0";
-%Script_Object_Player_Sprite.Composite_Sprite.setUpdateCallback(true);
+//%Script_Object_Player_Sprite.Composite_Sprite.setUpdateCallback(true);
 
 /************************************************************************/
 
@@ -62,13 +62,19 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 %Script_Object_Player_Sprite.Current_Speed=10;
 
 %Script_Object_Player_Sprite.Linear_Damping=1;
-//%Script_Object_Player_Sprite.Composite_Sprite.setLinearDamping(%Script_Object_Player_Sprite.Linear_Damping);
+%Script_Object_Player_Sprite.Composite_Sprite.setLinearDamping(%Script_Object_Player_Sprite.Linear_Damping);
 
 %Script_Object_Player_Sprite.Bool_Is_Mobile=false;
 
 /************************************************************************/
 
 %Script_Object_Player_Sprite.Health=100;
+
+/************************************************************************/
+
+%Script_Object_Player_Sprite.Base_Attack=10;
+
+%Script_Object_Player_Sprite.Current_Attack=10;
 
 /************************************************************************/
 
