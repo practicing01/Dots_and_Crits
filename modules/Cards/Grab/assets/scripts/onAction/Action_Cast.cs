@@ -1,5 +1,5 @@
 function Module_Card_Grab::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,
-%Second_Target_Module_ID_Parent,%Second_Target_GameConnection_Handle,%Second_Target_Object_Index)
+%Second_Target_Module_ID_Parent,%Second_Target_Game_Connection_Handle,%Second_Target_Object_Index)
 {
 
 %Target_Player=0;
@@ -54,7 +54,7 @@ for (%x=0;%x<%Second_Target_Module_ID_Parent.Simset_Objects.getCount();%x++)
 
 %Object=%Second_Target_Module_ID_Parent.Simset_Objects.getObject(%x);
 
-if ((%Object.GameConnection_Handle==%Second_Target_GameConnection_Handle)&&(%Object.Object_Index==%Second_Target_Object_Index))
+if ((%Object.Game_Connection_Handle==%Second_Target_Game_Connection_Handle)&&(%Object.Object_Index==%Second_Target_Object_Index))
 {
 
 %Scene_Object_Second_Target=%Object;

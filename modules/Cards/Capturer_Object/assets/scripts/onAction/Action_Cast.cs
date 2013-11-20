@@ -42,7 +42,7 @@ SceneGroup=26;//Dynamic world objects.
 
 Module_ID_Parent=%this;
 
-GameConnection_Handle=%Player_Sprite_Target_Game_Connection_Handle;
+Game_Connection_Handle=%Player_Sprite_Target_Game_Connection_Handle;
 
 Object_Index=%Object_Index;
 

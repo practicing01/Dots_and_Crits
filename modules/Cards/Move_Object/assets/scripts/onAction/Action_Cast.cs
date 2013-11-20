@@ -45,7 +45,7 @@ for (%x=0;%x<%Player_Game_Connection_Or_Object_Module_ID.Simset_Objects.getCount
 
 %Object=%Player_Game_Connection_Or_Object_Module_ID.Simset_Objects.getObject(%x);
 
-if ((%Object.GameConnection_Handle==%Object_Game_Connection)&&(%Object.Object_Index==%Object_Index))
+if ((%Object.Game_Connection_Handle==%Object_Game_Connection)&&(%Object.Object_Index==%Object_Index))
 {
 
 %Scene_Object=%Object;

@@ -19,7 +19,7 @@ else
 
 %Parameter_1=%Script_Object_Player_Sprite_Target.Module_ID_Parent;
 
-%Parameter_2=%Script_Object_Player_Sprite_Target.GameConnection_Handle;
+%Parameter_2=%Script_Object_Player_Sprite_Target.Game_Connection_Handle;
 
 %Parameter_3=%Script_Object_Player_Sprite_Target.Object_Index;
 

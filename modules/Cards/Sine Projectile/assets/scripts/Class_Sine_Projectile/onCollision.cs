@@ -1,4 +1,4 @@
-function Class_Projectile::onCollision(%this,%Colliding_Object,%Collision_Details)
+function Class_Sine_Projectile::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
 %Bool_Delete=false;
@@ -16,7 +16,7 @@ if (%Colliding_Object.Script_Object_Parent.Game_Connection_Handle!=%this.Game_Co
 }
 
 }
-else if (%Colliding_Object.class$="Class_Projectile")
+else if (%Colliding_Object.class$="Class_Sine_Projectile")
 {
 
 if (%Colliding_Object.Game_Connection_Handle!=%this.Game_Connection_Handle)

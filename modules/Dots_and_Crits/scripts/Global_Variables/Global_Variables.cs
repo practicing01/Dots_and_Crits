@@ -37,3 +37,5 @@ $Simset_Module_ID_Loaded_Player_Sprites=0;
 $Simset_Already_Loaded_Card_Modules=new SimSet();
 
 $Simset_Live_Clients=0;
+
+$Pie=3.14;
