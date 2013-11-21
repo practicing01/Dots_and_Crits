@@ -47,4 +47,7 @@
     <ScriptObject
         Card_Slot_Position="728 130"
         Module_ID_Card="Module_Card_Sine_Projectile" />
+    <ScriptObject
+        Card_Slot_Position="728 80"
+        Module_ID_Card="Module_Card_Volley_Projectile" />
 </SimSet>
