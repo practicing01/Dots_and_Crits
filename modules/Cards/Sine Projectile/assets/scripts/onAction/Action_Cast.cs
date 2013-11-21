@@ -1,4 +1,4 @@
-function Module_Card_Sine_Projectile::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,%Vector_2D_Position)
+function Module_Card_Sine_Projectile::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,%Vector_2D_Position,%Object_Index)
 {
 
 %Target_Player=0;
@@ -23,7 +23,7 @@ if (%Target_Player==0){return;}
 
 //Use player info to play animations.
 
-%Angle=mRound((Vector2AngleToPoint(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position,%Vector_2D_Position)+180)/*%360*/);
+%Angle=mRound((Vector2AngleToPoint(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position,%Vector_2D_Position)+180));
 
 if (%Angle>=360){%Angle=%Angle%360;}
 
