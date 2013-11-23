@@ -82,6 +82,6 @@ Scene_Dots_and_Crits.add(%Sprite_Projectile);
 
 %this.Simset_Objects.add(%Sprite_Projectile);
 
-%Sprite_Projectile.moveTo(%Vector_2D_Position,10,false,false);
+%Sprite_Projectile.moveTo(%Vector_2D_Position,20,false,false);
 
 }

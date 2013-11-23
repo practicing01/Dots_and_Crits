@@ -50,4 +50,7 @@
     <ScriptObject
         Card_Slot_Position="728 80"
         Module_ID_Card="Module_Card_Volley_Projectile" />
+    <ScriptObject
+        Card_Slot_Position="728 30"
+        Module_ID_Card="Module_Card_Shield" />
 </SimSet>

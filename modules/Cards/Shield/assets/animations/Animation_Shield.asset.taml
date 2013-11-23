@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Shield"
+    Image="@asset=Module_Card_Shield:Image_Shield"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
