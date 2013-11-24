@@ -180,7 +180,7 @@
 		useMouseEvents="1" />
 
 	<!-- Deck List -->
-<!--	<GuiScrollCtrl
+	<GuiScrollCtrl
 			Name="Gui_Scroller_Deck_Builder_Decks"
 			canSaveDynamicFields="1"
 			isContainer="1"
@@ -215,8 +215,6 @@
 					Active="1"
 					AllowMultipleSelections="0"/>
 	</GuiScrollCtrl>
-	
--->
 	
 	<!-- Deck Cards -->
 	<GuiScrollCtrl
@@ -291,5 +289,22 @@
 					Active="1"
 					AllowMultipleSelections="0"/>
 	</GuiScrollCtrl>
+	
+	<GuiTextEditCtrl
+					Name="Gui_Textedit_New_Deck_Name"
+					Profile="GuiTextEditProfile"
+					command=""
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="5 30"
+					Extent="160 24"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					maxChars="255"
+					text="New_Deck_Name"
+					escapeCommand=""/>
 
 </GuiControl>

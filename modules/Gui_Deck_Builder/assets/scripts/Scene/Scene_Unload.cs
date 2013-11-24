@@ -15,7 +15,7 @@ Gui_Deck_Builder.remove(%Gui_Child);
 
 %Gui_Child.delete();
 
-%x=0;//Restart loop because we just modified the count.
+%x=-1;//Restart loop because we just modified the count.
 
 }
 

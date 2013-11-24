@@ -39,4 +39,23 @@ Gui_List_Deck_Builder_Cards.addItem(%Module_ID_Card.Description);
 
 }
 
+/*******************************************************/
+
+Gui_List_Deck_Builder_Decks.clearItems();
+
+/*Search for decks.*/
+
+%String_Deck_List=getFileList("./../../../../Decks");
+
+%Deck_Count=getWordCount(%String_Deck_List);
+
+for (%x=0;%x<%Deck_Count;%x++)
+{
+
+%File_Name_Deck=getWord(%String_Deck_List,%x);
+
+Gui_List_Deck_Builder_Decks.addItem(fileBase(fileBase(%File_Name_Deck)));
+
+}
+
 }

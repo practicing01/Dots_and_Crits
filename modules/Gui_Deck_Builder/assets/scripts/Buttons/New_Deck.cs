@@ -1,7 +1,7 @@
 function Gui_Deck_Builder::New_Deck(%this)
 {
 
-%Dialog_Save_File=new SaveFileDialog()
+/*%Dialog_Save_File=new SaveFileDialog()
 {
 DefaultPath="modules/Decks";
 DefaultFile="New_Deck.asset.taml";
@@ -13,7 +13,13 @@ fileName="New_Deck.asset.taml";
 
 if (!%Bool_Write_Success){return;}
 
-Module_Gui_Deck_Builder.String_Deck_File_Name=%Dialog_Save_File.fileName;
+Module_Gui_Deck_Builder.String_Deck_File_Name=%Dialog_Save_File.fileName;*/
+
+%Filename=Gui_Textedit_New_Deck_Name.getText();
+
+if (%Filename$=""){return;}
+
+Module_Gui_Deck_Builder.String_Deck_File_Name="modules/Decks/"@%Filename@".asset.taml";
 
 if (isObject(Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards))
 {

@@ -1,7 +1,7 @@
 function Gui_Deck_Builder::Edit_Deck(%this)
 {
 
-%Dialog_Open_File=new OpenFileDialog()
+/*%Dialog_Open_File=new OpenFileDialog()
 {
 DefaultPath="modules/Decks";
 DefaultFile="New_Deck.asset.taml";
@@ -13,7 +13,19 @@ fileName="New_Deck.asset.taml";
 
 if (!%Bool_Read_Success){return;}
 
-Module_Gui_Deck_Builder.String_Deck_File_Name=%Dialog_Open_File.fileName;
+Module_Gui_Deck_Builder.String_Deck_File_Name=%Dialog_Open_File.fileName;*/
+
+/************************/
+
+if (Gui_List_Deck_Builder_Decks.getSelectedItem()==-1){return;}
+
+%Filename=Gui_List_Deck_Builder_Decks.getItemText(Gui_List_Deck_Builder_Decks.getSelectedItem());
+
+%Filename="modules/Decks/"@%Filename@".asset.taml";
+
+Module_Gui_Deck_Builder.String_Deck_File_Name=%Filename;
+
+/************************/
 
 if (isObject(Module_Gui_Deck_Builder.Simset_ModuleID_Deck_Cards))
 {
