@@ -16,21 +16,6 @@ if (%Colliding_Object.Script_Object_Parent.Game_Connection_Handle!=%this.Game_Co
 }
 
 }
-else if (%Colliding_Object.class$="Class_Sine_Projectile")
-{
-
-if (%Colliding_Object.Game_Connection_Handle!=%this.Game_Connection_Handle)
-{
-
-%Colliding_Object.Update_Health(-10);
-
-%this.Module_ID_Parent.Simset_Objects.remove(%this);
-
-%this.safeDelete();
-
-}
-
-}
 else if (%Colliding_Object.Game_Connection_Handle!=%this.Game_Connection_Handle)
 {
 

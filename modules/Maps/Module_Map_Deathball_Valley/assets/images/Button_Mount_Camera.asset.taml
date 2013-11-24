@@ -3,6 +3,6 @@
     ImageFile="Button_Mount_Camera.png"
 	CellCountX="1"
     CellCountY="1"
-    CellWidth="48"
-    CellHeight="48"
+    CellWidth="62"
+    CellHeight="62"
 	Optimal_Resolution="1280 800"/>

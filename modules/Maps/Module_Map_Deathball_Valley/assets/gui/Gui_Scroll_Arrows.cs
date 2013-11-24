@@ -8,8 +8,8 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
-Position="50 0";
+Extent="64 64";
+Position="64 0";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -27,7 +27,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
+Extent="64 64";
 Position="0 0";
 Profile="GuiTransparentProfile";
 isContainer="1";
@@ -54,8 +54,8 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
-Position="50 100";
+Extent="64 64";
+Position="64 128";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -73,7 +73,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
+Extent="64 64";
 Position="0 0";
 Profile="GuiTransparentProfile";
 isContainer="1";
@@ -100,8 +100,8 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
-Position="0 50";
+Extent="64 64";
+Position="0 64";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -119,7 +119,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
+Extent="64 64";
 Position="0 0";
 Profile="GuiTransparentProfile";
 isContainer="1";
@@ -146,8 +146,8 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
-Position="100 50";
+Extent="64 64";
+Position="128 64";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -165,7 +165,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="50 50";
+Extent="64 64";
 Position="0 0";
 Profile="GuiTransparentProfile";
 isContainer="1";
@@ -192,8 +192,8 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="48 48";
-Position="51 51";
+Extent="62 62";
+Position="65 65";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -211,7 +211,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
-Extent="48 48";
+Extent="62 62";
 Position="0 0";
 Profile="GuiTransparentProfile";
 isContainer="1";

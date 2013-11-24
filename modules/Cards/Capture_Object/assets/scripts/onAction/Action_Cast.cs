@@ -95,6 +95,8 @@ SceneLayer=16;
 //DefaultDensity=0;
 //DefaultRestitution=1;
 
+SleepingAllowed=false;
+
 SceneGroup=26;//Dynamic world objects.
 
 Module_ID_Parent=%this;
