@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Laser_Beam"
+    ImageFile="Laser_Beam.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="12"
+    CellHeight="40"
+	Optimal_Resolution="1280 800"/>

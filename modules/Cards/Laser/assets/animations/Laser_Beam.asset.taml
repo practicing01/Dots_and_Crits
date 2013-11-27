@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Laser_Beam"
+    Image="@asset=Module_Card_Laser:Image_Laser_Beam"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
