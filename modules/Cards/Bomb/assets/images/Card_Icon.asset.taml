@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Icon"
+    ImageFile="Card_Icon.png"
+	CellCountX="13"
+    CellCountY="1"
+    CellWidth="32"
+    CellHeight="64"
+	Optimal_Resolution="1280 800"/>

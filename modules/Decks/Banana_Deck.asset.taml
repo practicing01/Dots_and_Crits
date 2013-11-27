@@ -56,4 +56,7 @@
     <ScriptObject
         Card_Slot_Position="678 30"
         Module_ID_Card="Module_Card_Laser" />
+    <ScriptObject
+        Card_Slot_Position="628 30"
+        Module_ID_Card="Module_Card_Bomb" />
 </SimSet>
