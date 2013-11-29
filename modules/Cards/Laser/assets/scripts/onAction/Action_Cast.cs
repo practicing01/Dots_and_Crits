@@ -142,6 +142,8 @@ class="Class_Laser";
 
 SleepingAllowed=false;
 
+Game_Connection_Handle=%Player_Information.Game_Connection_Handle;
+
 };
 
 %this.Simset_Player_Information.add(%Script_Object_Player_Information);

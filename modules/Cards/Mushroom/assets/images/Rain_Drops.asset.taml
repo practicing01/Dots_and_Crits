@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Rain_Drops"
+    ImageFile="Rain_Drops.png"
+	CellCountX="16"
+    CellCountY="2"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

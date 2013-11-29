@@ -119,7 +119,7 @@ Parent_Spawner=%Sprite_Capture_Object_Spawner;
 
 %Collision_Shape_Index=%Sprite_Capture_Object_Capture_Object.createPolygonBoxCollisionShape(%Square_Size);
 
-//%Sprite_Capture_Object_Capture_Object.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+%Sprite_Capture_Object_Capture_Object.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Vector_2D_Mount_Offset="0 0";
 

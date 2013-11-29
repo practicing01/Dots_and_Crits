@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Mushroom"
+    Image="@asset=Module_Card_Mushroom:Image_Mushroom"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />

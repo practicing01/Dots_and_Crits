@@ -12,7 +12,12 @@ if (%Player_Information.Game_Connection_Handle==$GameConnection_Serverside_Conne
 
 commandToServer('Relay_Module_Function',%Player_Information.Composite_Sprite.Module_ID_Parent,"Action_Position",%Player_Information.Game_Connection_Handle,%Player_Information.Composite_Sprite.Position);
 
+if (!Window_Dots_and_Crits.getIsCameraMounted())
+{
+
 Window_Dots_and_Crits.setCameraPosition(%Portal_Spawn.Position.X,%Portal_Spawn.Position.Y);
+
+}
 
 }
 else
