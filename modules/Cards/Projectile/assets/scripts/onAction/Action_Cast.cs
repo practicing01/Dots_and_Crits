@@ -1,4 +1,4 @@
-function Module_Card_Projectile::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,%Vector_2D_Position)
+function Module_Card_Projectile::Action_Cast(%this,%Player_Information,%Player_Sprite_Target_Game_Connection_Handle,%Vector_2D_Position,%Object_Index)
 {
 
 %Target_Player=0;

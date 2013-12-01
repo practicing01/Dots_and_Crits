@@ -62,4 +62,7 @@
     <ScriptObject
         Card_Slot_Position="578 30"
         Module_ID_Card="Module_Card_Mushroom" />
+    <ScriptObject
+        Card_Slot_Position="528 30"
+        Module_ID_Card="Module_Card_Portal_Bearer" />
 </SimSet>

@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Portal_Bearer"
+    Image="@asset=Module_Card_Portal_Bearer:Image_Portal_Bearer"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
