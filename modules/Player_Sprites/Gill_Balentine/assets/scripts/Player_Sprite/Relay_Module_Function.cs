@@ -41,6 +41,12 @@ else if (%Module_Function$="Action_Position")
 %this.Action_Position(%Player_Information,%Parameter_0,%Parameter_1);
 
 }
+else if (%Module_Function$="Action_Cancel_Move")
+{
+
+%this.Action_Cancel_Move(%Player_Information);
+
+}
 
 break;
 

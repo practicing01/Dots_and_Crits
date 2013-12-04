@@ -45,24 +45,24 @@
         Card_Slot_Position="728 180"
         Module_ID_Card="Module_Card_Move_Object" />
     <ScriptObject
-        Card_Slot_Position="728 130"
+        Card_Slot_Position="578 0"
         Module_ID_Card="Module_Card_Sine_Projectile" />
     <ScriptObject
-        Card_Slot_Position="728 80"
+        Card_Slot_Position="528 0"
         Module_ID_Card="Module_Card_Volley_Projectile" />
     <ScriptObject
-        Card_Slot_Position="728 30"
+        Card_Slot_Position="478 0"
         Module_ID_Card="Module_Card_Shield" />
     <ScriptObject
-        Card_Slot_Position="678 30"
+        Card_Slot_Position="428 0"
         Module_ID_Card="Module_Card_Laser" />
     <ScriptObject
-        Card_Slot_Position="628 30"
+        Card_Slot_Position="378 0"
         Module_ID_Card="Module_Card_Bomb" />
     <ScriptObject
-        Card_Slot_Position="578 30"
+        Card_Slot_Position="328 0"
         Module_ID_Card="Module_Card_Mushroom" />
     <ScriptObject
-        Card_Slot_Position="528 30"
+        Card_Slot_Position="278 0"
         Module_ID_Card="Module_Card_Portal_Bearer" />
 </SimSet>

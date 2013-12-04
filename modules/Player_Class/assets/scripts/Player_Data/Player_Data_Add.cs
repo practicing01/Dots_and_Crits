@@ -8,10 +8,18 @@ Game_Connection_Handle=%Player_Information.Game_Connection_Handle;
 Connector_Name=%Player_Information.Connector_Name;
 String_Player_Sprite_Description=%Player_Information.String_Player_Sprite_Description;
 Player_Sprite_Data=0;
+Module_ID_Player_Sprite=0;
 
 };
 
 %this.Simset_Player_Data.add(%Script_Object_Player_Data);
+
+if (%Player_Information.Game_Connection_Handle==$GameConnection_Serverside_Connection)
+{
+
+$ScriptObject_Player_Information_This=%Script_Object_Player_Data;
+
+}
 
 for (%x=0;%x<$Simset_ModuleID_Player_Sprites.getCount();%x++)
 {

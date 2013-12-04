@@ -5,6 +5,8 @@ echo("Deathball Valley initialized.");
 
 %this.Gui_Scroll_Arrows_Spawn();
 
+%this.Gui_Move_Arrows_Spawn();
+
 for (%x=0;%x<Scene_Dots_and_Crits.getCount();%x++)
 {
 

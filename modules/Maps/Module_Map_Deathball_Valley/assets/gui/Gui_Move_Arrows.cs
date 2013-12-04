@@ -1,4 +1,4 @@
-function Module_Map_Deathball_Valley::Gui_Scroll_Arrows_Spawn(%this)
+function Module_Map_Deathball_Valley::Gui_Move_Arrows_Spawn(%this)
 {
 
 %GuiSpriteCtrl=new GuiSpriteCtrl()
@@ -9,7 +9,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 HorizSizing="relative";
 VertSizing="relative";
 Extent="64 64";
-Position="672 0";
+Position="64 0";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -23,7 +23,7 @@ Bool_Delete_Me="1";
 %GuiButtonCtrl=new GuiButtonCtrl()
 {
 
-class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
+class="Class_Module_Map_Deathball_Valley_Gui_Button_Move_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
@@ -45,6 +45,8 @@ Bool_Delete_Me="1";
 
 Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
 
+%this.Gui_Button_Move_Arrow_Up=%GuiButtonCtrl;
+
 /**********************************************************/
 
 %GuiSpriteCtrl=new GuiSpriteCtrl()
@@ -55,7 +57,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 HorizSizing="relative";
 VertSizing="relative";
 Extent="64 64";
-Position="672 128";
+Position="64 128";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -69,7 +71,7 @@ Bool_Delete_Me="1";
 %GuiButtonCtrl=new GuiButtonCtrl()
 {
 
-class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
+class="Class_Module_Map_Deathball_Valley_Gui_Button_Move_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
@@ -91,6 +93,8 @@ Bool_Delete_Me="1";
 
 Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
 
+%this.Gui_Button_Move_Arrow_Down=%GuiButtonCtrl;
+
 /**********************************************************/
 
 %GuiSpriteCtrl=new GuiSpriteCtrl()
@@ -101,7 +105,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 HorizSizing="relative";
 VertSizing="relative";
 Extent="64 64";
-Position="608 64";
+Position="0 64";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -115,7 +119,7 @@ Bool_Delete_Me="1";
 %GuiButtonCtrl=new GuiButtonCtrl()
 {
 
-class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
+class="Class_Module_Map_Deathball_Valley_Gui_Button_Move_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
@@ -137,6 +141,8 @@ Bool_Delete_Me="1";
 
 Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
 
+%this.Gui_Button_Move_Arrow_Left=%GuiButtonCtrl;
+
 /**********************************************************/
 
 %GuiSpriteCtrl=new GuiSpriteCtrl()
@@ -147,7 +153,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 HorizSizing="relative";
 VertSizing="relative";
 Extent="64 64";
-Position="736 64";
+Position="128 64";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -161,7 +167,7 @@ Bool_Delete_Me="1";
 %GuiButtonCtrl=new GuiButtonCtrl()
 {
 
-class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
+class="Class_Module_Map_Deathball_Valley_Gui_Button_Move_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
@@ -183,6 +189,8 @@ Bool_Delete_Me="1";
 
 Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
 
+%this.Gui_Button_Move_Arrow_Right=%GuiButtonCtrl;
+
 /**********************************************************/
 
 %GuiSpriteCtrl=new GuiSpriteCtrl()
@@ -193,7 +201,7 @@ class="Class_Module_Map_Deathball_Valley_Gui_Sprite";
 HorizSizing="relative";
 VertSizing="relative";
 Extent="62 62";
-Position="672 65";
+Position="65 65";
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
@@ -207,7 +215,7 @@ Bool_Delete_Me="1";
 %GuiButtonCtrl=new GuiButtonCtrl()
 {
 
-class="Class_Module_Map_Deathball_Valley_Gui_Button_Scroll_Arrow";
+class="Class_Module_Map_Deathball_Valley_Gui_Button_Move_Arrow";
 
 HorizSizing="relative";
 VertSizing="relative";
@@ -228,6 +236,8 @@ Bool_Delete_Me="1";
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
 Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+
+%this.Gui_Button_Move_Arrow_Center=%GuiButtonCtrl;
 
 /**********************************************************/
 
