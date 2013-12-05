@@ -45,6 +45,8 @@ Object_Index=%Object_Index;
 
 Health=100;
 
+Mounted_Rain_Drops=0;
+
 };
 
 %Sprite_Mushroom.setCollisionGroups(0,25,26,30);
@@ -123,6 +125,8 @@ if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Squar
 Scene_Dots_and_Crits.add(%Sprite_Rain_Drops);
 
 %Sprite_Rain_Drops.mount(%Sprite_Mushroom,"0 0",0,true,mDegToRad(0));
+
+%Sprite_Mushroom.Mounted_Rain_Drops=%Sprite_Rain_Drops;
 
 %this.Simset_Objects.add(%Sprite_Rain_Drops);
 
