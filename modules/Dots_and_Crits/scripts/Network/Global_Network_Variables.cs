@@ -6,7 +6,7 @@ $GameConnection_Serverside_Connection=0;
 
 $Simset_Server_List=0;
 
-$Bool_Is_Local_Connection=true;
+$Bool_Is_Local_Connection=false;
 
 $Bool_Is_Client=true;
 

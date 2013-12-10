@@ -65,6 +65,11 @@ $Simset_Already_Loaded_Card_Modules.deleteObjects();
 
 $Simset_Cards_To_Load=new SimSet();
 
+$Bool_Is_Local_Connection=false;
+
+/*No prototype for Gui_List_Servers, naughty code :y */
+Gui_List_Servers.clearItems();
+
 Dots_and_Crits.Client_Load();
 
 }

@@ -114,6 +114,27 @@
 		hovertime="1000"
 		groupNum="-1"
 		useMouseEvents="1" />
+
+	<!-- Single Player -->
+	<GuiButtonCtrl
+		Name="Gui_Button_Main_Menu_Single_Player"
+		Profile="BlueButtonProfile"
+		Text="Single Player"
+		ButtonType="PushButton"
+		command="Gui_Main_Menu.Single_Player();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="328 450"
+		Extent="140 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
 		
 	<!-- server list -->
 	<GuiScrollCtrl

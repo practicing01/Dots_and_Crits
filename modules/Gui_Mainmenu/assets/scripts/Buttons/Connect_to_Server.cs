@@ -30,11 +30,7 @@ if (%Object_Server==0){return;}
 
 Dots_and_Crits.Game_Connection_Delete($GameConnection_Master_Server_Query);
 
-$GameConnection_Master_Server_Query=0;
-
 Dots_and_Crits.Game_Connection_Delete($GameConnection_Connection);
-
-$GameConnection_Connection=0;
 
 $GameConnection_Serverside_Connection=0;
 

@@ -8,4 +8,6 @@ if (isObject(%Game_Connection))
 
 }
 
+%Game_Connection=0;
+
 }

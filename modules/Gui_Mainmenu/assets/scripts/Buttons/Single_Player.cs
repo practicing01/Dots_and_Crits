@@ -1,19 +1,19 @@
-function Dots_and_Crits::Client_Load(%this)
+function Gui_Main_Menu::Single_Player(%this)
 {
 
-echo("Loaded Client");
-
-setNetPort(9002);
-
-allowConnections(false);
+echo("Single player initiated.");
 
 Dots_and_Crits.Game_Connection_Delete($GameConnection_Master_Server_Query);
 
 Dots_and_Crits.Game_Connection_Delete($GameConnection_Connection);
 
-$GameConnection_Serverside_Connection=0;
+$Bool_Is_Local_Connection=true;
 
-$GameConnection_Connection=new GameConnection();
+allowConnections(true);
+
+setNetPort(9003);
+
+$GameConnection_Connection=new GameConnection();//crash cus got master query response?
 
 $GameConnection_Connection.setConnectArgs
 (
@@ -22,6 +22,6 @@ $String_Client_Name,//Connector Name
 $String_Player_Sprite//Player Sprite
 );
 
-%this.Query_Master_Server();
+$GameConnection_Connection.connectLocal();
 
 }

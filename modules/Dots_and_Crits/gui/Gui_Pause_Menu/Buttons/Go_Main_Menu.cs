@@ -1,12 +1,10 @@
 function Gui_Pause_Menu::Go_Main_Menu(%this)
 {
 
-if ($GameConnection_Connection!=0)
+if (isObject($GameConnection_Connection))
 {
 
 Dots_and_Crits.Game_Connection_Delete($GameConnection_Connection);
-
-$GameConnection_Connection=0;
 
 $GameConnection_Serverside_Connection=0;
 
@@ -39,7 +37,12 @@ ModuleDatabase.unloadExplicit(%Object.Module_ID_Card);
 
 }
 
+if (isObject($Simset_Deck_To_Load))
+{
+
 $Simset_Deck_To_Load.deleteObjects();
+
+}
 
 /***********************************************/
 /************ Delete Gui's **********************/

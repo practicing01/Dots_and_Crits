@@ -4,13 +4,15 @@ function Module_Server::Server_Connect(%this)
 if ($Bool_Is_Local_Connection)
 {
 
-$GameConnection_Connection.connect($IP_Master_Server);
+echo("Connecting to the local master server.");
 
 }
 else
 {
 
-//use internet ip
+echo("Connecting to the internet master server.");
+
+$GameConnection_Connection.connect($IP_Master_Server);
 
 }
 

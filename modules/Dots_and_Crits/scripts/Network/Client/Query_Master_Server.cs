@@ -1,7 +1,7 @@
 function Dots_and_Crits::Query_Master_Server(%this)
 {
 
-if ($GameConnection_Master_Server_Query==0)//Not Connected
+if (!isObject($GameConnection_Master_Server_Query))//Not Connected
 {
 
 $GameConnection_Master_Server_Query=new GameConnection();
@@ -18,13 +18,13 @@ if ($Bool_Is_Local_Connection)
 
 echo("Connecting to the local master server for query.");
 
-$GameConnection_Master_Server_Query.connect($IP_Master_Server);
-
 }
 else
 {
 
-//use internet ip
+echo("Connecting to the internet master server for query.");
+
+$GameConnection_Master_Server_Query.connect($IP_Master_Server);
 
 }
 
