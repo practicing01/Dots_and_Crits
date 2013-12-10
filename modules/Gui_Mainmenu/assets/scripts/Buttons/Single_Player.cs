@@ -22,6 +22,8 @@ $String_Client_Name,//Connector Name
 $String_Player_Sprite//Player Sprite
 );
 
+ClientGroup.deleteObjects();
+
 $GameConnection_Connection.connectLocal();
 
 }
