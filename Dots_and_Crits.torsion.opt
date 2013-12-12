@@ -8,7 +8,9 @@
 <OpenFiles>
 <File ScrollX="0" ScrollY="0">modules\Player_Sprites\Ayn\assets\scripts\Player_Sprite\Player_Sprite_Spawn.cs</File>
 <File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Network\Client\Client_Load.cs</File>
-<File ScrollX="0" ScrollY="57">modules\Player_Class\assets\scripts\Player_Data\Player_Data_Add.cs</File>
-<File ScrollX="0" ScrollY="0" Active="true">modules\Dots_and_Crits\scripts\Network\Global_Network_Variables.cs</File>
+<File ScrollX="0" ScrollY="54">modules\Player_Class\assets\scripts\Player_Data\Player_Data_Add.cs</File>
+<File ScrollX="0" ScrollY="0">modules\Dots_and_Crits\scripts\Network\Global_Network_Variables.cs</File>
+<File ScrollX="0" ScrollY="0">modules\Maps\Module_Map_Deus_Ex_Telum\main.cs</File>
+<File ScrollX="0" ScrollY="300" Active="true">modules\Maps\Module_Map_Deus_Ex_Telum\assets\scripts\Scene\Scene_Initialize.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

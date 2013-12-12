@@ -35,7 +35,7 @@ if (%Target_Player==0){return;}
 
 %Collision_Shape_Index=%Target_Player.Player_Sprite_Data.Composite_Sprite.createPolygonBoxCollisionShape(%Vector_2D_New_Size);
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Target_Player.Player_Sprite_Data.Composite_Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Target_Player.Player_Sprite_Data.Composite_Sprite.Position=%Target_Player.Player_Sprite_Data.Composite_Sprite.Position;
 

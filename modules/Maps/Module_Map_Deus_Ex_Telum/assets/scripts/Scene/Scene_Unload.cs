@@ -1,7 +1,9 @@
-function Module_Map_Deathball_Valley::Scene_Unload(%this)
+function Module_Map_Deus_Ex_Telum::Scene_Unload(%this)
 {
 
 cancel(%this.Camera_Move_Schedule.Schedule_Handle);
+
+cancel(%this.Schedule_Handle_Radiate_Visible);
 
 %this.Ass_Unload();
 
@@ -10,5 +12,9 @@ cancel(%this.Camera_Move_Schedule.Schedule_Handle);
 %this.Camera_Move_Schedule.delete();
 
 %this.Player_Move_Schedule.delete();
+
+%this.Simset_Objects.deleteObjects();
+
+%this.Simset_Objects.delete();
 
 }

@@ -13,4 +13,8 @@ if (isObject(%this.Vector_2D_Table))
 
 }
 
+%this.Simset_Objects.deleteObjects();
+
+%this.Simset_Objects.delete();
+
 }

@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Mech0_Run_Down"
+    Image="@asset=Module_Map_Deus_Ex_Telum:Image_Mech0"
+    AnimationFrames="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
