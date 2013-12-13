@@ -54,6 +54,8 @@ if (%Colliding_Object.Health>0&&%Colliding_Object.class$="Class_Deus_Ex_Telum_Me
 if (/*%this.Handle_Parent==%Colliding_Object&&*/%this.Bool_Player_Hit==true)
 {
 
+%this.safeDelete();
+
 Module_Map_Deus_Ex_Telum.Player_Spawn(%this.Scene_Object_Player_Hit);
 
 }

@@ -28,6 +28,10 @@ Direction="0";
 %this.Gui_Button_Move_Arrow_Center=0;
 %this.Gui_Button_Move_Arrow_Toggle_Menu=0;
 
+%this.Gui_Radar=0;
+
+%this.Scene_Object_Goal=0;
+
 %this.Simset_Objects=new SimSet();
 
 %this.Schedule_Handle_Radiate_Visible=0;

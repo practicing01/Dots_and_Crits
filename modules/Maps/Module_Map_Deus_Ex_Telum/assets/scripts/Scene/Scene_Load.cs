@@ -10,6 +10,7 @@ exec("./../Class_Deus_Ex_Telum_Wall/Class_Deus_Ex_Telum_Wall.cs");
 exec("./../Class_Deus_Ex_Telum_Mech/Class_Deus_Ex_Telum_Mech.cs");
 exec("./../Class_Deus_Ex_Telum_Goal/Class_Deus_Ex_Telum_Goal.cs");
 exec("./../Radiation_Visible/Radiation_Visible.cs");
+exec("./../Radar/Radar.cs");
 
 function Module_Map_Deus_Ex_Telum::Scene_Load(%this)
 {

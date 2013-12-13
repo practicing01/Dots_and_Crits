@@ -7,6 +7,8 @@ echo("Deus Ex Telum initialized.");
 
 %this.Gui_Move_Arrows_Spawn();
 
+%this.Gui_Radar_Spawn();
+
 /************************************************************************/
 
 //Create composite sprite containing floor tiles.
@@ -157,7 +159,7 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Simset_Random_Vectors=new SimSet();
 
-%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/32);
+%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/64);
 
 for (%x=0;%x<%Simset_All_Vectors_Count;%x++)
 {
@@ -297,6 +299,8 @@ Scene_Dots_and_Crits.add(%Sprite_Goal);
 %Sprite_Goal.setCollisionShapeIsSensor(%Collision_Shape,true);
 
 %this.Simset_Objects.add(%Sprite_Goal);
+
+%this.Scene_Object_Goal=%Sprite_Goal;
 
 %Object_Count++;
 
