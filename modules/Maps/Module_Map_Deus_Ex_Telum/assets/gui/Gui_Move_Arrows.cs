@@ -241,4 +241,52 @@ Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
 
 /**********************************************************/
 
+%GuiSpriteCtrl=new GuiSpriteCtrl()
+{
+
+class="Class_Module_Map_Deus_Ex_Telum_Gui_Sprite";
+
+HorizSizing="relative";
+VertSizing="relative";
+Extent="64 64";
+Position="128 128";
+Profile="GuiDefaultProfile";
+isContainer="1";
+canSaveDynamicFields="1";
+
+Image="Module_Map_Deus_Ex_Telum:Image_Scroll_Arrow_Toggle_Menu";
+
+Bool_Delete_Me="1";
+
+};
+
+%GuiButtonCtrl=new GuiButtonCtrl()
+{
+
+class="Class_Module_Map_Deus_Ex_Telum_Gui_Button_Move_Arrow";
+
+HorizSizing="relative";
+VertSizing="relative";
+Extent="64 64";
+Position="0 0";
+Profile="GuiTransparentProfile";
+isContainer="1";
+canSaveDynamicFields="1";
+
+Module_ID_Map=Module_Map_Deus_Ex_Telum;
+
+Arrow_Direction="Toggle_Menu";
+
+Bool_Delete_Me="1";
+
+};
+
+%GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
+
+Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+
+%this.Gui_Button_Move_Arrow_Toggle_Menu=%GuiButtonCtrl;
+
+/**********************************************************/
+
 }

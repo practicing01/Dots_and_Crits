@@ -1,6 +1,17 @@
 function Module_Map_Deus_Ex_Telum::Schedule_Player_Move(%this,%Direction)
 {
 
+if (%Direction$="Toggle_Menu")
+{
+
+%this.Player_Move_Schedule.Direction=%Direction;
+
+%this.Move_Player();
+
+return;
+
+}
+
 if (%this.Player_Move_Schedule.Direction$=%Direction&&%this.Player_Move_Schedule.Schedule_Handle!=0)
 {
 

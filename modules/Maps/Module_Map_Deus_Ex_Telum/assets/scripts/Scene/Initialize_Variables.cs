@@ -26,6 +26,7 @@ Direction="0";
 %this.Gui_Button_Move_Arrow_Left=0;
 %this.Gui_Button_Move_Arrow_Right=0;
 %this.Gui_Button_Move_Arrow_Center=0;
+%this.Gui_Button_Move_Arrow_Toggle_Menu=0;
 
 %this.Simset_Objects=new SimSet();
 

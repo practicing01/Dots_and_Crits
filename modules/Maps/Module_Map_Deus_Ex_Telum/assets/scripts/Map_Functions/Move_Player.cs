@@ -10,6 +10,33 @@ return;
 
 }
 
+if (%this.Player_Move_Schedule.Direction$="Toggle_Menu")
+{
+
+if ($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Script_Object_Parent.Gui_Menu.isAwake())
+{
+
+$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.detachGui();
+
+Canvas.pushDialog($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Script_Object_Parent.Gui_Menu);
+
+Canvas.popDialog($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Script_Object_Parent.Gui_Menu);
+
+return;
+
+}
+
+%Composite_Sprite_Player_Size=Scale_Camera_Vector_To_Resolution($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.getSpriteSize());
+
+$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.attachGui(
+$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Script_Object_Parent.Gui_Menu,
+Window_Dots_and_Crits,false,
+"0" SPC -(($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Script_Object_Parent.Gui_Menu.getExtent().Y)+(%Composite_Sprite_Player_Size.Y)));
+
+return;
+
+}
+
 %Vector_2D_Direction="0 0";
 
 if (%this.Player_Move_Schedule.Direction$="Up")

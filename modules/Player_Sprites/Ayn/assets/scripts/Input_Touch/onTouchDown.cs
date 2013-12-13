@@ -24,7 +24,7 @@ if (%this.Bool_Waiting_For_Attack)
 
 /**************************************************/
 
-%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(0),"","collision");
+/*%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(0),"","collision");
 
 if (getWordCount(%String_List_Picked_Objects)==0){return;}
 
@@ -51,6 +51,6 @@ break;
 
 }
 
-}
+}*/
 
 }
