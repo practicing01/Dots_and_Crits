@@ -159,7 +159,7 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Simset_Random_Vectors=new SimSet();
 
-%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/128);
+%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/96);
 
 for (%x=0;%x<%Simset_All_Vectors_Count;%x++)
 {
