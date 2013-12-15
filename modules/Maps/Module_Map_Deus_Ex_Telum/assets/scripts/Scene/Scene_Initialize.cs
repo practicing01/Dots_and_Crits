@@ -131,7 +131,7 @@ SceneGroup=26;//Dynamic world objects.
 
 Module_ID_Parent=%this;
 
-Game_Connection_Handle=$GameConnection_Serverside_Connection;
+Game_Connection_Handle=-$GameConnection_Serverside_Connection;//Make it negative so it doesn't belong to the player, making it destructable
 
 Object_Index=%x;
 
@@ -159,7 +159,7 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Simset_Random_Vectors=new SimSet();
 
-%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/64);
+%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/128);
 
 for (%x=0;%x<%Simset_All_Vectors_Count;%x++)
 {
@@ -193,7 +193,7 @@ SceneGroup=26;//Dynamic world objects.
 
 Module_ID_Parent=%this;
 
-Game_Connection_Handle=$GameConnection_Serverside_Connection;
+Game_Connection_Handle=-$GameConnection_Serverside_Connection;
 
 Object_Index=%x+%Object_Count;
 
