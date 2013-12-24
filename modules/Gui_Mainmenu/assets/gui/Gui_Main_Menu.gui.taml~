@@ -75,7 +75,7 @@
 
 	<!-- Instructions Button -->
 	<GuiButtonCtrl
-		Name="Gui_Button_Instructions"
+		Name="Gui_Button_Config"
 		Profile="BlueButtonProfile"
 		Text="Instructions"
 		ButtonType="PushButton"

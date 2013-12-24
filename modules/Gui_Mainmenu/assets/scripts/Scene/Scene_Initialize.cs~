@@ -3,7 +3,6 @@ function Module_Gui_Main_Menu::Scene_Initialize(%this)
 
 /*Splashes explicitly loaded Module_Gui_Main_Menu*/
 
-ModuleDatabase.LoadExplicit("Module_Gui_Instructions_Menu");
 ModuleDatabase.LoadExplicit("Module_Gui_Config_Menu");
 ModuleDatabase.LoadExplicit("Module_Gui_Deck_Builder");
 ModuleDatabase.LoadExplicit("Module_Gui_Server_Menu");

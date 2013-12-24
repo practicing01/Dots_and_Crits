@@ -484,23 +484,9 @@ new GuiControlProfile(GuiFormMenuBarProfile : GuiDefaultProfile);
 
 if (!isObject(Gui_Profile_Modalless_Text))
 {
-new GuiControlProfile(Gui_Profile_Modalless_Text)
+new GuiControlProfile(Gui_Profile_Modalless_Text : GuiTextProfile)
 {
-    border=false;
-
-    // font
-    fontType = $platformFontType;
-    fontSize = $platformFontSize;
-
-    fontColor = "white";
-
-    modal = false;
-    justify = "left";
-    autoSizeWidth = false;
-    autoSizeHeight = false;
-    returnTab = false;
-    numbersOnly = false;
-    cursorColor = "0 0 0 255";
+modal=false;
 };
 }
 
