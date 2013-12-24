@@ -16,7 +16,6 @@ echo("Deus Ex Telum initialized.");
 %Composite_Sprite_Floor_Tiles=new CompositeSprite()
 {
 
-CollisionCallback="true";
 SceneLayer=30;
 BodyType="static";
 
@@ -159,7 +158,7 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Simset_Random_Vectors=new SimSet();
 
-%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/96);
+%Simset_All_Vectors_Count=mRound(%Simset_All_Vectors.getCount()/128);
 
 for (%x=0;%x<%Simset_All_Vectors_Count;%x++)
 {
