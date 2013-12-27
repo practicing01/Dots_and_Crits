@@ -1,8 +1,8 @@
 <ImageAsset
     AssetName="Image_Gill_Balentine_Emote_Talk_Down_Right"
     ImageFile="Gill_Balentine_Emote_Talk_Down_Right.png"
-	CellCountX="8"
-    CellCountY="3"
+	CellCountX="13"
+    CellCountY="1"
     CellWidth="128"
     CellHeight="128"
 	Optimal_Resolution="1280 800"/>
