@@ -7,8 +7,6 @@ echo("PvP Construct initialized.");
 
 %this.Gui_Move_Arrows_Spawn();
 
-%this.Gui_Radar_Spawn();
-
 /************************************************************************/
 
 //Create composite sprite containing floor tiles.
@@ -72,14 +70,10 @@ Scene_Dots_and_Crits.add(%Composite_Sprite_Floor_Tiles);
 
 //Create spawn portal.
 
-%Random_Vector=%Simset_All_Vectors.getObject(getRandom(0,%Simset_All_Vectors.getCount()-1));
-
-%Simset_All_Vectors.remove(%Random_Vector);
-
 %Scene_Object_Portal_Spawn=new SceneObject()
 {
 
-Position="0 0";//%Random_Vector.Vector_2D;
+Position="0 0";
 class="Class_Portal_Spawn";
 size="10 10";
 BodyType="static";
@@ -89,13 +83,5 @@ BodyType="static";
 Scene_Dots_and_Crits.add(%Scene_Object_Portal_Spawn);
 
 %this.Simset_Portal_Spawn.add(%Scene_Object_Portal_Spawn);
-
-%Simset_All_Vectors.deleteObjects();
-
-%Simset_All_Vectors.delete();
-
-%Simset_Random_Vectors.deleteObjects();
-
-%Simset_Random_Vectors.delete();
 
 }

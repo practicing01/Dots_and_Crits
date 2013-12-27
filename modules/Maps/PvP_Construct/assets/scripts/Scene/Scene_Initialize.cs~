@@ -79,7 +79,7 @@ Scene_Dots_and_Crits.add(%Composite_Sprite_Floor_Tiles);
 %Scene_Object_Portal_Spawn=new SceneObject()
 {
 
-Position=%Random_Vector.Vector_2D;
+Position="0 0";//%Random_Vector.Vector_2D;
 class="Class_Portal_Spawn";
 size="10 10";
 BodyType="static";
