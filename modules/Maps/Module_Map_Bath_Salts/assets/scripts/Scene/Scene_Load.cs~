@@ -7,7 +7,7 @@ exec("./../../gui/Gui.cs");
 exec("./../Buttons/Buttons.cs");
 exec("./../Keyboard/Keyboard.cs");
 
-function Module_Map_Deathball_Valley::Scene_Load(%this)
+function Module_Map_Bath_Salts::Scene_Load(%this)
 {
 
 %this.Ass_Load();
@@ -16,7 +16,7 @@ Cancel_All_Schedules();
 
 Scene_Dots_and_Crits.clear();
 
-%this.Scene_Current=TamlRead("./../../scenes/Module_Map_Deathball_Valley.scene.taml");
+%this.Scene_Current=TamlRead("./../../scenes/Module_Map_Bath_Salts.scene.taml");
 
 if (!isObject(%this.Scene_Current))
 {

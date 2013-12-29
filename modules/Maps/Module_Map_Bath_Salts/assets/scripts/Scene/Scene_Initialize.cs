@@ -11,18 +11,26 @@ exec("./Scene_Initialize/Initialize_Floor/Initialize_Floor.cs");
 
 %this.Initialize_Floor();
 
-for (%x=0;%x<Scene_Dots_and_Crits.getCount();%x++)
+%this.Initialize_DWO();
+
+%this.Initialize_Monsters();
+
+/************************************************************************/
+
+//Create spawn portal.
+
+%Scene_Object_Portal_Spawn=new SceneObject()
 {
 
-%Object=Scene_Dots_and_Crits.getObject(%x);
+Position="0 0";
+class="Class_Portal_Spawn";
+size="10 10";
+BodyType="static";
 
-if (%Object.class$="Class_Portal_Spawn")
-{
+};
 
-%this.Simset_Portal_Spawn.add(%Object);
+Scene_Dots_and_Crits.add(%Scene_Object_Portal_Spawn);
 
-}
-
-}
+%this.Simset_Portal_Spawn.add(%Scene_Object_Portal_Spawn);
 
 }
