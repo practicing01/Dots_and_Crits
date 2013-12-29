@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Pseudo_Spider_Run_Up_Right"
+    ImageFile="Pseudo_Spider_Run_Up_Right.png"
+	CellCountX="14"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

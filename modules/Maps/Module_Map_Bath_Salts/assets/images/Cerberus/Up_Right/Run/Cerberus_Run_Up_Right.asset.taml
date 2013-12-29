@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Cerberus_Run_Up_Right"
+    ImageFile="Cerberus_Run_Up_Right.png"
+	CellCountX="30"
+    CellCountY="1"
+    CellWidth="64"
+    CellHeight="64"
+	Optimal_Resolution="1280 800"/>

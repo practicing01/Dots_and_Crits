@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Map_Bath_Salts"
+	Type="Map"
+	VersionId="1"
+	Description="Bath Salts"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

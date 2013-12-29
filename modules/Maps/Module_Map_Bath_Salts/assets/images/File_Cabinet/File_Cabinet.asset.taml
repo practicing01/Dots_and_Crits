@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_File_Cabinet"
+    ImageFile="File_Cabinet.png"
+	CellCountX="8"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

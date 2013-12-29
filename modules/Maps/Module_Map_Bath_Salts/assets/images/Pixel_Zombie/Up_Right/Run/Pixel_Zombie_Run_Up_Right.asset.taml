@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Pixel_Zombie_Run_Up_Right"
+    ImageFile="Pixel_Zombie_Run_Up_Right.png"
+	CellCountX="12"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>
