@@ -1,6 +1,8 @@
 function Module_Map_Bath_Salts::Scene_Unload(%this)
 {
 
+Canvas.popDialog(%this.Gui_Text_Score);
+
 cancel(%this.Camera_Move_Schedule.Schedule_Handle);
 
 %this.Simset_Objects.deleteObjects();

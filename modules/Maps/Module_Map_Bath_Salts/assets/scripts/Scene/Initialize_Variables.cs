@@ -32,4 +32,24 @@ Direction="0";
 
 %this.Simset_Objects=new SimSet();
 
+%this.Score=0;
+
+%this.Gui_Text_Score=new GuiTextCtrl()
+{
+Position=($Resolution.X/2)-32 SPC 0;
+HorizSizing="relative";
+VertSizing="relative";
+Text="0"; 
+Extent="64 64";
+isContainer="1";
+Profile="Gui_Profile_Modalless_Text";
+hovertime="1000";
+MaxLength="128";
+
+Bool_Delete_Me="1";
+
+};
+
+Window_Dots_and_Crits.addGuiControl(%this.Gui_Text_Score);
+
 }

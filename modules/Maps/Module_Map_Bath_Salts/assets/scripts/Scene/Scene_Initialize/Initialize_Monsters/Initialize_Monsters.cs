@@ -12,6 +12,8 @@ String_Asset_ID="Module_Map_Bath_Salts:Image_Cerberus_Run_Down";
 
 Handle_Asset=%this.Ass_Image_Cerberus_Run_Down;
 
+Monster_Type=0;//Cerberus
+
 };
 
 %Simset_Monster_Tiles.add(%Script_Object_Monster_Tile);
@@ -24,6 +26,8 @@ Handle_Asset=%this.Ass_Image_Cerberus_Run_Down;
 String_Asset_ID="Module_Map_Bath_Salts:Image_Pixel_Zombie_Run_Down";
 
 Handle_Asset=%this.Ass_Image_Pixel_Zombie_Run_Down;
+
+Monster_Type=1;//Pixel Zombie
 
 };
 
@@ -38,6 +42,8 @@ String_Asset_ID="Module_Map_Bath_Salts:Image_Pseudo_Spider_Run_Down";
 
 Handle_Asset=%this.Ass_Image_Pseudo_Spider_Run_Down;
 
+Monster_Type=2;//Pseudo Spider
+
 };
 
 %Simset_Monster_Tiles.add(%Script_Object_Monster_Tile);
@@ -50,6 +56,8 @@ Handle_Asset=%this.Ass_Image_Pseudo_Spider_Run_Down;
 String_Asset_ID="Module_Map_Bath_Salts:Image_Thin_Zombie_Run_Down";
 
 Handle_Asset=%this.Ass_Image_Thin_Zombie_Run_Down;
+
+Monster_Type=3;//Thin Zombie
 
 };
 
@@ -206,11 +214,13 @@ Object_Index=%this.Object_Count;
 
 Health=100;
 
-Direction="-1 1";//-1=Left/Up, 1=Right/Down
+Direction="0 1";//-1=Left/Up, 1=Right/Down
 
 Base_Speed=5;
 
 Current_Speed=5;
+
+Monster_Type=%Random_Monster_Tile.Monster_Type;
 
 Schedule_Handle_AI=0;
 
