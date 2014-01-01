@@ -99,4 +99,6 @@ AssetDatabase.releaseAsset(%this.Ass_Image_Thin_Spider_Run_Up_Left.getAssetId())
 
 AssetDatabase.releaseAsset(%this.Ass_Image_Thin_Spider_Run_Up_Right.getAssetId());
 
+AssetDatabase.releaseAsset(%this.Ass_Image_Wall.getAssetId());
+
 }

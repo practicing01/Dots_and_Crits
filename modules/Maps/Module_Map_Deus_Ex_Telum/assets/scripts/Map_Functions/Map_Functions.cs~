@@ -4,4 +4,5 @@ exec("./Schedule_Camera_Move.cs");
 exec("./Move_Player.cs");
 exec("./Schedule_Player_Move.cs");
 exec("./Player_Health.cs");
+exec("./Resize_Player.cs");
 

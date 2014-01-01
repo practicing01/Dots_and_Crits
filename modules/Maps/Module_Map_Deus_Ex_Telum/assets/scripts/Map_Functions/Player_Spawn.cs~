@@ -1,18 +1,6 @@
 function Module_Map_Deus_Ex_Telum::Player_Spawn(%this,%Sprite_Player)
 {
 
-//Resize player to fit within the 64x64 tiles
-
-%Vector_2D_Size=Scale_Vector_To_Camera("60 60");
-
-%Player_Information.Composite_Sprite.setSpriteSize(%Vector_2D_Size);
-
-%Player_Information.Composite_Sprite.clearCollisionShapes();
-
-%Player_Information.Composite_Sprite.createPolygonBoxCollisionShape(%Vector_2D_Size);
-
-/*********************************************************************/
-
 %Portal_Spawn=%this.Simset_Portal_Spawn.getObject(getRandom(0,%this.Simset_Portal_Spawn.getCount()-1));
 
 %Sprite_Player.Position=%Portal_Spawn.Position;

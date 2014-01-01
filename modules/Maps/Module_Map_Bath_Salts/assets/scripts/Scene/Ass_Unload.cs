@@ -101,4 +101,14 @@ AssetDatabase.releaseAsset(%this.Ass_Image_Thin_Spider_Run_Up_Right.getAssetId()
 
 AssetDatabase.releaseAsset(%this.Ass_Image_Wall.getAssetId());
 
+AssetDatabase.releaseAsset(%this.Ass_Image_Cute_Woman.getAssetId());
+
+AssetDatabase.releaseAsset(%this.Ass_Image_Figure_Girl.getAssetId());
+
+AssetDatabase.releaseAsset(%this.Ass_Image_Illumina.getAssetId());
+
+AssetDatabase.releaseAsset(%this.Ass_Image_Poco.getAssetId());
+
+AssetDatabase.releaseAsset(%this.Ass_Image_Simple_Girl.getAssetId());
+
 }

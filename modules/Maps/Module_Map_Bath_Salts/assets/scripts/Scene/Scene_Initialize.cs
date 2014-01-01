@@ -15,6 +15,8 @@ exec("./Scene_Initialize/Initialize_Floor/Initialize_Floor.cs");
 
 %this.Initialize_Monsters();
 
+%this.Initialize_Survivors();
+
 /************************************************************************/
 
 //Create spawn portal.

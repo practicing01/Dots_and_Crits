@@ -99,5 +99,7 @@ function Module_Map_Bath_Salts::Ass_Load(%this)
 
 %this.Ass_Image_Thin_Zombie_Run_Up_Right=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Thin_Zombie_Run_Up_Right");
 
+%this.Ass_Image_Wall=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Wall");
+
 }
 

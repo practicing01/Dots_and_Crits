@@ -101,5 +101,15 @@ function Module_Map_Bath_Salts::Ass_Load(%this)
 
 %this.Ass_Image_Wall=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Wall");
 
+%this.Ass_Image_Cute_Woman=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Cute_Woman");
+
+%this.Ass_Image_Figure_Girl=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Figure_Girl");
+
+%this.Ass_Image_Illumina=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Illumina");
+
+%this.Ass_Image_Poco=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Poco");
+
+%this.Ass_Image_Simple_Girl=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Simple_Girl");
+
 }
 
