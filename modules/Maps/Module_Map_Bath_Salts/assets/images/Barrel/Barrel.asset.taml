@@ -1,7 +1,7 @@
 <ImageAsset
     AssetName="Image_Barrel"
     ImageFile="Barrel.png"
-	CellCountX="1"
+	CellCountX="4"
     CellCountY="1"
     CellWidth="64"
     CellHeight="64"

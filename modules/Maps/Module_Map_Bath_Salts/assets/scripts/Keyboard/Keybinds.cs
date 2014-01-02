@@ -1,3 +1,6 @@
+function Module_Map_Bath_Salts::Keyboard_Bind(%this)
+{
+
 GlobalActionMap.bindCmd(keyboard,"w",
 "Class_Module_Map_Bath_Salts_Gui_Button_Move_Arrow::onAction(Module_Map_Bath_Salts.Gui_Button_Move_Arrow_Up);","");
 
@@ -9,3 +12,5 @@ GlobalActionMap.bindCmd(keyboard,"a",
 
 GlobalActionMap.bindCmd(keyboard,"d",
 "Class_Module_Map_Bath_Salts_Gui_Button_Move_Arrow::onAction(Module_Map_Bath_Salts.Gui_Button_Move_Arrow_Right);","");
+
+}

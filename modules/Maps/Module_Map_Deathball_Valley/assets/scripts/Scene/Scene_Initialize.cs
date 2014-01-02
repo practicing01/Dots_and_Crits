@@ -3,6 +3,8 @@ function Module_Map_Deathball_Valley::Scene_Initialize(%this)
 
 echo("Deathball Valley initialized.");
 
+%this.Keyboard_Bind();
+
 %this.Gui_Scroll_Arrows_Spawn();
 
 %this.Gui_Move_Arrows_Spawn();

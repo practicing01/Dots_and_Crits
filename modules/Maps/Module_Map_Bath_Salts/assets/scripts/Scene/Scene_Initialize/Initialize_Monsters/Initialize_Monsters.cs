@@ -115,7 +115,9 @@ for (%x=0;%x<2;%x++)
 
 %Tile=%Simset_Random_3_by_3_Positions.getObject(getRandom(0,%Simset_Random_3_by_3_Positions.getCount()-1));
 
-%Simset_Random_3_by_3_Positions.deleteObject(%Tile);
+%Simset_Random_3_by_3_Positions.remove(%Tile);
+
+%Tile.delete();
 
 }
 
@@ -164,7 +166,9 @@ for (%x=0;%x<1;%x++)
 
 %Tile=%Simset_Random_2_by_2_Positions.getObject(getRandom(0,%Simset_Random_2_by_2_Positions.getCount()-1));
 
-%Simset_Random_2_by_2_Positions.deleteObject(%Tile);
+%Simset_Random_2_by_2_Positions.remove(%Tile);
+
+%Tile.delete();
 
 }
 

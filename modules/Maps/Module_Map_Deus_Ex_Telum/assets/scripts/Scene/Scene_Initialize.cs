@@ -3,6 +3,8 @@ function Module_Map_Deus_Ex_Telum::Scene_Initialize(%this)
 
 echo("Deus Ex Telum initialized.");
 
+%this.Keyboard_Bind();
+
 %this.Gui_Scroll_Arrows_Spawn();
 
 %this.Gui_Move_Arrows_Spawn();

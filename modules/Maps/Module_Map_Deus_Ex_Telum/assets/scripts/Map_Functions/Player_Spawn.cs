@@ -3,13 +3,13 @@ function Module_Map_Deus_Ex_Telum::Player_Spawn(%this,%Sprite_Player)
 
 //Resize player to fit within the 64x64 tiles
 
-%Vector_2D_Size=Scale_Vector_To_Camera("60 60");
+%Vector_2D_Size=Scale_Vector_To_Camera("32 32");
 
-%Player_Information.Composite_Sprite.setSpriteSize(%Vector_2D_Size);
+%Sprite_Player.setSpriteSize(%Vector_2D_Size);
 
-%Player_Information.Composite_Sprite.clearCollisionShapes();
+%Sprite_Player.clearCollisionShapes();
 
-%Player_Information.Composite_Sprite.createPolygonBoxCollisionShape(%Vector_2D_Size);
+%Sprite_Player.createPolygonBoxCollisionShape(%Vector_2D_Size);
 
 /*********************************************************************/
 

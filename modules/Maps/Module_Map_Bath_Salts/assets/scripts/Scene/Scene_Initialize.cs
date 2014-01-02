@@ -4,6 +4,11 @@ function Module_Map_Bath_Salts::Scene_Initialize(%this)
 echo("Bath Salts initialized.");
 
 exec("./Scene_Initialize/Initialize_Floor/Initialize_Floor.cs");
+exec("./Scene_Initialize/Initialize_DWO/Initialize_DWO.cs");
+exec("./Scene_Initialize/Initialize_Monsters/Initialize_Monsters.cs");
+exec("./Scene_Initialize/Initialize_Survivors/Initialize_Survivors.cs");
+
+%this.Keyboard_Bind();
 
 %this.Gui_Scroll_Arrows_Spawn();
 
@@ -11,11 +16,11 @@ exec("./Scene_Initialize/Initialize_Floor/Initialize_Floor.cs");
 
 %this.Initialize_Floor();
 
-%this.Initialize_DWO();
+//%this.Initialize_DWO();
 
-%this.Initialize_Monsters();
+//%this.Initialize_Monsters();
 
-%this.Initialize_Survivors();
+//%this.Initialize_Survivors();
 
 /************************************************************************/
 
