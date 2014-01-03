@@ -102,6 +102,7 @@ String_Asset_ID="Module_Map_Bath_Salts:Image_Wood_3";
 %Composite_Sprite_Floor_Tiles=new CompositeSprite()
 {
 
+Position="0 0";
 SceneLayer=30;
 BodyType="static";
 
@@ -113,33 +114,35 @@ BodyType="static";
 
 //4x4 logical grid containing a logical grid of 3x3 tiles of size 1024*1024, which can be further split logically.
 
-%_4_by_4_Offset=(1024*3)/2;//Divide by 2 to get the middle because the center is the origin.
+%_2_by_2_Tile_Size="512 512";
 
-%_3_by_3_Offset=1024/2;
+%_3_by_3_Tile_Size=%_2_by_2_Tile_Size.X*2 SPC %_2_by_2_Tile_Size.Y*2;
 
-%_2_by_2_Offset=512/2;
+%_4_by_4_Tile_Size=%_3_by_3_Tile_Size.X*3 SPC %_3_by_3_Tile_Size.Y*3;
 
-%Wall_Offset=1536/2 SPC 64/2;
+%Wall_Tile_Size=Scale_Vector_To_Camera_By_Resolution("1280 64","1280 800");
 
-%Vector_2D_Tile_Size=Scale_Vector_To_Camera("512 512");
+%Wall_Tile_Offset=Scale_Vector_To_Camera_By_Resolution(%_4_by_4_Tile_Size,"1280 800");
 
-for (%_4_by_4_y=-2;%_4_by_4_y<2;%_4_by_4_y++)
+%Vector_2D_Tile_Size=Scale_Vector_To_Camera_By_Resolution("512 512","1280 800");
+
+for (%_4_by_4_y=0;%_4_by_4_y<4;%_4_by_4_y++)
 {
 
-for (%_4_by_4_x=-2;%_4_by_4_x<2;%_4_by_4_x++)
+for (%_4_by_4_x=0;%_4_by_4_x<4;%_4_by_4_x++)
 {
 
-for (%_3_by_3_y=-1;%_3_by_3_y<2;%_3_by_3_y++)
+%Random_Floor_Tile=%Simset_Floor_Tiles.getObject(getRandom(0,%Simset_Floor_Tiles.getCount()-1));
+
+for (%_3_by_3_y=0;%_3_by_3_y<3;%_3_by_3_y++)
 {
 
-for (%_3_by_3_x=-1;%_3_by_3_x<2;%_3_by_3_x++)
+for (%_3_by_3_x=0;%_3_by_3_x<3;%_3_by_3_x++)
 {
 
 /**********************************************************************/
 
 /*Set floor tiles.*/
-
-%Random_Floor_Tile=%Simset_Floor_Tiles.getObject(getRandom(0,%Simset_Floor_Tiles.getCount()-1));
 
 for (%_2_by_2_y=0;%_2_by_2_y<2;%_2_by_2_y++)
 {
@@ -149,11 +152,11 @@ for (%_2_by_2_x=0;%_2_by_2_x<2;%_2_by_2_x++)
 
 %Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=(%_2_by_2_x*%_2_by_2_Offset)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_2_by_2_x*%_2_by_2_Tile_Size.X)+(%_3_by_3_x*%_3_by_3_Tile_Size.X)+(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=(%_2_by_2_y*%_2_by_2_Offset)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_2_by_2_y*%_2_by_2_Tile_Size.Y)+(%_3_by_3_y*%_3_by_3_Tile_Size.Y)+(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Sprite_ID=%Composite_Sprite_Floor_Tiles.addSprite();
 
@@ -163,6 +166,12 @@ for (%_2_by_2_x=0;%_2_by_2_x<2;%_2_by_2_x++)
 
 %Composite_Sprite_Floor_Tiles.setSpriteImage(%Random_Floor_Tile.String_Asset_ID,0);
 
+Scene_Dots_and_Crits.add(%Composite_Sprite_Floor_Tiles);
+
+}
+
+}
+
 }
 
 }
@@ -171,7 +180,7 @@ for (%_2_by_2_x=0;%_2_by_2_x<2;%_2_by_2_x++)
 
 /*Set wall tiles.*/
 
-if (getRandom(0,1))
+if (1)//getRandom(0,1))
 {
 
 //Horizontal
@@ -181,11 +190,19 @@ if (getRandom(0,1))
 
 %Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((0*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((0*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+//%Vector_2D_Position.X+=(%Wall_Tile_Offset.X/2);
+
+%Vector_2D_Position.X+=%Vector_2D_Tile_Size.X;
+
+//%Vector_2D_Position.Y+=(%Wall_Tile_Offset.Y/2);
+
+//%Vector_2D_Position.Y-=%Wall_Tile_Size.Y/2;
 
 %Sprite_Wall=new Sprite()
 {
@@ -223,13 +240,21 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 ////////////////////////////////////////////////////////////////////////////////
 //Top-Right
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((1*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((0*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+%Vector_2D_Position.X+=(%Wall_Tile_Offset.X);
+
+%Vector_2D_Position.X-=%Wall_Tile_Size.X;
+
+%Vector_2D_Position.Y-=(%Wall_Tile_Offset.Y);
+
+%Vector_2D_Position.Y+=%Wall_Tile_Size.Y;
 
 %Sprite_Wall=new Sprite()
 {
@@ -262,18 +287,26 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //Bottom-Left
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((0*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((1*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+%Vector_2D_Position.X-=(%Wall_Tile_Offset.X);
+
+%Vector_2D_Position.X+=%Wall_Tile_Size.X;
+
+%Vector_2D_Position.Y+=(%Wall_Tile_Offset.Y);
+
+%Vector_2D_Position.Y-=%Wall_Tile_Size.Y;
 
 %Sprite_Wall=new Sprite()
 {
@@ -306,18 +339,26 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //Bottom-Right
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((1*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((1*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+%Vector_2D_Position.X+=(%Wall_Tile_Offset.X);
+
+%Vector_2D_Position.X-=%Wall_Tile_Size.X;
+
+%Vector_2D_Position.Y+=(%Wall_Tile_Offset.Y);
+
+%Vector_2D_Position.Y-=%Wall_Tile_Size.Y;
 
 %Sprite_Wall=new Sprite()
 {
@@ -350,20 +391,28 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 //Vertical
 
 ////////////////////////////////////////////////////////////////////////////////
 //Top-Left
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((0*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((0*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+%Vector_2D_Position.X-=(%Wall_Tile_Offset.X);
+
+%Vector_2D_Position.X+=%Wall_Tile_Size.Y;
+
+%Vector_2D_Position.Y+=(%Wall_Tile_Offset.Y);
+
+%Vector_2D_Position.Y-=%Wall_Tile_Size.X;
 
 %Sprite_Wall=new Sprite()
 {
@@ -398,18 +447,26 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //Top-Right
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((1*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((0*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+%Vector_2D_Position.X+=(%Wall_Tile_Offset.X);
+
+%Vector_2D_Position.X-=%Wall_Tile_Size.Y;
+
+%Vector_2D_Position.Y-=(%Wall_Tile_Offset.Y);
+
+%Vector_2D_Position.Y+=%Wall_Tile_Size.X;
 
 %Sprite_Wall=new Sprite()
 {
@@ -444,18 +501,26 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //Bottom-Left
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((0*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((1*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+%Vector_2D_Position.X-=(%Wall_Tile_Offset.X);
+
+%Vector_2D_Position.X+=%Wall_Tile_Size.Y;
+
+%Vector_2D_Position.Y+=(%Wall_Tile_Offset.Y);
+
+%Vector_2D_Position.Y-=%Wall_Tile_Size.X;
 
 %Sprite_Wall=new Sprite()
 {
@@ -490,18 +555,26 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //Bottom-Right
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
-%Vector_2D_Position.X=((1*%_4_by_4_Offset)+%Wall_Offset.Y)+(%_3_by_3_x*%_3_by_3_Offset)+(%_4_by_4_x*%_4_by_4_Offset);
+%Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
-%Vector_2D_Position.Y=((1*%_4_by_4_Offset)+%Wall_Offset.X)+(%_3_by_3_y*%_3_by_3_Offset)+(%_4_by_4_y*%_4_by_4_Offset);
+%Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Vector_To_Camera(%Vector_2D_Position);
+%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+
+%Vector_2D_Position.X+=(%Wall_Tile_Offset.X);
+
+%Vector_2D_Position.X-=%Wall_Tile_Size.Y;
+
+%Vector_2D_Position.Y+=(%Wall_Tile_Offset.Y);
+
+%Vector_2D_Position.Y-=%Wall_Tile_Size.X;
 
 %Sprite_Wall=new Sprite()
 {
@@ -536,7 +609,7 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 }
 
@@ -545,11 +618,5 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 }
 
 }
-
-}
-
-}
-
-Scene_Dots_and_Crits.add(%Composite_Sprite_Floor_Tiles);
 
 }

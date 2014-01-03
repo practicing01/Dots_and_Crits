@@ -52,4 +52,13 @@ Bool_Delete_Me="1";
 
 Window_Dots_and_Crits.addGuiControl(%this.Gui_Text_Score);
 
+%this.Script_Object_Input_Controller=new ScriptObject()
+{
+
+class="Class_Bath_Salts_Input_Controller";
+
+};
+
+Window_Dots_and_Crits.addInputListener(%this.Script_Object_Input_Controller);
+
 }
