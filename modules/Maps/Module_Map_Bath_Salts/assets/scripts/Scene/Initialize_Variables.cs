@@ -36,7 +36,7 @@ Direction="0";
 
 %this.Gui_Text_Score=new GuiTextCtrl()
 {
-Position=($Resolution.X/2)-32 SPC 0;
+Position="211 326";
 HorizSizing="relative";
 VertSizing="relative";
 Text="0"; 
