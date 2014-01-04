@@ -16,7 +16,7 @@ exec("./Scene_Initialize/Initialize_Survivors/Initialize_Survivors.cs");
 
 %this.Initialize_Floor();
 
-//%this.Initialize_DWO();
+%this.Initialize_DWO();
 
 //%this.Initialize_Monsters();
 
