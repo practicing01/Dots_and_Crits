@@ -13,6 +13,8 @@ if (Vector2Distance(%this.Position,$ScriptObject_Player_Information_This.Player_
 
 %Float_Angle_To_Point=Vector2AngleToPoint(%this.Position,$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position);
 
+%Float_Angle_To_Point=(%Float_Angle_To_Point+360)%360;
+
 if (%Float_Angle_To_Point>22.5&&%Float_Angle_To_Point<=67.5)//Down-Left
 {
 
