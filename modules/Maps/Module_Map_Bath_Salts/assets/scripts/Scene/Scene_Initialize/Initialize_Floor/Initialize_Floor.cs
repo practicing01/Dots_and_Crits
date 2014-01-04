@@ -102,7 +102,7 @@ String_Asset_ID="Module_Map_Bath_Salts:Image_Wood_3";
 %Composite_Sprite_Floor_Tiles=new CompositeSprite()
 {
 
-Position="0 0";
+Position=Scale_Vector_To_Camera_By_Resolution("0 0","1280 800");
 SceneLayer=30;
 BodyType="static";
 
@@ -154,7 +154,7 @@ for (%_2_by_2_x=0;%_2_by_2_x<2;%_2_by_2_x++)
 
 %Vector_2D_Position.Y=(%_2_by_2_y*%_2_by_2_Tile_Size.Y)+(%_3_by_3_y*%_3_by_3_Tile_Size.Y)+(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Sprite_ID=%Composite_Sprite_Floor_Tiles.addSprite();
 
@@ -164,15 +164,15 @@ for (%_2_by_2_x=0;%_2_by_2_x<2;%_2_by_2_x++)
 
 %Composite_Sprite_Floor_Tiles.setSpriteImage(%Random_Floor_Tile.String_Asset_ID,0);
 
+}
+
+}
+
+}
+
+}
+
 Scene_Dots_and_Crits.add(%Composite_Sprite_Floor_Tiles);
-
-}
-
-}
-
-}
-
-}
 
 /**********************************************************************/
 
@@ -192,11 +192,11 @@ if (1)//getRandom(0,1))
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Vector_2D_Position.X+=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.X)/2;
 
-%Vector_2D_Position.Y-=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.Y)/2;
+%Vector_2D_Position.Y+=(%Vector_2D_Tile_Size.Y*5)+((%Vector_2D_Tile_Size.Y/2)-(%Wall_Tile_Size.Y/2));
 
 %Sprite_Wall=new Sprite()
 {
@@ -234,23 +234,23 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 ////////////////////////////////////////////////////////////////////////////////
 //Top-Right
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
 %Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Vector_2D_Position.X+=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.X)/2;
 
-%Vector_2D_Projected_Offset=((512*6)-(1280/2)) SPC 0;
-
-%Vector_2D_Projected_Offset=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
-
-%Vector_2D_Position.X+=%Vector_2D_Projected_Offset.X;
-
 %Vector_2D_Position.Y-=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.Y)/2;
+
+%Vector_2D_Projected_Offset=((512*6)-(1280/2)) SPC 0;
+echo(%Vector_2D_Projected_Offset);
+%Vector_2D_Projected_Offset=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
+echo(%Vector_2D_Projected_Offset);
+%Vector_2D_Position.X+=%Vector_2D_Projected_Offset.X;
 
 %Sprite_Wall=new Sprite()
 {
@@ -283,7 +283,7 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %this.Simset_Objects.add(%Sprite_Wall);
 
-%this.Object_Count++;
+%this.Object_Count++;*/
 
 ////////////////////////////////////////////////////////////////////////////////
 //Bottom-Left
@@ -294,17 +294,11 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Vector_2D_Position.X+=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.X)/2;
 
-%Vector_2D_Position.Y-=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.Y)/2;
-
-%Vector_2D_Projected_Offset=0 SPC ((512*6)+(512-(64/2)));
-
-%Vector_2D_Projected_Offset=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
-
-%Vector_2D_Position.Y+=%Vector_2D_Projected_Offset.Y;
+%Vector_2D_Position.Y+=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.Y)/2;
 
 %Sprite_Wall=new Sprite()
 {
@@ -342,29 +336,25 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 ////////////////////////////////////////////////////////////////////////////////
 //Bottom-Right
 
-%Vector_2D_Position="0 0";
+/*%Vector_2D_Position="0 0";
 
 %Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Vector_2D_Position.X+=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.X)/2;
 
-%Vector_2D_Projected_Offset=((512*6)-(1280/2)) SPC 0;
+%Vector_2D_Position.Y+=((%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.Y))*6;
 
-%Vector_2D_Projected_Offset=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
+%Vector_2D_Projected_Offset=((512*6)-(1280/2)) SPC (512/2)+(64/2);
+
+%Vector_2D_Projected_Offset=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
 
 %Vector_2D_Position.X+=%Vector_2D_Projected_Offset.X;
 
-%Vector_2D_Position.Y-=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.Y)/2;
-
-%Vector_2D_Projected_Offset=0 SPC ((512*6)+(512-(64/2)));
-
-%Vector_2D_Projected_Offset=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
-
-%Vector_2D_Position.Y+=%Vector_2D_Projected_Offset.Y;
+%Vector_2D_Position.Y-=%Vector_2D_Projected_Offset.Y;
 
 %Sprite_Wall=new Sprite()
 {
@@ -410,7 +400,7 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Vector_2D_Position.X+=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.X)/2;
 
@@ -460,13 +450,13 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Vector_2D_Position.X+=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.X)/2;
 
 %Vector_2D_Projected_Offset=((512*6)-(64/2)) SPC 0;
 
-%Vector_2D_Projected_Offset=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
+%Vector_2D_Projected_Offset=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
 
 %Vector_2D_Position.X+=%Vector_2D_Projected_Offset.X;
 
@@ -516,17 +506,17 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
 %Vector_2D_Position.X+=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.X)/2;
 
-%Vector_2D_Position.Y-=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.Y)/2;
+%Vector_2D_Position.Y+=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.Y)*6;
 
-%Vector_2D_Projected_Offset=0 SPC ((512*6)+(512-(64/2)));
+%Vector_2D_Projected_Offset=0 SPC (512/2)+(1280/2);
 
-%Vector_2D_Projected_Offset=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
+%Vector_2D_Projected_Offset=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
 
-%Vector_2D_Position.Y+=%Vector_2D_Projected_Offset.Y;
+%Vector_2D_Position.Y-=%Vector_2D_Projected_Offset.Y;
 
 %Sprite_Wall=new Sprite()
 {
@@ -566,21 +556,25 @@ Scene_Dots_and_Crits.add(%Sprite_Wall);
 ////////////////////////////////////////////////////////////////////////////////
 //Bottom-Right
 
-/*%Vector_2D_Position="0 0";
+%Vector_2D_Position="0 0";
 
 %Vector_2D_Position.X=(%_4_by_4_x*%_4_by_4_Tile_Size.X);
 
 %Vector_2D_Position.Y=(%_4_by_4_y*%_4_by_4_Tile_Size.Y);
 
-%Vector_2D_Position=Scale_Position_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
+%Vector_2D_Position=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Position,"1280 800");
 
-%Vector_2D_Position.X+=(%Wall_Tile_Offset.X);
+%Vector_2D_Position.X+=(%Wall_Tile_Size.Y-%Vector_2D_Tile_Size.X)/2;
 
-%Vector_2D_Position.X-=%Wall_Tile_Size.Y;
+%Vector_2D_Position.Y+=(%Wall_Tile_Size.X-%Vector_2D_Tile_Size.Y)*6;
 
-%Vector_2D_Position.Y+=(%Wall_Tile_Offset.Y);
+%Vector_2D_Projected_Offset=((512*6)-(64/2)) SPC (512/2)+(1280/2);
 
-%Vector_2D_Position.Y-=%Wall_Tile_Size.X;
+%Vector_2D_Projected_Offset=Scale_Vector_To_Camera_By_Resolution(%Vector_2D_Projected_Offset,"1280 800");
+
+%Vector_2D_Position.X+=%Vector_2D_Projected_Offset.X;
+
+%Vector_2D_Position.Y-=%Vector_2D_Projected_Offset.Y;
 
 %Sprite_Wall=new Sprite()
 {

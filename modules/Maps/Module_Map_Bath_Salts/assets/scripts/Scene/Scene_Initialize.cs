@@ -29,7 +29,7 @@ exec("./Scene_Initialize/Initialize_Survivors/Initialize_Survivors.cs");
 %Scene_Object_Portal_Spawn=new SceneObject()
 {
 
-Position="0 0";
+Position=Scale_Vector_To_Camera_By_Resolution("0 0","1280 800");
 class="Class_Portal_Spawn";
 size="10 10";
 BodyType="static";
