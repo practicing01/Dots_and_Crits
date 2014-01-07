@@ -17,4 +17,8 @@ cancel(%this.Schedule_Handle_Radiate_Visible);
 
 %this.Simset_Objects.delete();
 
+%this.Simset_Goal_Spawn_Vectors.deleteObjects();
+
+%this.Simset_Goal_Spawn_Vectors.delete();
+
 }

@@ -34,6 +34,8 @@ Direction="0";
 
 %this.Simset_Objects=new SimSet();
 
+%this.Simset_Goal_Spawn_Vectors=0;
+
 %this.Schedule_Handle_Radiate_Visible=0;
 
 }

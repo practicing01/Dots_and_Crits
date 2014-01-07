@@ -261,11 +261,31 @@ Scene_Dots_and_Crits.add(%Sprite_Mech);
 
 /************************************************************************/
 
-//Create goal.
+//Create spawn portal.
 
 %Random_Vector=%Simset_All_Vectors.getObject(getRandom(0,%Simset_All_Vectors.getCount()-1));
 
 %Simset_All_Vectors.remove(%Random_Vector);
+
+%Scene_Object_Portal_Spawn=new SceneObject()
+{
+
+Position=%Random_Vector.Vector_2D;
+class="Class_Portal_Spawn";
+size="10 10";
+BodyType="static";
+
+};
+
+Scene_Dots_and_Crits.add(%Scene_Object_Portal_Spawn);
+
+%this.Simset_Portal_Spawn.add(%Scene_Object_Portal_Spawn);
+
+/************************************************************************/
+
+//Create goal.
+
+%Random_Vector=%Simset_All_Vectors.getObject(getRandom(0,%Simset_All_Vectors.getCount()-1));
 
 %Sprite_Goal=new Sprite()
 {
@@ -307,29 +327,7 @@ Scene_Dots_and_Crits.add(%Sprite_Goal);
 
 /************************************************************************/
 
-//Create spawn portal.
-
-%Random_Vector=%Simset_All_Vectors.getObject(getRandom(0,%Simset_All_Vectors.getCount()-1));
-
-%Simset_All_Vectors.remove(%Random_Vector);
-
-%Scene_Object_Portal_Spawn=new SceneObject()
-{
-
-Position=%Random_Vector.Vector_2D;
-class="Class_Portal_Spawn";
-size="10 10";
-BodyType="static";
-
-};
-
-Scene_Dots_and_Crits.add(%Scene_Object_Portal_Spawn);
-
-%this.Simset_Portal_Spawn.add(%Scene_Object_Portal_Spawn);
-
-%Simset_All_Vectors.deleteObjects();
-
-%Simset_All_Vectors.delete();
+%this.Simset_Goal_Spawn_Vectors=%Simset_All_Vectors;
 
 %Simset_Random_Vectors.deleteObjects();
 
