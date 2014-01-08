@@ -36,4 +36,13 @@ Direction="0";
 
 %this.Schedule_Handle_Radiate_Visible=0;
 
+%this.Script_Object_Input_Controller=new ScriptObject()
+{
+
+class="Class_PvP_Construct_Input_Controller";
+
+};
+
+Window_Dots_and_Crits.addInputListener(%this.Script_Object_Input_Controller);
+
 }

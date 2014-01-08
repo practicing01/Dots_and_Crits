@@ -28,4 +28,13 @@ Direction="0";
 %this.Gui_Button_Move_Arrow_Center=0;
 %this.Gui_Button_Move_Arrow_Toggle_Menu=0;
 
+%this.Script_Object_Input_Controller=new ScriptObject()
+{
+
+class="Class_Deathball_Valley_Input_Controller";
+
+};
+
+Window_Dots_and_Crits.addInputListener(%this.Script_Object_Input_Controller);
+
 }

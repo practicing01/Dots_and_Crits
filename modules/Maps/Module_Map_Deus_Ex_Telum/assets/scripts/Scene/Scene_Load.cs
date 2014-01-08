@@ -6,9 +6,7 @@ exec("./../Map_Functions/Map_Functions.cs");
 exec("./../../gui/Gui.cs");
 exec("./../Buttons/Buttons.cs");
 exec("./../Keyboard/Keyboard.cs");
-exec("./../Class_Deus_Ex_Telum_Wall/Class_Deus_Ex_Telum_Wall.cs");
-exec("./../Class_Deus_Ex_Telum_Mech/Class_Deus_Ex_Telum_Mech.cs");
-exec("./../Class_Deus_Ex_Telum_Goal/Class_Deus_Ex_Telum_Goal.cs");
+exec("./../Classes/Classes.cs");
 exec("./../Radiation_Visible/Radiation_Visible.cs");
 exec("./../Radar/Radar.cs");
 

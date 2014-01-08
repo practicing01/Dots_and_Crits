@@ -6,6 +6,7 @@ exec("./../Map_Functions/Map_Functions.cs");
 exec("./../../gui/Gui.cs");
 exec("./../Buttons/Buttons.cs");
 exec("./../Keyboard/Keyboard.cs");
+exec("./../Classes/Classes.cs");
 
 function Module_Map_Deathball_Valley::Scene_Load(%this)
 {

@@ -21,4 +21,6 @@ cancel(%this.Schedule_Handle_Radiate_Visible);
 
 %this.Simset_Goal_Spawn_Vectors.delete();
 
+%this.Script_Object_Input_Controller.delete();
+
 }

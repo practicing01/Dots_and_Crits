@@ -11,4 +11,6 @@ cancel(%this.Camera_Move_Schedule.Schedule_Handle);
 
 %this.Player_Move_Schedule.delete();
 
+%this.Script_Object_Input_Controller.delete();
+
 }
