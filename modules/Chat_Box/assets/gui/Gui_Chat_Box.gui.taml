@@ -174,9 +174,9 @@
 					Visible="1"
 					Active="1"
 					colCount="1"
-					colSize="100"
+					colSize="200"
 					colSpacing="0"
-					rowSize="60"
+					rowSize="50"
 					rowSpacing="0"
 					Delete_Me="0"/>
 	</GuiScrollCtrl>

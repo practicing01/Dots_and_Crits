@@ -45,7 +45,7 @@ Position="0 0";
 HorizSizing="relative";
 VertSizing="relative";
 Text=%Player_Name SPC "is playing."; 
-Extent="200 60";
+Extent="200 100";
 isContainer="0";
 Profile="GuiTextProfile";
 hovertime="1000";
@@ -60,6 +60,8 @@ Gui_List_Previous_Text.remove(Gui_List_Previous_Text.getObject(0));
 }
 
 Gui_Scroller_Previous_Text.computeSizes();
+
+Gui_Scroller_Previous_Text.scrollToBottom();
 
 }
 
