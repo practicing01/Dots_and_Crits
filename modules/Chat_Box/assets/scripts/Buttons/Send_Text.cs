@@ -10,6 +10,10 @@ commandToServer('Send_Text',%Text);
 
 Gui_MLTextEdit_Chat_Box.setText("");
 
+Gui_MLTextEdit_Chat_Box.setActive(false);
+
+Gui_MLTextEdit_Chat_Box.setActive(true);
+
 }
 
 }
