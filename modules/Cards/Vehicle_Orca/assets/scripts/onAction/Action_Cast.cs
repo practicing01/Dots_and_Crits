@@ -66,23 +66,22 @@ BodyType="static";
 size=%Vector_2D_Vehicle_Orca_Size;
 Image="Module_Card_Vehicle_Orca:Image_Vehicle_Orca";
 Position="0 0";
-SrcBlendFactor="SRC_ALPHA";
-DstBlendFactor="DST_ALPHA";
-BlendMode=true;
+Frame=4;
 
 };
 
 %this.Simset_Player_Information.add(%Script_Object_Player_Information);
 
+if (%Target_Player.Game_Connection_Handle==$GameConnection_Serverside_Connection)
+{
+
+%this.Player_Information_This=%Script_Object_Player_Information;
+
+}
+
 Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Sprite_Vehicle_Orca);
 
-%Vector_2D_Player_Size=%Target_Player.Player_Sprite_Data.Composite_Sprite.getSpriteSize();
-
-%Vector_2D_Mount_Offset="0 0";
-
-%Vector_2D_Mount_Offset.Y=(%Vector_2D_Player_Size.Y/2)+(%Vector_2D_Vehicle_Orca_Size.Y/2);
-
-%Script_Object_Player_Information.Sprite_Vehicle_Orca.mount(%Target_Player.Player_Sprite_Data.Scene_Object_Mount,%Vector_2D_Mount_Offset,0,true,mDegToRad(0));
+%Script_Object_Player_Information.Sprite_Vehicle_Orca.mount(%Target_Player.Player_Sprite_Data.Scene_Object_Mount,"0 0",0,true,mDegToRad(180));
 
 %Bool_Already_Registered_For_Dismount=false;
 
@@ -109,6 +108,10 @@ if (!%Bool_Already_Registered_For_Dismount)
 
 }
 
+%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(0);
+
+%Target_Player.Player_Sprite_Data.Current_Speed+=%Target_Player.Player_Sprite_Data.Base_Speed;
+
 }
 else
 {
@@ -118,11 +121,19 @@ if (%Player_Object.Sprite_Vehicle_Orca.Visible)
 
 %Player_Object.Sprite_Vehicle_Orca.Visible=false;
 
+%Player_Object.Player_Information.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(1);
+
+%Player_Object.Player_Information.Player_Sprite_Data.Current_Speed-=%Player_Object.Player_Information.Player_Sprite_Data.Base_Speed;
+
 }
 else
 {
 
 %Player_Object.Sprite_Vehicle_Orca.Visible=true;
+
+%Player_Object.Player_Information.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(0);
+
+%Player_Object.Player_Information.Player_Sprite_Data.Current_Speed+=%Player_Object.Player_Information.Player_Sprite_Data.Base_Speed;
 
 }
 

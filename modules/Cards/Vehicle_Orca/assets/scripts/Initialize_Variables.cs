@@ -29,6 +29,8 @@ Scene_Dots_and_Crits.add(%this.Scene_Object_Input_Capture);
 
 %this.Simset_Player_Information=new SimSet();
 
+%this.Player_Information_This=0;
+
 /************************************************/
 
 }

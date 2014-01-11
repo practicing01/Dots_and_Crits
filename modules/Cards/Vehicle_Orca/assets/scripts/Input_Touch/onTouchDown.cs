@@ -45,5 +45,22 @@ else if (%this.Module_ID_Parent.Bool_Waiting_For_Cast)
 %this.Module_ID_Parent.Card_Cast(%this.Module_ID_Parent.Card_Target.Script_Object_Parent);
 
 }
+else
+{
+
+if (isObject(%this.Module_ID_Parent.Player_Information_This))
+{
+
+if (%this.Module_ID_Parent.Player_Information_This.Sprite_Vehicle_Orca.Visible)
+{
+
+commandToServer('Relay_Module_Function',Module_Card_Vehicle_Orca,"Action_Move",
+%this.Module_ID_Parent.Player_Information_This.Player_Information.Game_Connection_Handle,%World_Position);
+
+}
+
+}
+
+}
 
 }

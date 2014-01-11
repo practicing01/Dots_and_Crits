@@ -70,6 +70,4 @@ else if (%this.Player_Move_Schedule.Direction$="Right")
 
 commandToServer('Relay_Module_Function',$ScriptObject_Player_Information_This.Module_ID_Player_Sprite,"Action_Move",%Vector_2D_World_Point);
 
-//%this.Player_Move_Schedule.Schedule_Handle=schedule(1000,0,"Module_Map_Deathball_Valley::Move_Player",%this);
-
 }
