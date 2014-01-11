@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Vehicle_Orca"
+    ImageFile="Vehicle_Orca.png"
+	CellCountX="8"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Vehicle_Orca"
+    Image="@asset=Module_Card_Vehicle_Orca:Image_Vehicle_Orca"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
