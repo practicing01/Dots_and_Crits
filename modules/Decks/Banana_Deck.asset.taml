@@ -65,4 +65,7 @@
     <ScriptObject
         Card_Slot_Position="278 0"
         Module_ID_Card="Module_Card_Portal_Bearer" />
+    <ScriptObject
+        Card_Slot_Position="678 380"
+        Module_ID_Card="Module_Card_Vehicle_Orca" />
 </SimSet>
