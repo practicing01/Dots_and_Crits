@@ -119,3 +119,21 @@ function Scale_Camera_Vector_To_Resolution(%Vector_2D)
 return %Vector_2D;
 
 }
+
+function Scale_Vector_To_Resolution_By_Resolution(%Vector_2D,%Vector_2D_Source_Resolution,%Vector_2D_Destination_Resolution)
+{
+
+%Scaled_Vector_2D="0 0";
+
+%Scaled_Vector_2D.X=(%Vector_2D.X*%Vector_2D_Destination_Resolution.X)/%Vector_2D_Source_Resolution.X;
+
+%Scaled_Vector_2D.Y=(%Vector_2D.Y*%Vector_2D_Destination_Resolution.Y)/%Vector_2D_Source_Resolution.Y;
+
+%Scaled_Vector_2D.X=mRound(%Scaled_Vector_2D.X);
+
+%Scaled_Vector_2D.Y=mRound(%Scaled_Vector_2D.Y);
+
+return %Scaled_Vector_2D;
+
+}
+
