@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Unit_0_Emote_Attack_Right"
+    ImageFile="Unit_0_Emote_Attack_Right.png"
+	CellCountX="5"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

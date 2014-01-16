@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Unit_0_Run_Up"
+    ImageFile="Unit_0_Run_Up.png"
+	CellCountX="9"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>
