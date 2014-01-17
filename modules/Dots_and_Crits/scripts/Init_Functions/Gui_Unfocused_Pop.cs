@@ -6,6 +6,8 @@ for (%x=0;%x<$Simset_Unfocused_Guis_To_Pop.getCount();%x++)
 
 %Gui_Object=$Simset_Unfocused_Guis_To_Pop.getObject(%x);
 
+Canvas.pushDialog(%Gui_Object);
+
 Canvas.popDialog(%Gui_Object);
 
 }

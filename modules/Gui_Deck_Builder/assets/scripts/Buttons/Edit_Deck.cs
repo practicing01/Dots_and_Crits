@@ -71,7 +71,7 @@ Extent="50 50";
 HorizSizing="relative";
 VertSizing="relative";
 isContainer="1";
-Position=%Script_Object_Card.Card_Slot_Position;
+Position=Scale_Vector_To_Resolution_By_Resolution(%Script_Object_Card.Card_Slot_Position,"800 480",$Resolution);
 Profile="GuiDefaultProfile";
 
 Script_Object_Card=%Script_Object_Card;
