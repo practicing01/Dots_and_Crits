@@ -26,7 +26,7 @@ else if (%Module_Function$="Action_Emote")
 else if (%Module_Function$="Action_Attack")
 {
 
-%this.Action_Attack(%Player_Information,%Parameter_0,%Parameter_1);
+%this.Action_Attack(%Player_Information,%Parameter_0,%Parameter_1,%Parameter_2);
 
 }
 else if (%Module_Function$="Action_Update_Health")

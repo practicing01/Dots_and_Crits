@@ -1,4 +1,4 @@
-function Module_Player_Sprite_Gill_Balentine::Action_Attack(%this,%Player_Information,%Object_Module_ID,%Object_Game_Connection_Handle)
+function Module_Player_Sprite_Gill_Balentine::Action_Attack(%this,%Player_Information,%Object_Module_ID,%Object_Game_Connection_Handle,%Object_Index)
 {
 
 //Set attack animation.
@@ -312,6 +312,9 @@ cancel(%Player_Information.Schedule_Animation_Reset);
 
 if (!isObject(%Object_Module_ID)){return;}
 
+if (%Object_Index==-1)//Player being attacked.
+{
+
 for (%x=0;%x<%Object_Module_ID.Simset_Player_Information.getCount();%x++)
 {
 
@@ -323,6 +326,28 @@ if (%Object.Game_Connection_Handle==%Object_Game_Connection_Handle)
 %Object_Module_ID.Action_Update_Health(%Object,%Object.Game_Connection_Handle,1,%Player_Information.Current_Attack);
 
 break;
+
+}
+
+}
+
+}
+else
+{
+
+for (%x=0;%x<%Object_Module_ID.Simset_Objects.getCount();%x++)
+{
+
+%Object=%Object_Module_ID.Simset_Objects.getObject(%x);
+
+if (%Object.Game_Connection_Handle==%Object_Game_Connection_Handle&&%Object.Object_Index==%Object_Index)
+{
+
+%Object_Module_ID.Action_Update_Health(%Player_Information,%Object.Game_Connection_Handle,%Object.Object_Index,1,%Player_Information.Current_Attack);
+
+break;
+
+}
 
 }
 
