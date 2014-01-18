@@ -1,7 +1,5 @@
-function Class_Shield::Update_Health(%this,%Health)
+function Class_Shield::Update_Health(%this)
 {
-
-%this.Health+=%Health;
 
 if (%this.Health<=0)
 {

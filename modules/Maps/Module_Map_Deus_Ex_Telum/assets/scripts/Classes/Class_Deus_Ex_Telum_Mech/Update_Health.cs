@@ -1,7 +1,5 @@
-function Class_Deus_Ex_Telum_Mech::Update_Health(%this,%Health)
+function Class_Deus_Ex_Telum_Mech::Update_Health(%this)
 {
-
-%this.Health+=%Health;
 
 if (%this.Health<=0)
 {

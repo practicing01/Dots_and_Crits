@@ -19,7 +19,7 @@ if (%Colliding_Object.Script_Object_Parent.Game_Connection_Handle!=%this.Game_Co
 else if (%Colliding_Object.Game_Connection_Handle!=%this.Game_Connection_Handle)
 {
 
-%Colliding_Object.Update_Health(-10);
+%Colliding_Object.Module_ID_Parent.Action_Update_Health(-1,%Colliding_Object.Game_Connection_Handle,%Colliding_Object.Object_Index,1,10);
 
 %this.Module_ID_Parent.Simset_Objects.remove(%this);
 

@@ -9,7 +9,7 @@ if (%this.Module_ID_Parent.Bool_Waiting_For_Target)
 
 %this.Module_ID_Parent.Card_Target=0;
 
-%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(0)|bit(26),"","collision");
+%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(0)|bit(25)|bit(26),"","collision");
 
 if (getWordCount(%String_List_Picked_Objects)==0){return;}
 

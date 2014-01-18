@@ -10,7 +10,7 @@ if (%Colliding_Object.class$="Class_Composite_Sprite_Player")
 else
 {
 
-%Colliding_Object.Update_Health(-10);
+%Colliding_Object.Module_ID_Parent.Action_Update_Health(-1,%Colliding_Object.Game_Connection_Handle,%Colliding_Object.Object_Index,1,10);
 
 }
 

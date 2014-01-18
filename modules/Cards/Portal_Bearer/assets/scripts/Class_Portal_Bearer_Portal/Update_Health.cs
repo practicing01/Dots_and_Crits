@@ -1,8 +1,7 @@
-function Class_Portal_Bearer_Portal::Update_Health(%this,%Health)
+function Class_Portal_Bearer_Portal::Update_Health(%this)
 {
 
-/*%this.Health+=%Health;
-
+/*
 if (%this.Health<=0)
 {
 

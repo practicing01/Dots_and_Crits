@@ -33,7 +33,7 @@ if (%Object.class$="Class_Composite_Sprite_Player")
 else
 {
 
-%Object.Update_Health(-10);
+%Object.Module_ID_Parent.Action_Update_Health(-1,%Object.Game_Connection_Handle,%Object.Object_Index,1,10);
 
 }
 

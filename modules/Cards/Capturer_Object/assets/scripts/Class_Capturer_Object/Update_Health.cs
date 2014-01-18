@@ -1,8 +1,7 @@
-function Class_Capturer_Object::Update_Health(%this,%Health)
+function Class_Capturer_Object::Update_Health(%this)
 {
 
-/*%this.Health+=%Health;
-
+/*
 if (%this.Health<=0)
 {
 

@@ -45,7 +45,7 @@ else if (%this.Module_ID_Parent.Bool_Waiting_For_Cast)
 
 %this.Module_ID_Parent.Card_Second_Target=0;
 
-%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(26),"","collision");
+%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(25)|bit(26),"","collision");
 
 if (getWordCount(%String_List_Picked_Objects)==0){return;}
 
@@ -54,7 +54,7 @@ for (%x=0;%x<getWordCount(%String_List_Picked_Objects);%x++)
 
 %Object=getWord(%String_List_Picked_Objects,%x);
 
-if (%Object.SceneGroup==26)
+if (%Object.SceneGroup==25||%Object.SceneGroup==26)
 {
 
 %this.Module_ID_Parent.Card_Second_Target=%Object;

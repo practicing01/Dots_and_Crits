@@ -9,6 +9,7 @@ exec("./../Keyboard/Keyboard.cs");
 exec("./../Classes/Classes.cs");
 exec("./../Radiation_Visible/Radiation_Visible.cs");
 exec("./../Radar/Radar.cs");
+exec("./../onAction/Actions.cs");
 
 function Module_Map_Deus_Ex_Telum::Scene_Load(%this)
 {

@@ -7,6 +7,7 @@ exec("./../../gui/Gui.cs");
 exec("./../Buttons/Buttons.cs");
 exec("./../Keyboard/Keyboard.cs");
 exec("./../Classes/Classes.cs");
+exec("./../onAction/Actions.cs");
 
 function Module_Map_Bath_Salts::Scene_Load(%this)
 {

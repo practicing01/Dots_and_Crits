@@ -81,11 +81,5 @@ else
 }
 
 }
-/*else
-{
-
-%Colliding_Object.Update_Health(-10);
-
-}*/
 
 }

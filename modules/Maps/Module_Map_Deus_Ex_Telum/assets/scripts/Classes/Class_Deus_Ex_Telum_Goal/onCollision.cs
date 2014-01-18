@@ -12,11 +12,5 @@ getRandom(0,%this.Module_ID_Parent.Simset_Goal_Spawn_Vectors.getCount()-1));
 %this.Position=%Random_Vector.Vector_2D;
 
 }
-/*else
-{
-
-%Colliding_Object.Update_Health(-10);
-
-}*/
 
 }
