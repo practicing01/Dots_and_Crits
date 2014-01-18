@@ -1,4 +1,4 @@
-function Class_Kingless_Hill::onDelete(%this)
+function Class_Kingless_Hill::onRemove(%this)
 {
 
 if (!isObject(%this.Simset_Player_Scores)){return;}

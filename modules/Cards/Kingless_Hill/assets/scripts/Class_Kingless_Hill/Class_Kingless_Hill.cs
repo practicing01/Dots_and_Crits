@@ -1,4 +1,4 @@
 exec("./onCollision.cs");
 exec("./Update_Health.cs");
-exec("./onDelete.cs");
+exec("./onRemove.cs");
 exec("./onEndCollision.cs");

@@ -40,7 +40,7 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       Bool_Delete_Me="1";
       
-      class="Module_Sprite_Summon_Unit_Gui_Menu";
+      class="Module_Card_Summon_Unit_Gui_Menu";
       
       String_Action="Move";
       
@@ -68,14 +68,14 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       Bool_Delete_Me="1";
       
-      class="Module_Sprite_Summon_Unit_Gui_Menu";
+      class="Module_Card_Summon_Unit_Gui_Menu";
       
       String_Action="Attack";
       
       Composite_Sprite_Parent=%Composite_Sprite;
       
    };
-   new GuiButtonCtrl() {
+/*   new GuiButtonCtrl() {
       canSaveDynamicFields = "1";
       isContainer = "0";
       Profile = "BlueButtonProfile";
@@ -96,7 +96,7 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       Bool_Delete_Me="1";
       
-      class="Module_Sprite_Summon_Unit_Gui_Menu";
+      class="Module_Card_Summon_Unit_Gui_Menu";
       
       String_Action="Skill";
       
@@ -124,13 +124,13 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       Bool_Delete_Me="1";
       
-      class="Module_Sprite_Summon_Unit_Gui_Menu";
+      class="Module_Card_Summon_Unit_Gui_Menu";
       
       String_Action="Set Skill";
       
       Composite_Sprite_Parent=%Composite_Sprite;
       
-   };
+   };*/
 };
 //--- OBJECT WRITE END ---
 

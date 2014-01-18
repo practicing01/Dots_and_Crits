@@ -29,4 +29,6 @@ Scene_Dots_and_Crits.add(%this.Scene_Object_Input_Capture);
 
 %this.Unit_Count=0;
 
+%this.Focused_Unit=-1;
+
 }

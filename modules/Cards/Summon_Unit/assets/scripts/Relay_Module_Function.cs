@@ -23,6 +23,24 @@ else if (%Module_Function$="Action_Cast")
 %this.Action_Cast(%Player_Information,%Parameter_0,%Parameter_1,%Parameter_2);
 
 }
+else if (%Module_Function$="Action_Attack")
+{
+
+%this.Action_Attack(%Player_Information,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
+
+}
+else if (%Module_Function$="Action_Move")
+{
+
+%this.Action_Move(%Player_Information,%Parameter_0,%Parameter_1);
+
+}
+else if (%Module_Function$="Action_Position")
+{
+
+%this.Action_Position(%Player_Information,%Parameter_0,%Parameter_1,%Parameter_2);
+
+}
 
 break;
 

@@ -1,6 +1,6 @@
 <AnimationAsset
     AssetName="Animation_Attack_Up_Right"
-    Image="@asset=Module_Player_Sprite_Summon_Unit:Image_Summon_Unit_Attack_Up_Right"
+    Image="@asset=Module_Card_Summon_Unit:Image_Summon_Unit_Attack_Up_Right"
     AnimationFrames="0 1 2 3 4"
     AnimationCycle="true"
 	AnimationTime="1.0" />

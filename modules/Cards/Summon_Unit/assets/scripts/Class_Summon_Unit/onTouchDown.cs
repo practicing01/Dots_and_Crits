@@ -7,7 +7,7 @@ if (%this.Bool_Waiting_For_Move)
 
 %this.Bool_Waiting_For_Move=false;
 
-%this.Gui_Button_Gui_Menu_Move(%World_Position);
+Module_Card_Summon_Unit.Gui_Button_Gui_Menu_Move(%World_Position,%this);
 
 }
 
@@ -18,13 +18,13 @@ if (%this.Bool_Waiting_For_Attack)
 
 %this.Bool_Waiting_For_Attack=false;
 
-%this.Gui_Button_Gui_Menu_Attack(%World_Position);
+Module_Card_Summon_Unit.Gui_Button_Gui_Menu_Attack(%World_Position,%this);
 
 }
 
 /**************************************************/
 
-%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(0)|bit(25)|bit(26),"","collision");
+%String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(25),"","collision");
 
 if (getWordCount(%String_List_Picked_Objects)==0){return;}
 
@@ -46,6 +46,8 @@ Window_Dots_and_Crits,false,
 "0" SPC -((%this.Gui_Menu.getExtent().Y)+(%this_Size.Y)));
 
 $Simset_Unfocused_Guis_To_Pop.add(%this.Gui_Menu);
+
+%this.Module_ID_Parent.Focused_Unit=%this;
 
 break;
 

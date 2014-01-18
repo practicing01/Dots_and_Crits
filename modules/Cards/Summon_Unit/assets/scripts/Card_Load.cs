@@ -6,6 +6,8 @@ exec("./Relay_Module_Function.cs");
 exec("./Card_Cast.cs");
 exec("./Input_Touch/Input_Touch.cs");
 exec("./onAction/Actions.cs");
+exec("./Actions/Actions.cs");
+exec("./Buttons/Buttons.cs");
 exec("./Gui/Gui.cs");
 exec("./Class_Summon_Unit/Class_Summon_Unit.cs");
 
