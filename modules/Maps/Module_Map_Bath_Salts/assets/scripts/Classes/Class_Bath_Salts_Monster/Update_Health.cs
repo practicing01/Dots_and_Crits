@@ -1,7 +1,6 @@
 function Class_Bath_Salts_Monster::Update_Health(%this)
 {
 
-/*
 if (%this.Health<=0)
 {
 
@@ -9,6 +8,6 @@ if (%this.Health<=0)
 
 %this.safeDelete();
 
-}*/
+}
 
 }
