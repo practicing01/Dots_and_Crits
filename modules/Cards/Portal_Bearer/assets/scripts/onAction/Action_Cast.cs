@@ -305,7 +305,7 @@ else
 %Player_Object.Sprite_Portal_Bearer.Visible=true;
 
 /******************************************************************************************/
-
+/*
 %Sprite_Projectile=new Sprite()
 {
 
@@ -375,7 +375,7 @@ Scene_Dots_and_Crits.add(%Sprite_Projectile);
 %this.Simset_Objects.add(%Sprite_Projectile);
 
 %Sprite_Projectile.moveTo(%World_Position,20,false,false);
-
+*/
 /******************************************************************************************/
 
 }

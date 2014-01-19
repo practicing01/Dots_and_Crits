@@ -25,7 +25,7 @@ Gui_List_Servers.addItem(%Connector_Name);
 else
 {
 
-schedule(0,0,"Dots_and_Crits::Game_Connection_Delete",Dots_and_Crits,$GameConnection_Master_Server_Query);
+Dots_and_Crits.Game_Connection_Delete($GameConnection_Master_Server_Query);
 
 }
 

@@ -1,15 +1,6 @@
 function Gui_Pause_Menu::Go_Main_Menu(%this)
 {
 
-if (isObject($GameConnection_Connection))
-{
-
-Dots_and_Crits.Game_Connection_Delete($GameConnection_Connection);
-
-$GameConnection_Serverside_Connection=0;
-
-}
-
 Module_Player_Class.Player_Data_Clear();
 
 if (isObject($Simset_Players_Information))
