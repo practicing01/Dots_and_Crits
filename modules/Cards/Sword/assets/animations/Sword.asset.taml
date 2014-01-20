@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Sword"
+    Image="@asset=Module_Card_Sword:Image_Sword"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
