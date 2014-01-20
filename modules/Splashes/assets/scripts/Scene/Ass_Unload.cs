@@ -14,8 +14,12 @@ AssetDatabase.releaseAsset(%this.Ass_Name.getAssetId());
 
 AssetDatabase.releaseAsset(%this.Ass_Logo_Torque.getAssetId());
 
+AssetDatabase.releaseAsset(%this.Ass_Splash_OGA.getAssetId());
+
 AssetDatabase.releaseAsset(%this.Ass_Audio_MourningDoveSoft.getAssetId());
 
 AssetDatabase.releaseAsset(%this.Ass_Audio_Torque_Wrench.getAssetId());
+
+AssetDatabase.releaseAsset(%this.Ass_Audio_Splash_OGA.getAssetId());
 
 }

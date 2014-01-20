@@ -20,7 +20,7 @@ BodyType="static";
 
 Scene_Dots_and_Crits.add(%Sprite_Company_Name);
 
-schedule(3000,0,"Splashes::Splash_Logo_Torque",%this.Handle_Module_Parent);
+schedule(3000,0,"Splashes::Splash_OGA",%this.Handle_Module_Parent);
 
 }
 

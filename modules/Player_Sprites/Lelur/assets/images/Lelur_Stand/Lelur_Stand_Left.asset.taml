@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Lelur_Stand_Left"
+    ImageFile="Lelur_Stand_Left.png"
+	CellCountX="8"
+    CellCountY="2"
+    CellWidth="256"
+    CellHeight="256"
+	Optimal_Resolution="1280 800"/>

@@ -24,7 +24,7 @@ $Simset_Players_Information=new SimSet();
 
 $Simset_Module_ID_Loaded_Player_Sprites=0;
 
-$Simset_Already_Loaded_Card_Modules=new SimSet();
+$Simset_Loaded_Card_Modules=new SimSet();
 
 $Simset_Live_Clients=0;
 

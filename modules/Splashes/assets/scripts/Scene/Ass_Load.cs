@@ -14,8 +14,12 @@ function Splashes::Ass_Load(%this)
 
 %this.Ass_Logo_Torque=AssetDatabase.acquireAsset("Splashes:Image_Logo_Torque");
 
+%this.Ass_Splash_OGA=AssetDatabase.acquireAsset("Splashes:Image_Splash_OGA");
+
 %this.Ass_Audio_MourningDoveSoft=AssetDatabase.acquireAsset("Splashes:audio_mourningdove");
 
 %this.Ass_Audio_Torque_Wrench=AssetDatabase.acquireAsset("Splashes:audio_torquewrench");
+
+%this.Ass_Audio_Splash_OGA=AssetDatabase.acquireAsset("Splashes:Audio_Splash_OGA");
 
 }

@@ -62,7 +62,7 @@ $Simset_Cards_To_Load.delete();
 
 }
 
-$Simset_Already_Loaded_Card_Modules.deleteObjects();
+$Simset_Loaded_Card_Modules.deleteObjects();
 
 $Simset_Cards_To_Load=new SimSet();
 

@@ -1,6 +1,7 @@
+exec("./../Torque/Splash_Logo_Torque.cs");
+exec("./../OGA/Splash_OGA.cs");
 exec("./../Dove/Dove_Construct.cs");
 exec("./../Dove/onCollision.cs");
-exec("./../Torque/Splash_Logo_Torque.cs");
 
 function Splashes::Scene_Initialize(%this)
 {

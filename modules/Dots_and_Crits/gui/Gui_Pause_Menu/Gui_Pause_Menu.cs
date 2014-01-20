@@ -31,4 +31,4 @@ Canvas.popDialog(Gui_Pause_Menu);
 
 }
 
-//GlobalActionMap.bindCmd(keyboard,"escape","Dots_and_Crits.Toggle_Pause_Menu();","");
+GlobalActionMap.bindCmd(keyboard,"escape","Dots_and_Crits.Toggle_Pause_Menu();","");

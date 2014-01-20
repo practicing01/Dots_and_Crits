@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Run_Down_Right"
+    Image="@asset=Module_Player_Sprite_Lelur:Image_Lelur_Run_Down_Right"
+    AnimationFrames="10 9 8 7 6 5 4 3 2 1 0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
