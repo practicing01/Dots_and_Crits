@@ -74,5 +74,8 @@
     <ScriptObject
         Card_Slot_Position="678 280"
         Module_ID_Card="Module_Card_Sword" />
+    <ScriptObject
+        Card_Slot_Position="678 230"
+        Module_ID_Card="Module_Card_Throw_Object" />
 </SimSet>
 
