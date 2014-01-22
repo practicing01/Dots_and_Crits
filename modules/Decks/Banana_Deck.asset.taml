@@ -19,7 +19,7 @@
         Module_ID_Card="Module_Card_Speedboof" />
     <ScriptObject
         Card_Slot_Position="578 430"
-        Module_ID_Card="Module_Card_Scale" />
+        Module_ID_Card="Module_Card_Scale_Object" />
     <ScriptObject
         Card_Slot_Position="628 430"
         Module_ID_Card="Module_Card_Deathball" />

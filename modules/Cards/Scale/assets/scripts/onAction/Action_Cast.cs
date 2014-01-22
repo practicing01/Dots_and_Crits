@@ -25,9 +25,9 @@ if (%Target_Player==0){return;}
 
 %Vector_2D_New_Size="0 0";
 
-%Vector_2D_New_Size.X=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.X-%Vector_2D_Position.X);
+%Vector_2D_New_Size.X=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.X-%Vector_2D_Position.X)*2;
 
-%Vector_2D_New_Size.Y=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.Y-%Vector_2D_Position.Y);
+%Vector_2D_New_Size.Y=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.Y-%Vector_2D_Position.Y)*2;
 
 %Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteSize(%Vector_2D_New_Size);
 
