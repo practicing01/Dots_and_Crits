@@ -1,7 +1,7 @@
 function Dots_and_Crits::Load_Cards(%this)
 {
 
-if (!isObject($Simset_Cards_To_Load)){return;}
+if (!isObject($Simset_Cards_To_Load)){echo("Simset_Cards_To_Load doesn't exist.");return;}
 
 if (!isObject($Simset_Loaded_Card_Modules))
 {

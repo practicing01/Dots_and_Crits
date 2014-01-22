@@ -1,7 +1,7 @@
 function clientCmdRegister_Card_To_Load(%Module_ID_Card)
 {
 
-if (!isObject($Simset_Cards_To_Load)){return;}
+if (!isObject($Simset_Cards_To_Load)){echo("Simset_Cards_To_Load doesn't exist.");return;}
 
 for (%x=0;%x<$Simset_Cards_To_Load.getCount();%x++)
 {
@@ -28,8 +28,6 @@ $Simset_Cards_To_Load.add(%Script_Object);
 
 if ($Bool_Is_Playing)
 {
-
-
 
 %Bool_Already_Loaded=false;
 

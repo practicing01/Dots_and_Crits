@@ -20,7 +20,7 @@
 		isContainer="0"
 		HorizSizing="relative"
 		VertSizing="relative"
-		Position="336 220"
+		Position="328 0"
 		Extent="128 40"
 		MinExtent="1 1"
 		canSave="1"
@@ -29,5 +29,63 @@
 		hovertime="1000"
 		groupNum="-1"
 		useMouseEvents="1" />
+
+	<!-- Cast Card Button -->
+	<GuiButtonCtrl
+		Name="Gui_Button_Pause_Menu_Cast_Card"
+		Profile="BlueButtonProfile"
+		Text="Load/Cast Card"
+		ButtonType="PushButton"
+		command="Gui_Pause_Menu.Gui_Button_Pause_Menu_Cast_Card();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="328 360"
+		Extent="140 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+
+	<!-- Cards -->
+	<GuiScrollCtrl
+			Name="Gui_Scroller_Pause_Menu_Cards"
+			canSaveDynamicFields="1"
+			isContainer="1"
+			Profile="GuiLightScrollProfile"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="300 140"
+			Extent="200 200"
+			MinExtent="1 1"
+			canSave="1"
+			Visible="1"
+			Active="1"
+			hovertime="1000"
+			willFirstRespond="1"
+			hScrollBar="dynamic"
+			vScrollBar="dynamic"
+			constantThumbHeight="0"
+			childMargin="2 3" >
+			
+				<GuiListBoxCtrl 
+					Name="Gui_List_Pause_Menu_Cards"
+					Profile="gui_list_profile_colored"
+					command=""
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="200 200"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
 
 </GuiControl>

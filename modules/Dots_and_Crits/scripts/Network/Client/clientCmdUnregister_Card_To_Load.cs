@@ -3,7 +3,7 @@
 function clientCmdUnregister_Card_To_Load(%Client,%Module_ID_Card)
 {
 
-if (!isObject($Simset_Cards_To_Load)){return;}
+if (!isObject($Simset_Cards_To_Load)){echo("Simset_Cards_To_Load doesn't exist.");return;}
 
 for (%x=0;%x<$Simset_Cards_To_Load.getCount();%x++)
 {
