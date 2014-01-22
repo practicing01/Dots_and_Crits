@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Ball"
+    Image="@asset=Module_Card_Ball:Image_Ball"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
