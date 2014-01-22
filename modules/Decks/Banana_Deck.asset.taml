@@ -77,5 +77,8 @@
     <ScriptObject
         Card_Slot_Position="678 230"
         Module_ID_Card="Module_Card_Throw_Object" />
+    <ScriptObject
+        Card_Slot_Position="678 180"
+        Module_ID_Card="Module_Card_Distance_Joint" />
 </SimSet>
 
