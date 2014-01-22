@@ -86,5 +86,14 @@
     <ScriptObject
         Card_Slot_Position="528 50"
         Module_ID_Card="Module_Card_Weld_Joint" />
+    <ScriptObject
+        Card_Slot_Position="478 50"
+        Module_ID_Card="Module_Card_Wall_Tile" />
+    <ScriptObject
+        Card_Slot_Position="428 50"
+        Module_ID_Card="Module_Card_Rotate_Object" />
+    <ScriptObject
+        Card_Slot_Position="378 50"
+        Module_ID_Card="Module_Card_Position_Object" />
 </SimSet>
 

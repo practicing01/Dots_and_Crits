@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Wall_Tile"
+    ImageFile="Wall_Tile.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="1024"
+    CellHeight="1024"
+	Optimal_Resolution="1280 800"/>

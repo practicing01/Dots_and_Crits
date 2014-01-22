@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Wall_Tile"
+    Image="@asset=Module_Card_Wall_Tile:Image_Wall_Tile"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
