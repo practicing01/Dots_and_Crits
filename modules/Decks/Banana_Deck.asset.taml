@@ -80,5 +80,11 @@
     <ScriptObject
         Card_Slot_Position="678 180"
         Module_ID_Card="Module_Card_Distance_Joint" />
+    <ScriptObject
+        Card_Slot_Position="578 50"
+        Module_ID_Card="Module_Card_Rope_Joint" />
+    <ScriptObject
+        Card_Slot_Position="528 50"
+        Module_ID_Card="Module_Card_Weld_Joint" />
 </SimSet>
 

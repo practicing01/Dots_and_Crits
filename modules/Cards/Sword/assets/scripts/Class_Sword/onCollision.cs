@@ -1,7 +1,7 @@
 function Class_Sword::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
-if (!%this.Visible){return;}
+if (!%this.Enabled){return;}
 
 if (%Colliding_Object.class$="Class_Composite_Sprite_Player"
 &&%Colliding_Object.Script_Object_Parent.Game_Connection_Handle!=%this.Game_Connection_Handle)

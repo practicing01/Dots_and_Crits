@@ -145,11 +145,19 @@ if (%Player_Object.Sprite_Sword.Visible)
 
 %Player_Object.Sprite_Sword.Visible=false;
 
+%Player_Object.Sprite_Sword.setEnabled(false);
+
+%Player_Object.Scene_Object_Anchor.setEnabled(false);
+
 }
 else
 {
 
 %Player_Object.Sprite_Sword.Visible=true;
+
+%Player_Object.Sprite_Sword.setEnabled(true);
+
+%Player_Object.Scene_Object_Anchor.setEnabled(true);
 
 }
 

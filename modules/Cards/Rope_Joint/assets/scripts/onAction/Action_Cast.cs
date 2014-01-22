@@ -1,4 +1,4 @@
-function Module_Card_Distance_Joint::Action_Cast(%this,%Player_Information,
+function Module_Card_Rope_Joint::Action_Cast(%this,%Player_Information,
 %Bool_Type_Of_Object,
 %Player_Game_Connection_Or_Object_Module_ID,
 %Object_Game_Connection,
@@ -116,15 +116,15 @@ if (%Target_Player)
 if (%Target_Player_0)
 {
 
-Scene_Dots_and_Crits.createDistanceJoint(%Target_Player.Composite_Sprite,%Target_Player_0.Composite_Sprite,
-VectorDist(%Target_Player.Composite_Sprite.Position,%Target_Player_0.Composite_Sprite.Position),"0 0","0 0",0,1,false);
+Scene_Dots_and_Crits.createRopeJoint(%Target_Player.Composite_Sprite,%Target_Player_0.Composite_Sprite,
+"0 0","0 0",VectorDist(%Target_Player.Composite_Sprite.Position,%Target_Player_0.Composite_Sprite.Position),false);
 
 }
 else//%Scene_Object_0
 {
 
-Scene_Dots_and_Crits.createDistanceJoint(%Target_Player.Composite_Sprite,%Scene_Object_0,
-VectorDist(%Target_Player.Composite_Sprite.Position,%Scene_Object_0.Position),"0 0","0 0",0,1,false);
+Scene_Dots_and_Crits.createRopeJoint(%Target_Player.Composite_Sprite,%Scene_Object_0,
+"0 0","0 0",VectorDist(%Target_Player.Composite_Sprite.Position,%Scene_Object_0.Position),false);
 
 }
 
@@ -135,15 +135,15 @@ else//%Scene_Object
 if (%Target_Player_0)
 {
 
-Scene_Dots_and_Crits.createDistanceJoint(%Scene_Object,%Target_Player_0.Composite_Sprite,
-VectorDist(%Scene_Object.Position,%Target_Player_0.Composite_Sprite.Position),"0 0","0 0",0,1,false);
+Scene_Dots_and_Crits.createRopeJoint(%Scene_Object,%Target_Player_0.Composite_Sprite,
+"0 0","0 0",VectorDist(%Scene_Object.Position,%Target_Player_0.Composite_Sprite.Position),false);
 
 }
 else//%Scene_Object_0
 {
 
-Scene_Dots_and_Crits.createDistanceJoint(%Scene_Object,%Scene_Object_0,
-VectorDist(%Scene_Object.Position,%Scene_Object_0.Position),"0 0","0 0",0,1,false);
+Scene_Dots_and_Crits.createRopeJoint(%Scene_Object,%Scene_Object_0,
+"0 0","0 0",VectorDist(%Scene_Object.Position,%Scene_Object_0.Position),false);
 
 }
 
