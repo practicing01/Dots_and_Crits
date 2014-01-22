@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Card_Position_Object"
+	Type="Card"
+	VersionId="1"
+	Description="Position Object Card"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>
