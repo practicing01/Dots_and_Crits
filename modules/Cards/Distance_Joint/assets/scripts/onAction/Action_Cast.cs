@@ -116,15 +116,15 @@ if (%Target_Player)
 if (%Target_Player_0)
 {
 
-Scene_Dots_and_Crits.createDistanceJoint(%Target_Player.Composite_Sprite,%Target_Player_0.Composite_Sprite,
-VectorDist(%Target_Player.Composite_Sprite.Position,%Target_Player_0.Composite_Sprite.Position),"0 0","0 0",0,1,false);
+Scene_Dots_and_Crits.createDistanceJoint(%Target_Player.Player_Sprite_Data.Composite_Sprite,%Target_Player_0.Player_Sprite_Data.Composite_Sprite,
+Vector2Distance(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position,%Target_Player_0.Player_Sprite_Data.Composite_Sprite.Position),"0 0","0 0",0,1,false);
 
 }
 else//%Scene_Object_0
 {
 
-Scene_Dots_and_Crits.createDistanceJoint(%Target_Player.Composite_Sprite,%Scene_Object_0,
-VectorDist(%Target_Player.Composite_Sprite.Position,%Scene_Object_0.Position),"0 0","0 0",0,1,false);
+Scene_Dots_and_Crits.createDistanceJoint(%Target_Player.Player_Sprite_Data.Composite_Sprite,%Scene_Object_0,
+Vector2Distance(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position,%Scene_Object_0.Position),"0 0","0 0",0,1,false);
 
 }
 
@@ -135,15 +135,15 @@ else//%Scene_Object
 if (%Target_Player_0)
 {
 
-Scene_Dots_and_Crits.createDistanceJoint(%Scene_Object,%Target_Player_0.Composite_Sprite,
-VectorDist(%Scene_Object.Position,%Target_Player_0.Composite_Sprite.Position),"0 0","0 0",0,1,false);
+Scene_Dots_and_Crits.createDistanceJoint(%Scene_Object,%Target_Player_0.Player_Sprite_Data.Composite_Sprite,
+Vector2Distance(%Scene_Object.Position,%Target_Player_0.Player_Sprite_Data.Composite_Sprite.Position),"0 0","0 0",0,1,false);
 
 }
 else//%Scene_Object_0
 {
 
 Scene_Dots_and_Crits.createDistanceJoint(%Scene_Object,%Scene_Object_0,
-VectorDist(%Scene_Object.Position,%Scene_Object_0.Position),"0 0","0 0",0,1,false);
+Vector2Distance(%Scene_Object.Position,%Scene_Object_0.Position),"0 0","0 0",0,1,false);
 
 }
 
