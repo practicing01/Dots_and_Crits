@@ -5,6 +5,10 @@ function Module_Card_NPC_Wyvern::Ass_Load(%this)
 
 %this.Ass_Animation_Icon="Module_Card_NPC_Wyvern:Animation_Icon";
 
+%this.Ass_Image_NPC_Wyvern_Explosion=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Explosion");
+
+%this.Ass_Image_NPC_Wyvern_Fire_Ball=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Fire_Ball");
+
 %this.Ass_Image_NPC_Wyvern_Breath_Down=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Breath_Down");
 
 %this.Ass_Image_NPC_Wyvern_Breath_Down_Left=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Breath_Down_Left");
@@ -85,7 +89,7 @@ function Module_Card_NPC_Wyvern::Ass_Load(%this)
 
 %this.Ass_Image_NPC_Wyvern_Hover_Up_Right=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Hover_Up_Right");
 
-%this.Ass_Image_NPC_NPC_Wyvern_Ram_Down=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Ram_Down");
+%this.Ass_Image_NPC_Wyvern_Ram_Down=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Ram_Down");
 
 %this.Ass_Image_NPC_Wyvern_Ram_Down_Left=AssetDatabase.acquireAsset("Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Ram_Down_Left");
 

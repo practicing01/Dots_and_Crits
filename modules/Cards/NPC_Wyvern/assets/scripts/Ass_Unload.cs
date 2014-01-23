@@ -3,6 +3,10 @@ function Module_Card_NPC_Wyvern::Ass_Unload(%this)
 
 AssetDatabase.releaseAsset(%this.Ass_Image_Icon.getAssetId());
 
+AssetDatabase.releaseAsset(%this.Ass_Image_NPC_Wyvern_Explosion.getAssetId());
+
+AssetDatabase.releaseAsset(%this.Ass_Image_NPC_Wyvern_Fire_Ball.getAssetId());
+
 AssetDatabase.releaseAsset(%this.Ass_Image_NPC_Wyvern_Breath_Down.getAssetId());
 
 AssetDatabase.releaseAsset(%this.Ass_Image_NPC_Wyvern_Breath_Down_Left.getAssetId());

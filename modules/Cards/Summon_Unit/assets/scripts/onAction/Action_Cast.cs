@@ -67,7 +67,7 @@ Bool_Waiting_For_Attack=false;
 
 %Collision_Shape_Index=%Composite_Sprite_Summon_Unit.createPolygonBoxCollisionShape(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Summon_Unit_Stand_Down));
 
-%Composite_Sprite_Summon_Unit.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Composite_Sprite_Summon_Unit.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Composite_Sprite_Summon_Unit.setFixedAngle(true);
 

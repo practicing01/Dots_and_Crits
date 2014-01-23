@@ -45,9 +45,15 @@ Object_Index=%Object_Index;
 
 Health=100;
 
+Previous_Health=100;
+
 Simset_Colliding_Objects=0;
 
 Vector_2D_Direction="0 -1";//0=neutral, x=1=right x=-1=left, y=1=up y=-1=down
+
+Bool_Is_Moving=false;
+
+Schedule_AI=0;
 
 };
 
@@ -68,6 +74,16 @@ Vector_2D_Direction="0 -1";//0=neutral, x=1=right x=-1=left, y=1=up y=-1=down
 %Square_Size.Y/=3;
 
 %Radius=0;
+
+if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Square_Size.Y/2;}
+
+%Collision_Shape_Index=%Sprite_NPC_Wyvern.createCircleCollisionShape(%Radius);
+
+//%Sprite_NPC_Wyvern.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+
+%Square_Size.X*=6;
+
+%Square_Size.Y*=6;
 
 if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Square_Size.Y/2;}
 
@@ -94,5 +110,7 @@ Scene_Dots_and_Crits.add(%Sprite_NPC_Wyvern);
 %Sprite_NPC_Wyvern.Position=%Sprite_NPC_Wyvern.Position;
 
 %this.Simset_Objects.add(%Sprite_NPC_Wyvern);
+
+%Sprite_NPC_Wyvern.Schedule_AI=schedule(4000,0,"Class_NPC_Wyvern::Schedule_AI",%Sprite_NPC_Wyvern);
 
 }

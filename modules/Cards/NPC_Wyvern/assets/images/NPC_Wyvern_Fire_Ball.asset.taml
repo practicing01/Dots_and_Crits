@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_NPC_Wyvern_Fire_Ball"
+    ImageFile="NPC_Wyvern_Fire_Ball.png"
+	CellCountX="10"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	Optimal_Resolution="1280 800"/>

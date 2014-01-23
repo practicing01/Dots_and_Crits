@@ -1,6 +1,8 @@
 function Class_Deus_Ex_Telum_Mech::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
+if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,0))){return;}
+
 if (%this.Health<=0){return;}
 
 if (%Colliding_Object.class$="Class_Deus_Ex_Telum_Microwave"){return;}

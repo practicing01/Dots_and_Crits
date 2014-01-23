@@ -1,6 +1,8 @@
 function Class_Capturer_Object::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
+if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,0))){return;}
+
 if (%Colliding_Object.class$="Class_Capture_Object")
 {
 

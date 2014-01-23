@@ -1,6 +1,8 @@
 function Class_Bath_Salts_Monster::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
+if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,0))){return;}
+
 if (%this.Health<=0){return;}
 
 if (%Colliding_Object.class$="Class_Composite_Sprite_Player")

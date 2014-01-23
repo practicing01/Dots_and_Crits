@@ -58,7 +58,7 @@ if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Squar
 
 %Collision_Shape_Index=%Sprite_Bomb.createCircleCollisionShape(%Radius);
 
-%Sprite_Bomb.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Sprite_Bomb.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Vector_2D_Mount_Offset="0 0";
 

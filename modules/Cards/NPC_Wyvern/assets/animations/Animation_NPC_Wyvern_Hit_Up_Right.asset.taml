@@ -2,5 +2,5 @@
     AssetName="Animation_NPC_Wyvern_Hit_Up_Right"
     Image="@asset=Module_Card_NPC_Wyvern:Image_NPC_Wyvern_Hit_Up_Right"
     AnimationFrames="0 1 2 3 4 5 6 7"
-    AnimationCycle="true"
+    AnimationCycle="false"
 	AnimationTime="1.0" />

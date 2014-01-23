@@ -56,7 +56,7 @@ Health=100;
 
 %Collision_Shape_Index=%Sprite_Shield.createPolygonBoxCollisionShape(%Square_Size);
 
-%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Vector_2D_Mount_Offset="0 0";
 
@@ -138,7 +138,7 @@ Health=100;
 
 %Collision_Shape_Index=%Sprite_Shield.createPolygonBoxCollisionShape(%Square_Size);
 
-%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Vector_2D_Mount_Offset="0 0";
 
@@ -220,7 +220,7 @@ Health=100;
 
 %Collision_Shape_Index=%Sprite_Shield.createPolygonBoxCollisionShape(%Square_Size);
 
-%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Vector_2D_Mount_Offset="0 0";
 
@@ -302,7 +302,7 @@ Health=100;
 
 %Collision_Shape_Index=%Sprite_Shield.createPolygonBoxCollisionShape(%Square_Size);
 
-%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Sprite_Shield.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
 %Vector_2D_Mount_Offset="0 0";
 
