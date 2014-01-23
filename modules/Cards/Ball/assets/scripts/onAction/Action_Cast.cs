@@ -33,8 +33,7 @@ Animation="Module_Card_Ball:Animation_Ball";
 class="Class_Ball";
 CollisionCallback="true";
 SceneLayer=16;
-DefaultDensity=0;
-DefaultRestitution=1;
+DefaultRestitution=1.0;
 
 SceneGroup=26;//Dynamic world objects.
 

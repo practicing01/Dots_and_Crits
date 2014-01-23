@@ -33,8 +33,6 @@ Animation="Module_Card_Wall_Tile:Animation_Wall_Tile";
 class="Class_Wall_Tile";
 CollisionCallback="true";
 SceneLayer=16;
-DefaultDensity=0;
-DefaultRestitution=1;
 BodyType="static";
 
 SceneGroup=26;//Dynamic world objects.

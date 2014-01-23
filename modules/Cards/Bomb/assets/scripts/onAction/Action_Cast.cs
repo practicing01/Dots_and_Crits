@@ -33,8 +33,6 @@ Frame=0;
 class="Class_Bomb";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SceneGroup=26;//Dynamic world objects.
 

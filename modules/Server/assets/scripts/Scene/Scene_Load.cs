@@ -2,6 +2,7 @@ exec("./Ass_Load.cs");
 exec("./Ass_Unload.cs");
 exec("./../Server_Connect.cs");
 exec("./../Server_Heartbeat.cs");
+exec("./../Server_Pass_AI_Token.cs");
 exec("./Initialize_Variables.cs");
 exec("./Scene_Initialize.cs");
 exec("./../Buttons/Buttons.cs");

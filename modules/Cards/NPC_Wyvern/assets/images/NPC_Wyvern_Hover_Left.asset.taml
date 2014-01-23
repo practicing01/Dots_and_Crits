@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_NPC_Wyvern_Hover_Left"
+    ImageFile="NPC_Wyvern_Hover_Left.png"
+	CellCountX="8"
+    CellCountY="1"
+    CellWidth="256"
+    CellHeight="256"
+	Optimal_Resolution="1280 800"/>

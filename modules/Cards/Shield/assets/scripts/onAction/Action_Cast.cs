@@ -33,8 +33,6 @@ Animation="Module_Card_Shield:Animation_Shield";
 class="Class_Shield";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SleepingAllowed=false;
 
@@ -117,8 +115,6 @@ Animation="Module_Card_Shield:Animation_Shield";
 class="Class_Shield";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SleepingAllowed=false;
 
@@ -201,8 +197,6 @@ Animation="Module_Card_Shield:Animation_Shield";
 class="Class_Shield";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SleepingAllowed=false;
 
@@ -285,8 +279,6 @@ Animation="Module_Card_Shield:Animation_Shield";
 class="Class_Shield";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SleepingAllowed=false;
 

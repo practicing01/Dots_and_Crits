@@ -32,8 +32,6 @@ Image="Module_Card_Mushroom:Image_Mushroom";
 class="Class_Mushroom";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SceneGroup=26;//Dynamic world objects.
 
@@ -95,8 +93,6 @@ Animation="Module_Card_Mushroom:Animation_Rain_Drops";
 class="Class_Mushroom";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SceneGroup=26;//Dynamic world objects.
 

@@ -9,6 +9,8 @@ Dots_and_Crits.Game_Connection_Delete($GameConnection_Connection);
 
 $Bool_Is_Local_Connection=true;
 
+$Bool_A_I_Token_Bearer=true;
+
 allowConnections(true);
 
 setNetPort(9003);

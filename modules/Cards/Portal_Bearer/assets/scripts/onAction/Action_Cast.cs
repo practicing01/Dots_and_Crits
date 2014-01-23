@@ -230,8 +230,6 @@ Angle=(Vector2AngleToPoint(%Player_Object.Sprite_Portal_Bearer.Position,%World_P
 class="Class_Portal_Bearer_Projectile";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SceneGroup=26;//Dynamic world objects.
 
@@ -314,8 +312,6 @@ Angle=(Vector2AngleToPoint(%Player_Object.Sprite_Portal_Bearer.Position,%World_P
 class="Class_Portal_Bearer_Projectile";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SceneGroup=26;//Dynamic world objects.
 

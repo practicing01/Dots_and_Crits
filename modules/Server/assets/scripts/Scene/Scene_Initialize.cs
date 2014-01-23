@@ -23,7 +23,8 @@ $GameConnection_Connection.setConnectArgs
 
 %this.Server_Connect();
 
-schedule(60000,0,"Module_Server::Server_Heartbeat",%this);
+schedule(10000,0,"Module_Server::Server_Heartbeat",%this);
+schedule(10000,0,"Module_Server::Server_Pass_AI_Token",%this);
 
 }
 

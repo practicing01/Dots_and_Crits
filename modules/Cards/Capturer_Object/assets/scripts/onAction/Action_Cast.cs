@@ -33,8 +33,6 @@ Animation="Module_Card_Capturer_Object:Animation_Capturer_Object_Idle";
 class="Class_Capturer_Object";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 BodyType="static";
 

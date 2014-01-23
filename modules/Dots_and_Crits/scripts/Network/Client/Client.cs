@@ -12,3 +12,4 @@ exec("./clientCmdRegister_Play.cs");
 exec("./clientCmdUnregister_Card_To_Load.cs");
 exec("./clientCmdRelay_Module_Function.cs");
 exec("./clientCmdHeartbeat.cs");
+exec("./clientCmdRegister_AI_Token.cs");

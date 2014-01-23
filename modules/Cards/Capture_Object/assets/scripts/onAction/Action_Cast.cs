@@ -33,8 +33,6 @@ Animation="Module_Card_Capture_Object:Animation_Spawner_Idle";
 class="Class_Capture_Object_Spawner";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 BodyType="static";
 
@@ -92,8 +90,6 @@ Animation="Module_Card_Capture_Object:Animation_Capture_Object_Idle";
 class="Class_Capture_Object";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SleepingAllowed=false;
 

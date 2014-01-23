@@ -33,8 +33,6 @@ Animation="Module_Card_Kingless_Hill:Animation_Kingless_Hill";
 class="Class_Kingless_Hill";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SceneGroup=26;//Dynamic world objects.
 

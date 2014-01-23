@@ -19,6 +19,8 @@ if (%this.Connector_Type$="Client")
 %this.Is_Playing=false;
 %this.Simset_Cards_To_Load=new SimSet();
 
+%this.Bool_A_I_Token_Bearer=false;
+
 }
 
 if (!$Bool_Is_Master_Server)

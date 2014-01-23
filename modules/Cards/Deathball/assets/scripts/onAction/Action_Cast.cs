@@ -33,8 +33,6 @@ Animation="Module_Card_Deathball:Animation_Deathball_Run_Up";
 class="Class_Deathball";
 CollisionCallback="true";
 SceneLayer=16;
-//DefaultDensity=0;
-//DefaultRestitution=1;
 
 SceneGroup=26;//Dynamic world objects.
 

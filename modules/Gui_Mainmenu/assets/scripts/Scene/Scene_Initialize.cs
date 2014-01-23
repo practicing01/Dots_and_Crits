@@ -68,6 +68,8 @@ $Simset_Cards_To_Load=new SimSet();
 
 $Bool_Is_Local_Connection=false;
 
+$Bool_A_I_Token_Bearer=false;
+
 /*No prototype for Gui_List_Servers, naughty code :y */
 Gui_List_Servers.clearItems();
 
