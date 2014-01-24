@@ -27,7 +27,7 @@ if (%Target_Player==0){return;}
 {
 
 class="Class_Summon_Unit";
-CollisionCallback="true";
+//CollisionCallback="true";
 SceneGroup=25;//25=npcs
 SceneLayer=16;
 

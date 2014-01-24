@@ -248,7 +248,7 @@ if (%Sprite_Unit.Current_Speed>0)
 else
 {
 
-%this.onMoveToComplete();
+%Sprite_Unit.onMoveToComplete();
 
 }
 

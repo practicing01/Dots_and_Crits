@@ -9,7 +9,7 @@ if (getWordCount(%String_List_Picked_Objects)==0){return;}
 
 %Object=getWord(%String_List_Picked_Objects,0);
 
-if (%Object.SceneGroup==0)//Player
+if (%Object.class$="Class_Sprite_Player")
 {
 
 commandToServer('Relay_Module_Function',Module_Player_Sprite_Lelur,"Action_Attack",

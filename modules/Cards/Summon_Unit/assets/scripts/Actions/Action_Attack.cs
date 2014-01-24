@@ -322,14 +322,6 @@ getRandom(0,%Script_Object_Player.Simset_Animation_Stand_Melee_Down_Left.getCoun
 
 /*******************************************************************/
 
-//Schedule a reset of animations so the attack animation doesn't loop.
-
-//cancel(%Script_Object_Player.Sprite.Schedule_Animation_Reset);
-
-//%Script_Object_Player.Sprite.Schedule_Animation_Reset=schedule(2000,0,%Script_Object_Player.Sprite.Module_ID_Parent @ "::Animation_Reset",%Script_Object_Player.Sprite.Module_ID_Parent,%Script_Object_Player);
-
-/*******************************************************************/
-
 //Animate Unit
 
 if (%Sprite_Unit.Bool_Is_Mobile)
@@ -626,14 +618,6 @@ getRandom(0,%Sprite_Unit.Simset_Animation_Stand_Melee_Down_Left.getCount()-1)
 }
 
 }
-
-/*******************************************************************/
-
-//Schedule a reset of animations so the attack animation doesn't loop.
-
-//cancel(%Sprite_Unit.Schedule_Animation_Reset);
-
-//%Sprite_Unit.Schedule_Animation_Reset=schedule(2000,0,"Class_Summon_Unit::Animation_Reset",%Sprite_Unit);
 
 /*******************************************************************/
 

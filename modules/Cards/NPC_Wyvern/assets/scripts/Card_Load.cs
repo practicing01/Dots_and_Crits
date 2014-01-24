@@ -6,6 +6,7 @@ exec("./Relay_Module_Function.cs");
 exec("./Card_Cast.cs");
 exec("./Input_Touch/Input_Touch.cs");
 exec("./onAction/Actions.cs");
+exec("./Actions/Actions.cs");
 exec("./Class_NPC_Wyvern/Class_NPC_Wyvern.cs");
 
 function Module_Card_NPC_Wyvern::Card_Load(%this)

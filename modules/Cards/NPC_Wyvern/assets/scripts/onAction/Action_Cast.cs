@@ -34,6 +34,7 @@ class="Class_NPC_Wyvern";
 CollisionCallback="true";
 SceneLayer=14;
 FixedAngle=true;
+LinearDamping=1;
 
 SceneGroup=26;//Dynamic world objects.
 
@@ -54,6 +55,16 @@ Vector_2D_Direction="0 -1";//0=neutral, x=1=right x=-1=left, y=1=up y=-1=down
 Bool_Is_Moving=false;
 
 Schedule_AI=0;
+
+Linear_Damping=1;
+
+Base_Speed=10;
+
+Current_Speed=10;
+
+Base_Attack=20;
+
+Current_Attack=20;
 
 };
 

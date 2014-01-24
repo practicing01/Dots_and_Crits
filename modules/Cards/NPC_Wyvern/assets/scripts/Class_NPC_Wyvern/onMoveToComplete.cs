@@ -1,4 +1,4 @@
-function Class_Summon_Unit::onMoveToComplete(%this)
+function Class_NPC_Wyvern::onMoveToComplete(%this)
 {
 
 %this.Bool_Is_Mobile=false;
@@ -13,6 +13,6 @@ commandToServer('Relay_Module_Function',%this.Module_ID_Parent,"Action_Position"
 
 }
 
-%this.Animation_Reset();
+%this.Animation_Set("Hover");
 
 }

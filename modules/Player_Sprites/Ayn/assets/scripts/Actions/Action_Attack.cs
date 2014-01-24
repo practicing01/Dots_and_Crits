@@ -300,14 +300,6 @@ getRandom(0,%Player_Information.Simset_Animation_Stand_Melee_Down_Left.getCount(
 
 /*******************************************************************/
 
-//Schedule a reset of animations so the attack animation doesn't loop.
-
-//cancel(%Player_Information.Schedule_Animation_Reset);
-
-//%Player_Information.Schedule_Animation_Reset=schedule(2000,0,"Module_Player_Sprite_Ayn::Animation_Reset",%this,%Player_Information);
-
-/*******************************************************************/
-
 //Go through object's module if the object exists based on game connection handle.
 
 if (!isObject(%Object_Module_ID)){return;}

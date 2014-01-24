@@ -1,7 +1,12 @@
 function Class_Summon_Unit::onRemove(%this)
 {
 
+if (isObject(%this.Gui_Menu))
+{
+
 %this.Gui_Menu.delete();
+
+}
 
 %this.Simset_Animation_Stand_Up.deleteObjects();
 %this.Simset_Animation_Stand_Up_Right.deleteObjects();

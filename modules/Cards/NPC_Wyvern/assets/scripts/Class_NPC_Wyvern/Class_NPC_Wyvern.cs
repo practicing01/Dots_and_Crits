@@ -6,3 +6,4 @@ exec("./onEndCollision.cs");
 exec("./Animation_Set.cs");
 exec("./onAnimationEnd.cs");
 exec("./Schedule_AI.cs");
+exec("./onMoveToComplete.cs");
