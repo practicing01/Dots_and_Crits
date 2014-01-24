@@ -126,7 +126,9 @@ return;
    
 Scene_Destroy_Dots_and_Crits();
 
-%Scene.setName("Scene_Dots_and_Crits");    
+%Scene.setName("Scene_Dots_and_Crits");
+
+//%Scene.class="Class_Scene_Dots_and_Crits";
 
 Scene_Set_To_Window();
 
@@ -134,15 +136,11 @@ Scene_Set_To_Window();
 
 //-----------------------------------------------------------------------------
 
-function Scene_Dots_and_Crits::onCollision(%this, %sceneObjectA, %sceneObjectB, %collisionDetails)
+/*function Class_Scene_Dots_and_Crits::onSceneCollision(%this,%Scene_Object_0,%Scene_Object_1,%Collision_Details)
 {
-    if (%sceneObjectA.isMethod(handleCollision))
-        %sceneObjectA.handleCollision(%sceneObjectB, %collisionDetails);
-    else
-        %sceneObjectA.callOnBehaviors(handleCollision, %sceneObjectB, %collisionDetails);
 
-    if (%sceneObjectB.isMethod(handleCollision))
-        %sceneObjectB.handleCollision(%sceneObjectA, %collisionDetails);
-    else
-        %sceneObjectB.callOnBehaviors(handleCollision, %sceneObjectA, %collisionDetails);
-}
+echo(%Scene_Object_0.class);
+
+echo(%Scene_Object_1.class);
+
+}*/

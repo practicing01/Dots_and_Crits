@@ -1,9 +1,9 @@
 function Class_NPC_Wyvern::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
-if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,0))){return;}
+if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,1))){return;}
 
-if (%this.getCollisionShapeIsSensor(getWord(%Collision_Details,1)))
+if (%this.getCollisionShapeIsSensor(getWord(%Collision_Details,0)))
 {
 
 for (%x=0;%x<%this.Simset_Colliding_Objects.getCount();%x++)
@@ -31,6 +31,9 @@ if (%Colliding_Object.SceneGroup!=30)//Walls
 else
 {
 
+if ($Bool_A_I_Token_Bearer)
+{
+
 if (%Colliding_Object.SceneGroup!=30)//Walls
 {
 
@@ -46,6 +49,8 @@ else
 
 commandToServer('Relay_Module_Function',Module_Card_NPC_Wyvern,"Action_Attack",
 %Colliding_Object.Module_ID_Parent,%Colliding_Object.Game_Connection_Handle,%Colliding_Object.Object_Index,%this.Object_Index,0);
+
+}
 
 }
 

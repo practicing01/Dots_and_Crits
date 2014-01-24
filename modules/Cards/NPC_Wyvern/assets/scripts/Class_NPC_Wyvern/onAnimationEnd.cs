@@ -3,7 +3,7 @@ function Class_NPC_Wyvern::onAnimationEnd(%this)
 
 if (%this.Health<=0){return;}
 
-if (%this.Bool_Is_Moving)
+if (%this.Bool_Is_Mobile)
 {
 
 %this.Animation_Set("Fly");
