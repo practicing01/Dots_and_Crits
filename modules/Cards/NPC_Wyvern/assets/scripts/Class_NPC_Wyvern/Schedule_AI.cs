@@ -4,17 +4,25 @@ function Class_NPC_Wyvern::Schedule_AI(%this)
 if ($Bool_A_I_Token_Bearer)
 {
 
-for (%x=0;%x<%this.Simset_Colliding_Objects.getCount();%x++)
+if (%this.Simset_Colliding_Objects.getCount())
 {
 
-%Collided_Object=%this.Simset_Colliding_Objects.getObject(%x);
+%Collided_Object=%this.Simset_Colliding_Objects.getObject(0);//First in, first to die :D.
 
 //breath ram sting
+%Random_Attack=getRandom(0,2);
+
+if (%Random_Attack==0)
+{
+
+
 
 }
 
 }
 
-%this.Schedule_AI=schedule(4000,0,"Class_NPC_Wyvern::Schedule_AI",%this);
+}
+
+%this.Schedule_AI=schedule(2000,0,"Class_NPC_Wyvern::Schedule_AI",%this);
 
 }

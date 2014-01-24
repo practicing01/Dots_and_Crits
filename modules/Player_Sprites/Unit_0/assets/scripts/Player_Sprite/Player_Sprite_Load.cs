@@ -7,6 +7,7 @@ exec("./../../gui/Gui.cs");
 exec("./Player_Sprite_Spawn.cs");
 exec("./Player_Sprite_Data_Remove.cs");
 exec("./../Animation_Reset/Animation_Reset.cs");
+exec("./../onAnimationEnd/onAnimationEnd.cs");
 exec("./Relay_Module_Function.cs");
 exec("./../Actions/Actions.cs");
 exec("./../Input_Touch/Input_Touch.cs");

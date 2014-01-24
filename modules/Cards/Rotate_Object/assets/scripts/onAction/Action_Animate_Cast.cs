@@ -27,7 +27,7 @@ if (%Target_Player.Bool_Is_Mobile)
 if (%Target_Player.Vector_2D_Direction.X==0&&%Target_Player.Vector_2D_Direction.Y==0)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Down.getObject
 (
@@ -43,7 +43,7 @@ else if (%Target_Player.Vector_2D_Direction.Y==0)
 if (%Target_Player.Vector_2D_Direction.X==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Right.getObject
 (
@@ -56,7 +56,7 @@ getRandom(0,%Target_Player.Simset_Animation_Run_Cast_Self_Right.getCount()-1)
 else if (%Target_Player.Vector_2D_Direction.X==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Left.getObject
 (
@@ -74,7 +74,7 @@ else if (%Target_Player.Vector_2D_Direction.X==0)
 if (%Target_Player.Vector_2D_Direction.Y==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Up.getObject
 (
@@ -87,7 +87,7 @@ getRandom(0,%Target_Player.Simset_Animation_Run_Cast_Self_Up.getCount()-1)
 else if (%Target_Player.Vector_2D_Direction.Y==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Down.getObject
 (
@@ -108,7 +108,7 @@ if (%Target_Player.Vector_2D_Direction.X==1)
 if (%Target_Player.Vector_2D_Direction.Y==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Up_Right.getObject
 (
@@ -121,7 +121,7 @@ getRandom(0,%Target_Player.Simset_Animation_Run_Cast_Self_Up_Right.getCount()-1)
 else if (%Target_Player.Vector_2D_Direction.Y==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Down_Right.getObject
 (
@@ -139,7 +139,7 @@ else if (%Target_Player.Vector_2D_Direction.X==-1)
 if (%Target_Player.Vector_2D_Direction.Y==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Up_Left.getObject
 (
@@ -152,7 +152,7 @@ getRandom(0,%Target_Player.Simset_Animation_Run_Cast_Self_Up_Left.getCount()-1)
 else if (%Target_Player.Vector_2D_Direction.Y==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Run_Cast_Self_Down_Left.getObject
 (
@@ -174,7 +174,7 @@ else
 if (%Target_Player.Vector_2D_Direction.X==0&&%Target_Player.Vector_2D_Direction.Y==0)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Down.getObject
 (
@@ -190,7 +190,7 @@ else if (%Target_Player.Vector_2D_Direction.Y==0)
 if (%Target_Player.Vector_2D_Direction.X==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Right.getObject
 (
@@ -203,7 +203,7 @@ getRandom(0,%Target_Player.Simset_Animation_Stand_Cast_Self_Right.getCount()-1)
 else if (%Target_Player.Vector_2D_Direction.X==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Left.getObject
 (
@@ -221,7 +221,7 @@ else if (%Target_Player.Vector_2D_Direction.X==0)
 if (%Target_Player.Vector_2D_Direction.Y==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Up.getObject
 (
@@ -234,7 +234,7 @@ getRandom(0,%Target_Player.Simset_Animation_Stand_Cast_Self_Up.getCount()-1)
 else if (%Target_Player.Vector_2D_Direction.Y==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Down.getObject
 (
@@ -255,7 +255,7 @@ if (%Target_Player.Vector_2D_Direction.X==1)
 if (%Target_Player.Vector_2D_Direction.Y==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Up_Right.getObject
 (
@@ -268,7 +268,7 @@ getRandom(0,%Target_Player.Simset_Animation_Stand_Cast_Self_Up_Right.getCount()-
 else if (%Target_Player.Vector_2D_Direction.Y==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Down_Right.getObject
 (
@@ -286,7 +286,7 @@ else if (%Target_Player.Vector_2D_Direction.X==-1)
 if (%Target_Player.Vector_2D_Direction.Y==1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Up_Left.getObject
 (
@@ -299,7 +299,7 @@ getRandom(0,%Target_Player.Simset_Animation_Stand_Cast_Self_Up_Left.getCount()-1
 else if (%Target_Player.Vector_2D_Direction.Y==-1)
 {
 
-%Target_Player.Composite_Sprite.setSpriteAnimation
+%Target_Player.Sprite.playAnimation
 (
 %Target_Player.Simset_Animation_Stand_Cast_Self_Down_Left.getObject
 (
@@ -318,8 +318,8 @@ getRandom(0,%Target_Player.Simset_Animation_Stand_Cast_Self_Down_Left.getCount()
 
 //Schedule animation reset.
 
-cancel(%Target_Player.Schedule_Animation_Reset);
+//cancel(%Target_Player.Schedule_Animation_Reset);
 
-%Target_Player.Schedule_Animation_Reset=schedule(2000,0,%Target_Player.Composite_Sprite.Module_ID_Parent@"::Animation_Reset",%Target_Player.Composite_Sprite.Module_ID_Parent,%Target_Player);
+//%Target_Player.Schedule_Animation_Reset=schedule(2000,0,%Target_Player.Sprite.Module_ID_Parent@"::Animation_Reset",%Target_Player.Sprite.Module_ID_Parent,%Target_Player);
 
 }

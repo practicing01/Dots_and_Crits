@@ -38,13 +38,13 @@ if (%Player_Data.Is_Playing)
 
 //Delete old sprite.
 
-%Sprite_Position=%Player_Data.Player_Sprite_Data.Composite_Sprite.Position;
+%Sprite_Position=%Player_Data.Player_Sprite_Data.Sprite.Position;
 
 %Player_Data.Player_Sprite_Data.Scene_Object_Mount.dismount();
 
 %Player_Data.Player_Sprite_Data.Scene_Object_Mount.safeDelete();
 
-%Player_Data.Player_Sprite_Data.Composite_Sprite.safeDelete();
+%Player_Data.Player_Sprite_Data.Sprite.safeDelete();
 
 for (%y=0;%y<%Player_Data.getDynamicFieldCount();%y++)
 {
@@ -67,13 +67,13 @@ if (%Dynamic_Field.getClassName()$="Simset")
 
 %Player_Data.Player_Sprite_Data=%Player_Data.Module_ID_Player_Sprite.Player_Sprite_Spawn(%Script_Object_Player_Data.Game_Connection_Handle);
 
-Scene_Dots_and_Crits.add(%Player_Data.Player_Sprite_Data.Composite_Sprite);
+Scene_Dots_and_Crits.add(%Player_Data.Player_Sprite_Data.Sprite);
 
-%Player_Data.Player_Sprite_Data.Composite_Sprite.Position=%Sprite_Position;
+%Player_Data.Player_Sprite_Data.Sprite.Position=%Sprite_Position;
 
 Scene_Dots_and_Crits.add(%Player_Data.Player_Sprite_Data.Scene_Object_Mount);
 
-%Player_Data.Player_Sprite_Data.Scene_Object_Mount.mount(%Player_Data.Player_Sprite_Data.Composite_Sprite,"0 0",0,true,-1);
+%Player_Data.Player_Sprite_Data.Scene_Object_Mount.mount(%Player_Data.Player_Sprite_Data.Sprite,"0 0",0,true,-1);
 
 }
 
@@ -108,13 +108,13 @@ if (%Player_Data.Is_Playing)
 
 //Delete old sprite.
 
-%Sprite_Position=%Player_Data.Player_Sprite_Data.Composite_Sprite.Position;
+%Sprite_Position=%Player_Data.Player_Sprite_Data.Sprite.Position;
 
 %Player_Data.Player_Sprite_Data.Scene_Object_Mount.dismount();
 
 %Player_Data.Player_Sprite_Data.Scene_Object_Mount.safeDelete();
 
-%Player_Data.Player_Sprite_Data.Composite_Sprite.safeDelete();
+%Player_Data.Player_Sprite_Data.Sprite.safeDelete();
 
 for (%y=0;%y<%Player_Data.getDynamicFieldCount();%y++)
 {
@@ -137,13 +137,13 @@ if (%Dynamic_Field.getClassName()$="Simset")
 
 %Player_Data.Player_Sprite_Data=%Player_Data.Module_ID_Player_Sprite.Player_Sprite_Spawn(%Script_Object_Player_Data.Game_Connection_Handle);
 
-Scene_Dots_and_Crits.add(%Player_Data.Player_Sprite_Data.Composite_Sprite);
+Scene_Dots_and_Crits.add(%Player_Data.Player_Sprite_Data.Sprite);
 
-%Player_Data.Player_Sprite_Data.Composite_Sprite.Position=%Sprite_Position;
+%Player_Data.Player_Sprite_Data.Sprite.Position=%Sprite_Position;
 
 Scene_Dots_and_Crits.add(%Player_Data.Player_Sprite_Data.Scene_Object_Mount);
 
-%Player_Data.Player_Sprite_Data.Scene_Object_Mount.mount(%Player_Data.Player_Sprite_Data.Composite_Sprite,"0 0",0,true,-1);
+%Player_Data.Player_Sprite_Data.Scene_Object_Mount.mount(%Player_Data.Player_Sprite_Data.Sprite,"0 0",0,true,-1);
 
 }
 

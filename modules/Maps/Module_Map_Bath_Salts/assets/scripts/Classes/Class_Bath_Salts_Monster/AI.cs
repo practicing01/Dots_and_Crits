@@ -5,13 +5,13 @@ if (!isObject(%this)){return;}
 
 //Check if player is close.
 
-if (Vector2Distance(%this.Position,$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position)
+if (Vector2Distance(%this.Position,$ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position)
 <=Vector2Distance("0 0",%this.Scaled_Resolution))
 {
 
 /************************************************************/
 
-%Float_Angle_To_Point=Vector2AngleToPoint(%this.Position,$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position);
+%Float_Angle_To_Point=Vector2AngleToPoint(%this.Position,$ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position);
 
 %Float_Angle_To_Point=(%Float_Angle_To_Point+360)%360;
 
@@ -65,7 +65,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Up_Right"
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 else if (%Float_Angle_To_Point>67.5&&%Float_Angle_To_Point<=112.5)//Down
@@ -118,7 +118,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Up")
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 else if (%Float_Angle_To_Point>112.5&&%Float_Angle_To_Point<=157.5)//Down-Right
@@ -171,7 +171,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Up_Left")
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 else if (%Float_Angle_To_Point>157.5&&%Float_Angle_To_Point<=202.5)//Right
@@ -224,7 +224,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Left")
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 else if (%Float_Angle_To_Point>202.5&&%Float_Angle_To_Point<=247.5)//Up-Right
@@ -277,7 +277,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Down_Left
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 else if (%Float_Angle_To_Point>247.5&&%Float_Angle_To_Point<=292.5)//Up
@@ -330,7 +330,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Down")
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 else if (%Float_Angle_To_Point>292.5&&%Float_Angle_To_Point<=337.5)//Up-Left
@@ -383,7 +383,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Down_Righ
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 else if (%Float_Angle_To_Point>337.5&&%Float_Angle_To_Point<=22.5)//Left
@@ -436,7 +436,7 @@ if (%this.Animation!$="Module_Map_Bath_Salts:Animation_Thin_Zombie_Run_Right")
 
 }
 
-%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite.Position,%this.Current_Speed,true,false);
+%this.moveTo($ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite.Position,%this.Current_Speed,true,false);
 
 }
 

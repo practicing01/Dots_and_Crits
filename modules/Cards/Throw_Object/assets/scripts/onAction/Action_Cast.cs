@@ -29,9 +29,9 @@ break;
 
 if (%Target_Player==0){return;}
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setLinearDamping(0);
+%Target_Player.Player_Sprite_Data.Sprite.setLinearDamping(0);
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.moveTo(%Vector_2D_Position,100,true,false);
+%Target_Player.Player_Sprite_Data.Sprite.moveTo(%Vector_2D_Position,100,true,false);
 
 }
 else

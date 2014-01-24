@@ -24,7 +24,7 @@ for (%x=0;%x<getWordCount(%String_List_Picked_Objects);%x++)
 
 %Object=getWord(%String_List_Picked_Objects,%x);
 
-if (%Object.class$="Class_Composite_Sprite_Player")
+if (%Object.class$="Class_Sprite_Player")
 {
 
 %Object.Module_ID_Parent.Action_Update_Health(%Object.Script_Object_Parent,%Object.Script_Object_Parent.Game_Connection_Handle,1,10);

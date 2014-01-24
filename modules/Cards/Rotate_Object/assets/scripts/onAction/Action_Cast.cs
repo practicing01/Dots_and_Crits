@@ -29,7 +29,7 @@ break;
 
 if (%Target_Player==0){return;}
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.Angle=(%Target_Player.Player_Sprite_Data.Composite_Sprite.Angle+45)%360;
+%Target_Player.Player_Sprite_Data.Sprite.Angle=(%Target_Player.Player_Sprite_Data.Sprite.Angle+45)%360;
 
 }
 else

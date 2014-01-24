@@ -127,7 +127,7 @@ return;
 
 %Vector_2D_Grab_Size=%Player_Object.Sprite_Grab.Size;
 
-%Vector_2D_Player_Size=%Target_Player.Player_Sprite_Data.Composite_Sprite.getSpriteSize();
+%Vector_2D_Player_Size=%Target_Player.Player_Sprite_Data.Sprite.getSize();
 
 %Vector_2D_Mount_Offset="0 0";
 

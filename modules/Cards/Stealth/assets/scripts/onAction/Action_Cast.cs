@@ -26,16 +26,16 @@ if (%Target_Player==0){return;}
 if (%Player_Sprite_Target_Game_Connection_Handle==$GameConnection_Serverside_Connection)
 {
 
-if (%Target_Player.Player_Sprite_Data.Composite_Sprite.getSpriteBlendAlpha()!=0.5)
+if (%Target_Player.Player_Sprite_Data.Sprite.getBlendAlpha()!=0.5)
 {
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(0.5);
+%Target_Player.Player_Sprite_Data.Sprite.setBlendAlpha(0.5);
 
 }
 else
 {
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(1.0);
+%Target_Player.Player_Sprite_Data.Sprite.setBlendAlpha(1.0);
 
 }
 
@@ -43,16 +43,16 @@ else
 else
 {
 
-if (%Target_Player.Player_Sprite_Data.Composite_Sprite.getSpriteBlendAlpha()!=0)
+if (%Target_Player.Player_Sprite_Data.Sprite.getBlendAlpha()!=0)
 {
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(0);
+%Target_Player.Player_Sprite_Data.Sprite.setBlendAlpha(0);
 
 }
 else
 {
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(1);
+%Target_Player.Player_Sprite_Data.Sprite.setBlendAlpha(1);
 
 }
 

@@ -3,7 +3,7 @@ function Module_Player_Sprite_Lelur::Gui_Menu_Config_Set_Animation(%this)
 
 if (%this.Gui_Menu_Config.Gui_Scroller_Lelur_Menu_Config_Objects.Gui_List_Lelur_Menu_Config_Objects.getSelectedItem()==-1){return;}
 
-%Script_Object_Player_Sprite=%this.Gui_Menu_Config.Composite_Sprite_Player_Parent.Script_Object_Parent;
+%Script_Object_Player_Sprite=%this.Gui_Menu_Config.Sprite_Player_Parent.Script_Object_Parent;
 
 %UInt_Selected_Animation=%this.Gui_Menu_Config.Gui_Scroller_Lelur_Menu_Config_Objects.Gui_List_Lelur_Menu_Config_Objects.getSelectedItem();
 

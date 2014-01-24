@@ -108,7 +108,7 @@ if (!%Bool_Already_Registered_For_Dismount)
 
 }
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(0);
+%Target_Player.Player_Sprite_Data.Sprite.setBlendAlpha(0);
 
 %Target_Player.Player_Sprite_Data.Current_Speed+=%Target_Player.Player_Sprite_Data.Base_Speed;
 
@@ -121,7 +121,7 @@ if (%Player_Object.Sprite_Vehicle_Orca.Visible)
 
 %Player_Object.Sprite_Vehicle_Orca.Visible=false;
 
-%Player_Object.Player_Information.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(1);
+%Player_Object.Player_Information.Player_Sprite_Data.Sprite.setBlendAlpha(1);
 
 %Player_Object.Player_Information.Player_Sprite_Data.Current_Speed-=%Player_Object.Player_Information.Player_Sprite_Data.Base_Speed;
 
@@ -131,7 +131,7 @@ else
 
 %Player_Object.Sprite_Vehicle_Orca.Visible=true;
 
-%Player_Object.Player_Information.Player_Sprite_Data.Composite_Sprite.setSpriteBlendAlpha(0);
+%Player_Object.Player_Information.Player_Sprite_Data.Sprite.setBlendAlpha(0);
 
 %Player_Object.Player_Information.Player_Sprite_Data.Current_Speed+=%Player_Object.Player_Information.Player_Sprite_Data.Base_Speed;
 

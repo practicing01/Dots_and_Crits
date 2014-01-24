@@ -1,7 +1,7 @@
-function Module_Player_Sprite_Gill_Balentine::Gui_Menu_Config_Create(%this,%Composite_Sprite_Player_Parent)
+function Module_Player_Sprite_Gill_Balentine::Gui_Menu_Config_Create(%this,%Sprite_Player_Parent)
 {
 
-%Script_Object_Player_Sprite=%Composite_Sprite_Player_Parent.Script_Object_Parent;
+%Script_Object_Player_Sprite=%Sprite_Player_Parent.Script_Object_Parent;
 
    %Gui_Menu_Config=new GuiWindowCtrl() {
       canSaveDynamicFields = "1";
@@ -33,7 +33,7 @@ function Module_Player_Sprite_Gill_Balentine::Gui_Menu_Config_Create(%this,%Comp
       
       Bool_Delete_Me="1";
       
-      Composite_Sprite_Player_Parent=%Composite_Sprite_Player_Parent;
+      Sprite_Player_Parent=%Sprite_Player_Parent;
       
    };
    

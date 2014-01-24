@@ -48,7 +48,7 @@ Health=100;
 
 %Sprite_Bomb.setCollisionGroups(0,25,26,30);
 
-%Vector_2D_Target_Player_Sprite_Size=%Target_Player.Player_Sprite_Data.Composite_Sprite.getSpriteSize();
+%Vector_2D_Target_Player_Sprite_Size=%Target_Player.Player_Sprite_Data.Sprite.getSize();
 
 %Square_Size=Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Bomb);
 

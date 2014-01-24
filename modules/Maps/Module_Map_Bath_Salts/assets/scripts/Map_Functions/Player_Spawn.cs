@@ -10,7 +10,7 @@ function Module_Map_Bath_Salts::Player_Spawn(%this,%Sprite_Player)
 if (%Player_Information.Game_Connection_Handle==$GameConnection_Serverside_Connection)
 {
 
-commandToServer('Relay_Module_Function',%Player_Information.Composite_Sprite.Module_ID_Parent,"Action_Position",%Player_Information.Game_Connection_Handle,%Player_Information.Composite_Sprite.Position);
+commandToServer('Relay_Module_Function',%Player_Information.Sprite.Module_ID_Parent,"Action_Position",%Player_Information.Game_Connection_Handle,%Player_Information.Sprite.Position);
 
 if (!Window_Dots_and_Crits.getIsCameraMounted())
 {
@@ -31,7 +31,7 @@ for (%x=0;%x<Module_Player_Class.Simset_Player_Data.getCount();%x++)
 if (%Player_Object.Game_Connection_Handle==$GameConnection_Serverside_Connection)
 {
 
-commandToServer('Relay_Module_Function',%Player_Object.Player_Sprite_Data.Composite_Sprite.Module_ID_Parent,"Action_Position",%Player_Object.Game_Connection_Handle,%Player_Object.Player_Sprite_Data.Composite_Sprite.Position);
+commandToServer('Relay_Module_Function',%Player_Object.Player_Sprite_Data.Sprite.Module_ID_Parent,"Action_Position",%Player_Object.Game_Connection_Handle,%Player_Object.Player_Sprite_Data.Sprite.Position);
 
 break;
 

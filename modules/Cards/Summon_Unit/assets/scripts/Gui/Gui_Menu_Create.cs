@@ -1,4 +1,4 @@
-function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
+function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Sprite)
 {
 
 //--- OBJECT WRITE BEGIN ---
@@ -44,7 +44,7 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       String_Action="Move";
       
-      Composite_Sprite_Parent=%Composite_Sprite;
+      Sprite_Parent=%Sprite;
       
    };
    new GuiButtonCtrl() {
@@ -72,7 +72,7 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       String_Action="Attack";
       
-      Composite_Sprite_Parent=%Composite_Sprite;
+      Sprite_Parent=%Sprite;
       
    };
 /*   new GuiButtonCtrl() {
@@ -100,7 +100,7 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       String_Action="Skill";
       
-      Composite_Sprite_Parent=%Composite_Sprite;
+      Sprite_Parent=%Sprite;
       
    };
    new GuiButtonCtrl() {
@@ -128,7 +128,7 @@ function Module_Card_Summon_Unit::Gui_Menu_Create(%this,%Composite_Sprite)
       
       String_Action="Set Skill";
       
-      Composite_Sprite_Parent=%Composite_Sprite;
+      Sprite_Parent=%Sprite;
       
    };*/
 };

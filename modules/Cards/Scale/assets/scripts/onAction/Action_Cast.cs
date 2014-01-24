@@ -25,18 +25,18 @@ if (%Target_Player==0){return;}
 
 %Vector_2D_New_Size="0 0";
 
-%Vector_2D_New_Size.X=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.X-%Vector_2D_Position.X)*2;
+%Vector_2D_New_Size.X=mAbs(%Target_Player.Player_Sprite_Data.Sprite.Position.X-%Vector_2D_Position.X)*2;
 
-%Vector_2D_New_Size.Y=mAbs(%Target_Player.Player_Sprite_Data.Composite_Sprite.Position.Y-%Vector_2D_Position.Y)*2;
+%Vector_2D_New_Size.Y=mAbs(%Target_Player.Player_Sprite_Data.Sprite.Position.Y-%Vector_2D_Position.Y)*2;
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.setSpriteSize(%Vector_2D_New_Size);
+%Target_Player.Player_Sprite_Data.Sprite.setSize(%Vector_2D_New_Size);
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.clearCollisionShapes();
+%Target_Player.Player_Sprite_Data.Sprite.clearCollisionShapes();
 
-%Collision_Shape_Index=%Target_Player.Player_Sprite_Data.Composite_Sprite.createPolygonBoxCollisionShape(%Vector_2D_New_Size);
+%Collision_Shape_Index=%Target_Player.Player_Sprite_Data.Sprite.createPolygonBoxCollisionShape(%Vector_2D_New_Size);
 
-//%Target_Player.Player_Sprite_Data.Composite_Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Target_Player.Player_Sprite_Data.Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.Position=%Target_Player.Player_Sprite_Data.Composite_Sprite.Position;
+%Target_Player.Player_Sprite_Data.Sprite.Position=%Target_Player.Player_Sprite_Data.Sprite.Position;
 
 }

@@ -7,6 +7,7 @@ exec("./Input_Touch/Input_Touch.cs");
 exec("./Movement/onMoveToComplete.cs");
 exec("./onCollision/onCollision.cs");
 exec("./onRemove/onRemove.cs");
+exec("./onAnimationEnd/onAnimationEnd.cs");
 
 function Module_Player_Class::Player_Class_Load(%this)
 {

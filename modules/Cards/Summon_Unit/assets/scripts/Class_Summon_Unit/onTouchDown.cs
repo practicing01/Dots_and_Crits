@@ -38,7 +38,7 @@ if (%Object==%this&&%Object.Game_Connection_Handle==$GameConnection_Serverside_C
 
 Dots_and_Crits.Gui_Unfocused_Pop();
 
-%this_Size=Scale_Camera_Vector_To_Resolution(%this.getSpriteSize());
+%this_Size=Scale_Camera_Vector_To_Resolution(%this.getSize());
 
 %this.attachGui(
 %this.Gui_Menu,

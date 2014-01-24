@@ -12,7 +12,7 @@ for (%x=0;%x<Module_Player_Class.Simset_Player_Data.getCount();%x++)
 if (%Player_Object.Game_Connection_Handle==$GameConnection_Serverside_Connection)
 {
 
-Window_Dots_and_Crits.mount(%Player_Object.Player_Sprite_Data.Composite_Sprite,"0 0",0,1,false);
+Window_Dots_and_Crits.mount(%Player_Object.Player_Sprite_Data.Sprite,"0 0",0,1,false);
 
 return;
 

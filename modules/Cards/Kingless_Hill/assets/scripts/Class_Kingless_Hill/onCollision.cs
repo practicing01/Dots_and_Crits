@@ -3,7 +3,7 @@ function Class_Kingless_Hill::onCollision(%this,%Colliding_Object,%Collision_Det
 
 if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,0))){return;}
 
-if (%Colliding_Object.class$="Class_Composite_Sprite_Player")
+if (%Colliding_Object.class$="Class_Sprite_Player")
 {
 
 %Player_Score=0;
@@ -13,7 +13,7 @@ for (%x=0;%x<%this.Simset_Player_Scores.getCount();%x++)
 
 %Player_Score=%this.Simset_Player_Scores.getObject(%x);
 
-if (%Player_Score.Composite_Sprite_ID_Player==%Colliding_Object)
+if (%Player_Score.Sprite_ID_Player==%Colliding_Object)
 {
 
 break;
@@ -40,7 +40,7 @@ for (%x=0;%x<Module_Player_Class.Simset_Player_Data.getCount();%x++)
 
 %Player_Object=Module_Player_Class.Simset_Player_Data.getObject(%x);
 
-if (%Player_Object.Player_Sprite_Data.Composite_Sprite==%Colliding_Object)
+if (%Player_Object.Player_Sprite_Data.Sprite==%Colliding_Object)
 {
 
 break;
@@ -62,7 +62,7 @@ if (%Player_Object==0){return;}
 %New_Player_Score=new ScriptObject()
 {
 
-Composite_Sprite_ID_Player=%Colliding_Object;
+Sprite_ID_Player=%Colliding_Object;
 
 Score=0;
 

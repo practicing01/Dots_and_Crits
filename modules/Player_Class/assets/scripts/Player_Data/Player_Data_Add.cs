@@ -77,12 +77,12 @@ break;
 
 %Script_Object_Player_Data.Player_Sprite_Data=%Script_Object_Player_Data.Module_ID_Player_Sprite.Player_Sprite_Spawn(%Script_Object_Player_Data.Game_Connection_Handle);
 
-Scene_Dots_and_Crits.add(%Script_Object_Player_Data.Player_Sprite_Data.Composite_Sprite);
+Scene_Dots_and_Crits.add(%Script_Object_Player_Data.Player_Sprite_Data.Sprite);
 
 Scene_Dots_and_Crits.add(%Script_Object_Player_Data.Player_Sprite_Data.Scene_Object_Mount);
 
-%Script_Object_Player_Data.Player_Sprite_Data.Scene_Object_Mount.mount(%Script_Object_Player_Data.Player_Sprite_Data.Composite_Sprite,"0 0",0,true,-1);
+%Script_Object_Player_Data.Player_Sprite_Data.Scene_Object_Mount.mount(%Script_Object_Player_Data.Player_Sprite_Data.Sprite,"0 0",0,true,-1);
 
-$Module_ID_Map_Loaded.Player_Spawn(%Script_Object_Player_Data.Player_Sprite_Data.Composite_Sprite);
+$Module_ID_Map_Loaded.Player_Spawn(%Script_Object_Player_Data.Player_Sprite_Data.Sprite);
 
 }

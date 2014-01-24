@@ -13,10 +13,14 @@ commandToServer('Relay_Module_Function',%this.Module_ID_Parent,"Action_Position"
 
 }
 
+%this.Animation_Reset();
+
+return;
+
 if (%this.Vector_2D_Direction.X==0&&%this.Vector_2D_Direction.Y==0)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Down.getObject
 (
@@ -32,7 +36,7 @@ else if (%this.Vector_2D_Direction.Y==0)
 if (%this.Vector_2D_Direction.X==1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Right.getObject
 (
@@ -45,7 +49,7 @@ getRandom(0,%this.Simset_Animation_Stand_Right.getCount()-1)
 else if (%this.Vector_2D_Direction.X==-1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Left.getObject
 (
@@ -63,7 +67,7 @@ else if (%this.Vector_2D_Direction.X==0)
 if (%this.Vector_2D_Direction.Y==1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Up.getObject
 (
@@ -76,7 +80,7 @@ getRandom(0,%this.Simset_Animation_Stand_Up.getCount()-1)
 else if (%this.Vector_2D_Direction.Y==-1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Down.getObject
 (
@@ -97,7 +101,7 @@ if (%this.Vector_2D_Direction.X==1)
 if (%this.Vector_2D_Direction.Y==1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Up_Right.getObject
 (
@@ -110,7 +114,7 @@ getRandom(0,%this.Simset_Animation_Stand_Up_Right.getCount()-1)
 else if (%this.Vector_2D_Direction.Y==-1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Down_Right.getObject
 (
@@ -128,7 +132,7 @@ else if (%this.Vector_2D_Direction.X==-1)
 if (%this.Vector_2D_Direction.Y==1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Up_Left.getObject
 (
@@ -141,7 +145,7 @@ getRandom(0,%this.Simset_Animation_Stand_Up_Left.getCount()-1)
 else if (%this.Vector_2D_Direction.Y==-1)
 {
 
-%this.setSpriteAnimation
+%this.playAnimation
 (
 %this.Simset_Animation_Stand_Down_Left.getObject
 (

@@ -6,7 +6,7 @@ if (!$Bool_Is_Playing){return;}
 if (!isObject(%Scene_Object_Emitter))
 {
 
-%Scene_Object_Emitter=$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite;
+%Scene_Object_Emitter=$ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite;
 
 }
 

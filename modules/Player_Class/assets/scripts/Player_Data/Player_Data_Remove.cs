@@ -14,7 +14,7 @@ if (%Player.Game_Connection_Handle==%Player_Data.Game_Connection_Handle)
 
 %Player_Data.Player_Sprite_Data.Simset_Objects_To_Dismount.delete();
 
-%Player_Data.Player_Sprite_Data.Composite_Sprite.Module_ID_Parent.Player_Sprite_Data_Remove(%Player_Data.Player_Sprite_Data);
+%Player_Data.Player_Sprite_Data.Sprite.Module_ID_Parent.Player_Sprite_Data_Remove(%Player_Data.Player_Sprite_Data);
 
 /*Delete animation simsets.*/
 for (%y=0;%y<%Player_Data.Player_Sprite_Data.getDynamicFieldCount();%y++)
@@ -47,7 +47,7 @@ if (%Dynamic_Field.getClassName()$="Simset")
 
 %Player_Data.Player_Sprite_Data.Scene_Object_Mount.safeDelete();
 
-%Player_Data.Player_Sprite_Data.Composite_Sprite.safeDelete();
+%Player_Data.Player_Sprite_Data.Sprite.safeDelete();
 
 %Player_Data.Player_Sprite_Data.delete();
 

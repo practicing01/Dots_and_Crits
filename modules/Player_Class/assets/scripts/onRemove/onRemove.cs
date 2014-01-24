@@ -1,4 +1,4 @@
-function Class_Composite_Sprite_Player::onRemove(%this)
+function Class_Sprite_Player::onRemove(%this)
 {
 
 %this.Script_Object_Parent.Simset_Animation_Stand_Up.deleteObjects();

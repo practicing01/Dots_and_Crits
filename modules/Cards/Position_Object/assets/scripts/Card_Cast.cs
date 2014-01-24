@@ -6,7 +6,7 @@ function Module_Card_Position_Object::Card_Cast(%this,%Script_Object_Player_Spri
 %Parameter_2=0;
 %Parameter_3=0;
 
-if (%Script_Object_Player_Sprite_Target.class$="Class_Composite_Sprite_Player")
+if (%Script_Object_Player_Sprite_Target.class$="Class_Sprite_Player")
 {
 
 %Parameter_1=%Script_Object_Player_Sprite_Target.Script_Object_Parent.Game_Connection_Handle;

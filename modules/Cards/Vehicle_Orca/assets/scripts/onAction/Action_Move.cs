@@ -45,7 +45,7 @@ else
 
 if (%Player_Object==0){return;}
 
-%Angle=(Vector2AngleToPoint(%Player_Object.Player_Information.Player_Sprite_Data.Composite_Sprite.Position,%Vector_2D_Position)+180)%360;
+%Angle=(Vector2AngleToPoint(%Player_Object.Player_Information.Player_Sprite_Data.Sprite.Position,%Vector_2D_Position)+180)%360;
 
 if ((%Angle>=337.5&&%Angle<=360)||(%Angle>=0&&%Angle<22.5))//Left
 {

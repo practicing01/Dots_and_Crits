@@ -21,6 +21,6 @@ break;
 
 if (!%Target_Player){return;}
 
-%Target_Player.Composite_Sprite.Position=%Vector_2D_Position;
+%Target_Player.Sprite.Position=%Vector_2D_Position;
 
 }

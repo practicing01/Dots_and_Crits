@@ -5,7 +5,7 @@ if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,0))){
 
 if (%this.Health<=0){return;}
 
-if (%Colliding_Object.class$="Class_Composite_Sprite_Player")
+if (%Colliding_Object.class$="Class_Sprite_Player")
 {
 
 %this.Module_ID_Parent.Score=0;

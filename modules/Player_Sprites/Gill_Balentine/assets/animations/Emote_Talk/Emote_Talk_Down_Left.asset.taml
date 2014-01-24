@@ -2,5 +2,5 @@
     AssetName="Animation_Emote_Talk_Down_Left"
     Image="@asset=Module_Player_Sprite_Gill_Balentine:Image_Gill_Balentine_Emote_Talk_Down_Left"
     AnimationFrames="0 1 2 3 4 5 6 7 8 9 10 11 12"
-    AnimationCycle="true"
+    AnimationCycle="false"
 	AnimationTime="1.5" />

@@ -11,10 +11,10 @@ function Module_Player_Sprite_Unit_0::Player_Sprite_Spawn(%this,%Game_Connection
 
 /************************************************************************/
 
-%Script_Object_Player_Sprite.Composite_Sprite=new CompositeSprite()
+%Script_Object_Player_Sprite.Sprite=new Sprite()
 {
 
-class="Class_Composite_Sprite_Player";
+class="Class_Sprite_Player";
 CollisionCallback="true";
 SceneGroup=0;//0=players
 SceneLayer=15;
@@ -29,31 +29,24 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 
 };
 
-%Script_Object_Player_Sprite.Composite_Sprite.CollisionGroups=bit(0)|bit(25)|bit(26)|bit(30);//0=players, 25=npcs, 26=world objects, 30=walls
-%Script_Object_Player_Sprite.Composite_Sprite.SetBatchLayout("off");
-%Script_Object_Player_Sprite.Composite_Sprite.SetBatchSortMode("z");
-%Script_Object_Player_Sprite.Composite_Sprite.SetBatchIsolated(true);
+%Script_Object_Player_Sprite.Sprite.CollisionGroups=bit(0)|bit(25)|bit(26)|bit(30);//0=players, 25=npcs, 26=world objects, 30=walls
 
 /************************************************************************/
 
-%Script_Object_Player_Sprite.Composite_Sprite.clearSprites();
-%Script_Object_Player_Sprite.Sprite_ID=%Script_Object_Player_Sprite.Composite_Sprite.addSprite();
-%Script_Object_Player_Sprite.Composite_Sprite.setSpriteLocalPosition(0,0);
-%Script_Object_Player_Sprite.Composite_Sprite.setSpriteSize(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Unit_0_Stand_Down));
-%Script_Object_Player_Sprite.Composite_Sprite.setSpriteImage("Module_Player_Sprite_Unit_0:Image_Unit_0_Stand_Down",0);
-%Script_Object_Player_Sprite.Composite_Sprite.SetSpriteDepth(1);
+%Script_Object_Player_Sprite.Sprite.setSize(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Unit_0_Stand_Down));
+%Script_Object_Player_Sprite.Sprite.setImage("Module_Player_Sprite_Unit_0:Image_Unit_0_Stand_Down",0);
 
 /************************************************************************/
 
-%Script_Object_Player_Sprite.Composite_Sprite.clearCollisionShapes();
+%Script_Object_Player_Sprite.Sprite.clearCollisionShapes();
 
-%Collision_Shape_Index=%Script_Object_Player_Sprite.Composite_Sprite.createPolygonBoxCollisionShape(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Unit_0_Stand_Down));
+%Collision_Shape_Index=%Script_Object_Player_Sprite.Sprite.createPolygonBoxCollisionShape(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Unit_0_Stand_Down));
 
-//%Script_Object_Player_Sprite.Composite_Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
+//%Script_Object_Player_Sprite.Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
-%Script_Object_Player_Sprite.Composite_Sprite.setFixedAngle(true);
-%Script_Object_Player_Sprite.Composite_Sprite.Position="0 0";
-//%Script_Object_Player_Sprite.Composite_Sprite.setUpdateCallback(true);
+%Script_Object_Player_Sprite.Sprite.setFixedAngle(true);
+%Script_Object_Player_Sprite.Sprite.Position="0 0";
+//%Script_Object_Player_Sprite.Sprite.setUpdateCallback(true);
 
 /************************************************************************/
 
@@ -62,7 +55,7 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 %Script_Object_Player_Sprite.Current_Speed=10;
 
 %Script_Object_Player_Sprite.Linear_Damping=1;
-%Script_Object_Player_Sprite.Composite_Sprite.setLinearDamping(%Script_Object_Player_Sprite.Linear_Damping);
+%Script_Object_Player_Sprite.Sprite.setLinearDamping(%Script_Object_Player_Sprite.Linear_Damping);
 
 %Script_Object_Player_Sprite.Bool_Is_Mobile=false;
 
@@ -78,12 +71,12 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 
 /************************************************************************/
 
-%Script_Object_Player_Sprite.Composite_Sprite.setUseInputEvents(true);
-Window_Dots_and_Crits.addInputListener(%Script_Object_Player_Sprite.Composite_Sprite);
+%Script_Object_Player_Sprite.Sprite.setUseInputEvents(true);
+Window_Dots_and_Crits.addInputListener(%Script_Object_Player_Sprite.Sprite);
 
 /************************************************************************/
 
-%Script_Object_Player_Sprite.Gui_Menu=%this.Gui_Menu_Create(%Script_Object_Player_Sprite.Composite_Sprite);
+%Script_Object_Player_Sprite.Gui_Menu=%this.Gui_Menu_Create(%Script_Object_Player_Sprite.Sprite);
 
 /************************************************************************/
 
@@ -91,7 +84,7 @@ Window_Dots_and_Crits.addInputListener(%Script_Object_Player_Sprite.Composite_Sp
 {
 
 BodyType="static";
-size=%Script_Object_Player_Sprite.Composite_Sprite.getSpriteSize();
+size=%Script_Object_Player_Sprite.Sprite.getSize();
 Position="0 0";
 Angle="180";
 
@@ -340,7 +333,7 @@ String_Animation_Name="Animation_Run_Right";
 
 /************************************************************************/
 
-%Script_Object_Player_Sprite.Composite_Sprite.setSpriteAnimation
+%Script_Object_Player_Sprite.Sprite.playAnimation
 (
 %Script_Object_Player_Sprite.Simset_Animation_Stand_Down.getObject
 (
@@ -961,7 +954,7 @@ String_Animation_Name="Animation_Emote_Attack_Right";
 %Script_Object_Player_Sprite.Simset_Projectile_Origin_Direction.add(%Simset_Direction_Left);
 %Script_Object_Player_Sprite.Simset_Projectile_Origin_Direction.add(%Simset_Direction_Up_Left);
 
-%Sprite_Size=%Script_Object_Player_Sprite.Composite_Sprite.getSpriteSize();
+%Sprite_Size=%Script_Object_Player_Sprite.Sprite.getSize();
 
 //Up
 %Projectile_Origin=new ScriptObject()

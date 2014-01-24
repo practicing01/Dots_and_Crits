@@ -90,7 +90,7 @@ Position="0 0";
 
 Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Sprite_Laser);
 
-%Vector_2D_Player_Size=%Player_Information.Player_Sprite_Data.Composite_Sprite.getSpriteSize();
+%Vector_2D_Player_Size=%Player_Information.Player_Sprite_Data.Sprite.getSize();
 
 %Vector_2D_Mount_Offset="0 0";
 

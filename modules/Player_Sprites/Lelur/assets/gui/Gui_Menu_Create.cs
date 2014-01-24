@@ -1,4 +1,4 @@
-function Module_Player_Sprite_Lelur::Gui_Menu_Create(%this,%Composite_Sprite_Player)
+function Module_Player_Sprite_Lelur::Gui_Menu_Create(%this,%Sprite_Player)
 {
 
 //--- OBJECT WRITE BEGIN ---
@@ -44,7 +44,7 @@ function Module_Player_Sprite_Lelur::Gui_Menu_Create(%this,%Composite_Sprite_Pla
       
       String_Action="Move";
       
-      Composite_Sprite_Player_Parent=%Composite_Sprite_Player;
+      Sprite_Player_Parent=%Sprite_Player;
       
    };
    new GuiButtonCtrl() {
@@ -72,7 +72,7 @@ function Module_Player_Sprite_Lelur::Gui_Menu_Create(%this,%Composite_Sprite_Pla
       
       String_Action="Attack";
       
-      Composite_Sprite_Player_Parent=%Composite_Sprite_Player;
+      Sprite_Player_Parent=%Sprite_Player;
       
    };
    new GuiButtonCtrl() {
@@ -100,7 +100,7 @@ function Module_Player_Sprite_Lelur::Gui_Menu_Create(%this,%Composite_Sprite_Pla
       
       String_Action="Emote";
       
-      Composite_Sprite_Player_Parent=%Composite_Sprite_Player;
+      Sprite_Player_Parent=%Sprite_Player;
       
    };
    new GuiButtonCtrl() {
@@ -128,7 +128,7 @@ function Module_Player_Sprite_Lelur::Gui_Menu_Create(%this,%Composite_Sprite_Pla
       
       String_Action="Config";
       
-      Composite_Sprite_Player_Parent=%Composite_Sprite_Player;
+      Sprite_Player_Parent=%Sprite_Player;
       
    };
 };

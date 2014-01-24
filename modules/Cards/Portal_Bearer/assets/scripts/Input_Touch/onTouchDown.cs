@@ -19,7 +19,7 @@ for (%x=0;%x<getWordCount(%String_List_Picked_Objects);%x++)
 
 %Object=getWord(%String_List_Picked_Objects,%x);
 
-if (%Object.class$="Class_Composite_Sprite_Player")
+if (%Object.class$="Class_Sprite_Player")
 {
 
 %this.Module_ID_Parent.Card_Target=%Object;

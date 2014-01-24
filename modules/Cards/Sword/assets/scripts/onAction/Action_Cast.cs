@@ -64,7 +64,7 @@ Sprite_Sword=0;
 
 BodyType="dynamic";
 size="1 1";
-Position=%Target_Player.Player_Sprite_Data.Composite_Sprite.Position;
+Position=%Target_Player.Player_Sprite_Data.Sprite.Position;
 
 Joint_ID=0;
 
@@ -74,7 +74,7 @@ Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Scene_Object_Anchor);
 
 %Script_Object_Player_Information.Scene_Object_Anchor.Joint_ID=Scene_Dots_and_Crits.createRopeJoint
 (
-%Target_Player.Player_Sprite_Data.Composite_Sprite,
+%Target_Player.Player_Sprite_Data.Sprite,
 %Script_Object_Player_Information.Scene_Object_Anchor,
 "0 0","0 0",5.0,false
 );
@@ -87,7 +87,7 @@ Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Scene_Object_Anchor);
 BodyType="dynamic";
 size=%Vector_2D_Sword_Size;
 Image="Module_Card_Sword:Image_Sword";
-Position=%Target_Player.Player_Sprite_Data.Composite_Sprite.Position;
+Position=%Target_Player.Player_Sprite_Data.Sprite.Position;
 class="Class_Sword";
 CollisionCallback="true";
 SceneLayer=16;
@@ -116,7 +116,7 @@ Bullet=true;
 
 %Script_Object_Player_Information.Sprite_Sword.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
-%Script_Object_Player_Information.Sprite_Sword.Position.Y+=(%Target_Player.Player_Sprite_Data.Composite_Sprite.Size.Y/2)+(%Vector_2D_Sword_Size.Y/2);
+%Script_Object_Player_Information.Sprite_Sword.Position.Y+=(%Target_Player.Player_Sprite_Data.Sprite.Size.Y/2)+(%Vector_2D_Sword_Size.Y/2);
 
 Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Sprite_Sword);
 

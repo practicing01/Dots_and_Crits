@@ -76,7 +76,7 @@ BlendMode=true;
 
 Scene_Dots_and_Crits.add(%Script_Object_Player_Information.Sprite_Flashlight);
 
-%Vector_2D_Player_Size=%Target_Player.Player_Sprite_Data.Composite_Sprite.getSpriteSize();
+%Vector_2D_Player_Size=%Target_Player.Player_Sprite_Data.Sprite.getSize();
 
 %Vector_2D_Mount_Offset="0 0";
 

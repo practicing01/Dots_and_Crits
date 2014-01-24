@@ -1,7 +1,7 @@
 function Module_Player_Sprite_Unit_0::Action_Move(%this,%Player_Information,%Vector_2D_Position)
 {
 
-%Angle=(Vector2AngleToPoint(%Player_Information.Composite_Sprite.Position,%Vector_2D_Position)+180)%360;
+%Angle=(Vector2AngleToPoint(%Player_Information.Sprite.Position,%Vector_2D_Position)+180)%360;
 
 if ((%Angle>=337.5&&%Angle<=360)||(%Angle>=0&&%Angle<22.5))//Left
 {
@@ -87,7 +87,7 @@ else if ((%Angle>=292.5&&%Angle<337.5))//Up-Left
 if (%Player_Information.Vector_2D_Direction.X==0&&%Player_Information.Vector_2D_Direction.Y==0)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Down.getObject
 (
@@ -103,7 +103,7 @@ else if (%Player_Information.Vector_2D_Direction.Y==0)
 if (%Player_Information.Vector_2D_Direction.X==1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Right.getObject
 (
@@ -116,7 +116,7 @@ getRandom(0,%Player_Information.Simset_Animation_Run_Right.getCount()-1)
 else if (%Player_Information.Vector_2D_Direction.X==-1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Left.getObject
 (
@@ -134,7 +134,7 @@ else if (%Player_Information.Vector_2D_Direction.X==0)
 if (%Player_Information.Vector_2D_Direction.Y==1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Up.getObject
 (
@@ -147,7 +147,7 @@ getRandom(0,%Player_Information.Simset_Animation_Run_Up.getCount()-1)
 else if (%Player_Information.Vector_2D_Direction.Y==-1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Down.getObject
 (
@@ -168,7 +168,7 @@ if (%Player_Information.Vector_2D_Direction.X==1)
 if (%Player_Information.Vector_2D_Direction.Y==1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Up_Right.getObject
 (
@@ -181,7 +181,7 @@ getRandom(0,%Player_Information.Simset_Animation_Run_Up_Right.getCount()-1)
 else if (%Player_Information.Vector_2D_Direction.Y==-1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Down_Right.getObject
 (
@@ -199,7 +199,7 @@ else if (%Player_Information.Vector_2D_Direction.X==-1)
 if (%Player_Information.Vector_2D_Direction.Y==1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Up_Left.getObject
 (
@@ -212,7 +212,7 @@ getRandom(0,%Player_Information.Simset_Animation_Run_Up_Left.getCount()-1)
 else if (%Player_Information.Vector_2D_Direction.Y==-1)
 {
 
-%Player_Information.Composite_Sprite.setSpriteAnimation
+%Player_Information.Sprite.playAnimation
 (
 %Player_Information.Simset_Animation_Run_Down_Left.getObject
 (
@@ -234,15 +234,15 @@ getRandom(0,%Player_Information.Simset_Animation_Run_Down_Left.getCount()-1)
 if (%Player_Information.Current_Speed>0)
 {
 
-%Player_Information.Composite_Sprite.setLinearDamping(0);
+%Player_Information.Sprite.setLinearDamping(0);
 
-%Player_Information.Composite_Sprite.moveTo(%Vector_2D_Position,%Player_Information.Current_Speed,true,false);
+%Player_Information.Sprite.moveTo(%Vector_2D_Position,%Player_Information.Current_Speed,true,false);
 
 }
 else
 {
 
-%this.onMoveToComplete(%Player_Information.Composite_Sprite);
+%this.onMoveToComplete(%Player_Information.Sprite);
 
 }
 

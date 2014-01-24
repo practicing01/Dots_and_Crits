@@ -3,7 +3,7 @@ function Class_Volley_Projectile::onCollision(%this,%Colliding_Object,%Collision
 
 if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,0))){return;}
 
-if (%Colliding_Object.class$="Class_Composite_Sprite_Player")
+if (%Colliding_Object.class$="Class_Sprite_Player")
 {
 
 if (%Colliding_Object.Script_Object_Parent.Game_Connection_Handle!=%this.Game_Connection_Handle)

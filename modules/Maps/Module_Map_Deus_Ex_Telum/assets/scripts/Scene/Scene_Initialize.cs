@@ -257,7 +257,7 @@ Scene_Dots_and_Crits.add(%Sprite_Mech);
 
 //Schedule visible radiation.
 
-%this.Schedule_Handle_Radiate_Visible=schedule(5000,0,"Module_Map_Deus_Ex_Telum::Radiate",%this,$ScriptObject_Player_Information_This.Player_Sprite_Data.Composite_Sprite);
+%this.Schedule_Handle_Radiate_Visible=schedule(5000,0,"Module_Map_Deus_Ex_Telum::Radiate",%this,$ScriptObject_Player_Information_This.Player_Sprite_Data.Sprite);
 
 /************************************************************************/
 

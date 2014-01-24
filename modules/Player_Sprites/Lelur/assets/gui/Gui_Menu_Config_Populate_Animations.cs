@@ -7,7 +7,7 @@ if (%this.Gui_Menu_Config.Gui_Scroller_Lelur_Menu_Config_Simsets.Gui_List_Lelur_
 
 %this.Gui_List_Menu_Config_Selection_Simset=%this.Gui_Menu_Config.Gui_Scroller_Lelur_Menu_Config_Simsets.Gui_List_Lelur_Menu_Config_Simsets.getSelectedItem();
 
-%Script_Object_Player_Sprite=%this.Gui_Menu_Config.Composite_Sprite_Player_Parent.Script_Object_Parent;
+%Script_Object_Player_Sprite=%this.Gui_Menu_Config.Sprite_Player_Parent.Script_Object_Parent;
 
 %String_Selected_Simset=%this.Gui_Menu_Config.Gui_Scroller_Lelur_Menu_Config_Simsets.Gui_List_Lelur_Menu_Config_Simsets.getItemText
 (

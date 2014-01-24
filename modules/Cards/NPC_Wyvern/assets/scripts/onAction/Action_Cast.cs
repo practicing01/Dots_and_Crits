@@ -65,7 +65,7 @@ Schedule_AI=0;
 
 %Sprite_NPC_Wyvern.setCollisionGroups(0,25,26,30);
 
-%Vector_2D_Target_Player_Sprite_Size=%Target_Player.Player_Sprite_Data.Composite_Sprite.getSpriteSize();
+%Vector_2D_Target_Player_Sprite_Size=%Target_Player.Player_Sprite_Data.Sprite.getSize();
 
 %Square_Size=%Sprite_NPC_Wyvern.Size;
 

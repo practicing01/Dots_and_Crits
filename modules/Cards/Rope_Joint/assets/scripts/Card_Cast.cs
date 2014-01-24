@@ -6,7 +6,7 @@ function Module_Card_Rope_Joint::Card_Cast(%this,%Script_Object_Player_Sprite_Ta
 %Parameter_2=0;
 %Parameter_3=0;
 
-if (%Script_Object_Player_Sprite_Target.class$="Class_Composite_Sprite_Player")
+if (%Script_Object_Player_Sprite_Target.class$="Class_Sprite_Player")
 {
 
 %Parameter_1=%Script_Object_Player_Sprite_Target.Script_Object_Parent.Game_Connection_Handle;
@@ -32,7 +32,7 @@ else
 %Parameter_6=0;
 %Parameter_7=0;
 
-if (%Script_Object_Player_Sprite_Target_0.class$="Class_Composite_Sprite_Player")
+if (%Script_Object_Player_Sprite_Target_0.class$="Class_Sprite_Player")
 {
 
 %Parameter_5=%Script_Object_Player_Sprite_Target_0.Script_Object_Parent.Game_Connection_Handle;

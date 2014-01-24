@@ -29,7 +29,7 @@ break;
 
 if (%Target_Player==0){return;}
 
-%Target_Player.Player_Sprite_Data.Composite_Sprite.Position=%Vector_2D_Position;
+%Target_Player.Player_Sprite_Data.Sprite.Position=%Vector_2D_Position;
 
 }
 else
