@@ -7,9 +7,7 @@ function Module_Map_Deus_Ex_Telum::Player_Spawn(%this,%Sprite_Player)
 
 %Sprite_Player.setSize(%Vector_2D_Size);
 
-%Sprite_Player.clearCollisionShapes();
-
-%Sprite_Player.createPolygonBoxCollisionShape(%Vector_2D_Size);
+%Sprite_Player.onResize();
 
 /*********************************************************************/
 

@@ -22,6 +22,6 @@ $String_Client_Name,//Connector Name
 $String_Player_Sprite//Player Sprite
 );
 
-%this.Query_Master_Server();
+//%this.Query_Master_Server();
 
 }

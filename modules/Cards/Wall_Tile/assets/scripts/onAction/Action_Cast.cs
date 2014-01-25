@@ -53,11 +53,7 @@ Health=100;
 
 %Square_Size=Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Wall_Tile);
 
-%Radius=0;
-
-if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Square_Size.Y/2;}
-
-%Collision_Shape_Index=%Sprite_Wall_Tile.createCircleCollisionShape(%Radius);
+%Collision_Shape_Index=%Sprite_Wall_Tile.createPolygonBoxCollisionShape(%Square_Size);
 
 //%Sprite_Wall_Tile.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 

@@ -41,14 +41,14 @@ Script_Object_Parent=%Script_Object_Player_Sprite;
 %Script_Object_Player_Sprite.Sprite.clearCollisionShapes();
 
 /*Since the sprite is 256*256 but we want a 128*128 collision box, we scale it.*/
-/*
+
 %Scaled_Size=Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Lelur_Stand_Down);
 
 %Scaled_Size.X/=2;
 
 %Scaled_Size.Y/=2;
-*/
-%Collision_Shape_Index=%Script_Object_Player_Sprite.Sprite.createPolygonBoxCollisionShape(Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Lelur_Stand_Down));
+
+%Collision_Shape_Index=%Script_Object_Player_Sprite.Sprite.createPolygonBoxCollisionShape(%Scaled_Size);
 
 //%Script_Object_Player_Sprite.Sprite.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 

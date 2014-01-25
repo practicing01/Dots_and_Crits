@@ -138,6 +138,7 @@ Image="Module_Card_Portal_Bearer:Image_Portal_In";
 Animation="Module_Card_Portal_Bearer:Animation_Portal_In";
 Position="0 0";
 Visible=false;
+CollisionCallback="true";
 
 SceneGroup=26;//Dynamic world objects.
 
@@ -175,6 +176,7 @@ Image="Module_Card_Portal_Bearer:Image_Portal_Out";
 Animation="Module_Card_Portal_Bearer:Animation_Portal_Out";
 Position="0 0";
 Visible=false;
+CollisionCallback="true";
 
 SceneGroup=26;//Dynamic world objects.
 

@@ -3,3 +3,4 @@ exec("./onRemove.cs");
 exec("./onMoveToComplete.cs");
 exec("./Animation_Reset.cs");
 exec("./onAnimationEnd.cs");
+exec("./onResize.cs");

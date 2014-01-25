@@ -14,6 +14,7 @@ exec("./../Input_Touch/Input_Touch.cs");
 exec("./../Movement/onMoveToComplete.cs");
 exec("./../onCollision/onCollision.cs");
 exec("./../Player_Dismount_Objects/Player_Dismount_Objects.cs");
+exec("./../onResize/onResize.cs");
 
 function Module_Player_Sprite_Unit_0::Player_Sprite_Load(%this)
 {
