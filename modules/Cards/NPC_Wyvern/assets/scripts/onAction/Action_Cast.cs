@@ -46,7 +46,7 @@ Object_Index=%Object_Index;
 
 Health=9001;
 
-Previous_Health=100;
+Previous_Health=9001;
 
 Simset_Colliding_Objects=0;
 

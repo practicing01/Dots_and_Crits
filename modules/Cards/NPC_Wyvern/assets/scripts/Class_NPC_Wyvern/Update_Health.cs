@@ -16,8 +16,10 @@ return;
 
 }
 
-if (%this.Previous_Health>%this.Health)//Hit
+if (%this.Previous_Health-%this.Health>=500)//Hit
 {
+
+%this.Previous_Health=%this.Health;
 
 %this.Animation_Set("Hit");
 
@@ -34,7 +36,5 @@ else//No change
 
 
 }
-
-%this.Previous_Health=%this.Health;
 
 }
