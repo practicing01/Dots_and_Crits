@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Toggle_Projectile"
+    Image="@asset=Module_Card_Toggle_Projectile:Image_Toggle_Projectile"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
