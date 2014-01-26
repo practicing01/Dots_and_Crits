@@ -117,14 +117,14 @@ if (%Target_Player_0)
 {
 
 Scene_Dots_and_Crits.createWeldJoint(%Target_Player.Player_Sprite_Data.Sprite,%Target_Player_0.Player_Sprite_Data.Sprite,
-%Target_Player.Player_Sprite_Data.Sprite.getLocalVector(%Target_Player_0.Player_Sprite_Data.Sprite.Position),%Target_Player_0.Player_Sprite_Data.Sprite.getLocalVector(%Target_Player.Player_Sprite_Data.Sprite.Position),0.5,0.5,false);
+%Target_Player.Player_Sprite_Data.Sprite.getLocalVector(%Target_Player_0.Player_Sprite_Data.Sprite.Position),%Target_Player_0.Player_Sprite_Data.Sprite.getLocalVector(%Target_Player.Player_Sprite_Data.Sprite.Position),0,1,false);
 
 }
 else//%Scene_Object_0
 {
 
 Scene_Dots_and_Crits.createWeldJoint(%Target_Player.Player_Sprite_Data.Sprite,%Scene_Object_0,
-%Target_Player.Player_Sprite_Data.Sprite.getLocalVector(%Scene_Object_0.Position),%Scene_Object_0.getLocalVector(%Target_Player.Player_Sprite_Data.Sprite.Position),0.5,0.5,false);
+%Target_Player.Player_Sprite_Data.Sprite.getLocalVector(%Scene_Object_0.Position),%Scene_Object_0.getLocalVector(%Target_Player.Player_Sprite_Data.Sprite.Position),0,1,false);
 
 }
 
@@ -136,14 +136,14 @@ if (%Target_Player_0)
 {
 
 Scene_Dots_and_Crits.createWeldJoint(%Scene_Object,%Target_Player_0.Player_Sprite_Data.Sprite,
-%Scene_Object.getLocalVector(%Target_Player_0.Player_Sprite_Data.Sprite.Position),%Target_Player_0.Player_Sprite_Data.Sprite.getLocalVector(%Scene_Object.Position),0.5,0.5,false);
+%Scene_Object.getLocalVector(%Target_Player_0.Player_Sprite_Data.Sprite.Position),%Target_Player_0.Player_Sprite_Data.Sprite.getLocalVector(%Scene_Object.Position),0,1,false);
 
 }
 else//%Scene_Object_0
 {
 
 Scene_Dots_and_Crits.createWeldJoint(%Scene_Object,%Scene_Object_0,
-%Scene_Object.getLocalVector(%Scene_Object_0.Position),%Scene_Object_0.getLocalVector(%Scene_Object.Position),0.5,0.5,false);
+%Scene_Object.getLocalVector(%Scene_Object_0.Position),%Scene_Object_0.getLocalVector(%Scene_Object.Position),0,1,false);
 
 }
 

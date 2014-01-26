@@ -35,6 +35,8 @@ if (%Target_Player==0){return;}
 
 %Vector_2D_New_Size.Y=mAbs(%Target_Player.Player_Sprite_Data.Sprite.Position.Y-%Vector_2D_Position.Y)*2;
 
+if (%Vector_2D_New_Size.X==0||%Vector_2D_New_Size.Y==0){return;}
+
 %Target_Player.Player_Sprite_Data.Sprite.setSize(%Vector_2D_New_Size);
 
 %Target_Player.Player_Sprite_Data.Sprite.onResize();
@@ -70,9 +72,9 @@ if (%Scene_Object==0){return;}
 
 %Vector_2D_New_Size.Y=mAbs(%Scene_Object.Position.Y-%Vector_2D_Position.Y)*2;
 
-%Scene_Object.setSize(%Vector_2D_New_Size);
+if (%Vector_2D_New_Size.X==0||%Vector_2D_New_Size.Y==0){return;}
 
-//The following assumes only 1 collision shape, very bad :<
+%Scene_Object.setSize(%Vector_2D_New_Size);
 
 %Scene_Object.onResize();
 
