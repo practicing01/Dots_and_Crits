@@ -133,7 +133,7 @@ if (%Square_Size.X>%Square_Size.Y){%Radius=%Square_Size.X/2;}else{%Radius=%Squar
 
 %Sprite_Portal.setCollisionShapeIsSensor(%Collision_Shape_Index,true);
 
-%Vector_2D_To_Direction=Vector2Direction(%Sprite_Portal.Angle,%Radius*1.25);
+%Vector_2D_To_Direction=Vector2Direction(%Sprite_Portal.Angle,%Radius);
 
 %Sprite_Portal.Vector_2D_Position_Offset=Vector2Add(%Sprite_Portal.Vector_2D_Position_Offset,%Vector_2D_To_Direction);
 
