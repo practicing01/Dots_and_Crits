@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Toggle_Portal_Bearer_Projectile"
+    Image="@asset=Module_Card_Toggle_Portal_Bearer:Image_Toggle_Portal_Bearer_Projectile"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

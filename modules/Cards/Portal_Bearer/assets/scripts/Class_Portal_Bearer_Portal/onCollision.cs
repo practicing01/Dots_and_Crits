@@ -53,7 +53,7 @@ Vector2Length(%Colliding_Object.size)/2+Vector2Length(%Player_Object.Sprite_Port
 
 %Colliding_Object.Position=Vector2Add(%Player_Object.Sprite_Portal_Out.Position,%Vector_To_Direction);
 
-%Colliding_Object.onMoveToComplete(%Colliding_Object);
+%Colliding_Object.onMoveToComplete();
 
 }
 else
@@ -64,7 +64,7 @@ Vector2Length(%Colliding_Object.size)/2+Vector2Length(%Player_Object.Sprite_Port
 
 %Colliding_Object.Position=Vector2Add(%Player_Object.Sprite_Portal_In.Position,%Vector_To_Direction);
 
-%Colliding_Object.onMoveToComplete(%Colliding_Object);
+%Colliding_Object.onMoveToComplete();
 
 }
 
