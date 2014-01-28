@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Toggle_Wall_Tile"
+    ImageFile="Toggle_Wall_Tile.png"
+	CellCountX="12"
+    CellCountY="1"
+    CellWidth="64"
+    CellHeight="64"
+	Optimal_Resolution="1280 800"/>
