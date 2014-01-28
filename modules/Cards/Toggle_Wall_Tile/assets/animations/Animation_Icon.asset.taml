@@ -1,6 +1,6 @@
 <AnimationAsset
     AssetName="Animation_Icon"
     Image="@asset=Module_Card_Toggle_Wall_Tile:Image_Icon"
-    AnimationFrames="0 1 2 3 4 5 6 7 8 9 10 11"
+    AnimationFrames="2 3 4 5 6 7 8"
     AnimationCycle="true"
 	AnimationTime="1.5" />

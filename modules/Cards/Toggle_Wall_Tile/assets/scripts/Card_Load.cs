@@ -6,7 +6,7 @@ exec("./Relay_Module_Function.cs");
 exec("./Card_Cast.cs");
 exec("./Input_Touch/Input_Touch.cs");
 exec("./onAction/Actions.cs");
-exec("./Class_Toggle_Wall_Tile/Class_Toggle_Wall_Tile.cs");
+exec("./Class_Toggle_Wall_Tile_Wall/Class_Toggle_Wall_Tile_Wall.cs");
 
 function Module_Card_Toggle_Wall_Tile::Card_Load(%this)
 {

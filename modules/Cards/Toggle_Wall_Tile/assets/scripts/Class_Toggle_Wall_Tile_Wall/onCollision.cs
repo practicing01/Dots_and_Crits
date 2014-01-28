@@ -1,7 +1,7 @@
 function Class_Toggle_Wall_Tile_Wall::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
-if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,1))){return;}
+/*if (%Colliding_Object.getCollisionShapeIsSensor(getWord(%Collision_Details,1))){return;}
 
 if (%Colliding_Object.class$="Class_Sprite_Player")
 {
@@ -27,6 +27,6 @@ else// if (%Colliding_Object.Game_Connection_Handle!=%this.Game_Connection_Handl
 
 %this.safeDelete();
 
-}
+}*/
 
 }

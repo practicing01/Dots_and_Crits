@@ -98,5 +98,9 @@
     <ScriptObject
         Card_Slot_Position="328 50"
         Module_ID_Card="Module_Card_Black_Hole" />
+
+    <ScriptObject
+        Card_Slot_Position="278 50"
+        Module_ID_Card="Module_Card_Toggle_Projectile" />
 </SimSet>
 
