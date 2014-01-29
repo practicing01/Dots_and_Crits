@@ -46,7 +46,7 @@ Bool_Delete_Me="1";
 
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
-Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+Gui_Dots_and_Crits_Overlay.addGuiControl(%GuiSpriteCtrl);
 
 %this.Gui_Button_Move_Arrow_Up=%GuiButtonCtrl;
 
@@ -98,7 +98,7 @@ Bool_Delete_Me="1";
 
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
-Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+Gui_Dots_and_Crits_Overlay.addGuiControl(%GuiSpriteCtrl);
 
 %this.Gui_Button_Move_Arrow_Down=%GuiButtonCtrl;
 
@@ -150,7 +150,7 @@ Bool_Delete_Me="1";
 
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
-Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+Gui_Dots_and_Crits_Overlay.addGuiControl(%GuiSpriteCtrl);
 
 %this.Gui_Button_Move_Arrow_Left=%GuiButtonCtrl;
 
@@ -202,7 +202,7 @@ Bool_Delete_Me="1";
 
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
-Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+Gui_Dots_and_Crits_Overlay.addGuiControl(%GuiSpriteCtrl);
 
 %this.Gui_Button_Move_Arrow_Right=%GuiButtonCtrl;
 
@@ -250,7 +250,7 @@ Bool_Delete_Me="1";
 
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
-Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+Gui_Dots_and_Crits_Overlay.addGuiControl(%GuiSpriteCtrl);
 
 %this.Gui_Button_Move_Arrow_Center=%GuiButtonCtrl;
 */
@@ -300,7 +300,7 @@ Bool_Delete_Me="1";
 
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
-Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+Gui_Dots_and_Crits_Overlay.addGuiControl(%GuiSpriteCtrl);
 
 %this.Gui_Button_Move_Arrow_Toggle_Menu=%GuiButtonCtrl;
 

@@ -38,15 +38,15 @@ $Simset_Deck_To_Load.deleteObjects();
 /***********************************************/
 /************ Delete Gui's **********************/
 
-for (%x=0;%x<Window_Dots_and_Crits.getCount();%x++)
+for (%x=0;%x<Gui_Dots_and_Crits_Overlay.getCount();%x++)
 {
 
-%Gui_Child=Window_Dots_and_Crits.getObject(%x);
+%Gui_Child=Gui_Dots_and_Crits_Overlay.getObject(%x);
 
 if (%Gui_Child.Bool_Delete_Me==true)
 {
 
-Window_Dots_and_Crits.remove(%Gui_Child);
+Gui_Dots_and_Crits_Overlay.remove(%Gui_Child);
 
 %Gui_Child.deleteObjects();
 

@@ -99,7 +99,7 @@ Bool_Delete_Me="1";
 
 %GuiSpriteCtrl.addGuiControl(%GuiButtonCtrl);
 
-Window_Dots_and_Crits.addGuiControl(%GuiSpriteCtrl);
+Gui_Dots_and_Crits_Overlay.addGuiControl(%GuiSpriteCtrl);
 
 }
 

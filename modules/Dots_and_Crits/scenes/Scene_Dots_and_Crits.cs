@@ -30,6 +30,24 @@ $Resolution=getRes();
 
 Window_Dots_and_Crits.setCameraSize(100,%Cam_Y);
 
+if (!isObject(Gui_Dots_and_Crits_Overlay))
+{
+
+new GuiControl(Gui_Dots_and_Crits_Overlay)
+{
+
+Position="0 0";
+Extent=$Resolution;
+Profile=gui_profile_modalless;
+
+};   
+
+Window_Dots_and_Crits.addGuiControl(Gui_Dots_and_Crits_Overlay);
+
+Gui_Dots_and_Crits_Overlay.setActive(true);
+
+}
+
 }
 
 //-----------------------------------------------------------------------------

@@ -13,4 +13,7 @@ GlobalActionMap.bindCmd(keyboard,"a",
 GlobalActionMap.bindCmd(keyboard,"d",
 "Class_Module_Map_Bath_Salts_Gui_Button_Move_Arrow::onAction(Module_Map_Bath_Salts.Gui_Button_Move_Arrow_Right);","");
 
+GlobalActionMap.bindCmd(keyboard,"h",
+"Toggle_Gui();","");
+
 }
