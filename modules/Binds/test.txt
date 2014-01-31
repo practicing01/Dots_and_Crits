@@ -1,0 +1,4 @@
+// Torque Input Map File
+if (isObject(Module_Card_Bind_Emote_Action_Map)) Module_Card_Bind_Emote_Action_Map.delete();
+new ActionMap(Module_Card_Bind_Emote_Action_Map);
+Module_Card_Bind_Emote_Action_Map.bindCmd(keyboard, "p", "Module_Card_Bind_Emote.Bind_Emote_Emote_Cast(\"Module_Player_Sprite_Ayn:Animation_Run_Down\");", "");

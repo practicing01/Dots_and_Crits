@@ -31,4 +31,12 @@ Scene_Dots_and_Crits.add(%this.Scene_Object_Input_Capture);
 
 %this.Gui_Edit_Text_Key=0;
 
+%this.Gui_Edit_Text_Filename_Save=0;
+
+%this.Gui_List_Binds=0;
+
+%this.Action_Map_Keys=new ActionMap(Module_Card_Bind_Emote_Action_Map);
+
+%this.Action_Map_Keys.Push();
+
 }
