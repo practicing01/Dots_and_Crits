@@ -26,7 +26,16 @@ Module_Card_Summon_Unit.Gui_Button_Gui_Menu_Attack(%World_Position,%this);
 
 %String_List_Picked_Objects=Scene_Dots_and_Crits.pickPoint(%World_Position,bit(25),"","collision");
 
-if (getWordCount(%String_List_Picked_Objects)==0){return;}
+if (getWordCount(%String_List_Picked_Objects)==0)
+{
+
+Canvas.pushDialog(%this.Gui_Menu);
+
+Canvas.popDialog(%this.Gui_Menu);
+
+return;
+
+}
 
 for (%x=0;%x<getWordCount(%String_List_Picked_Objects);%x++)
 {
