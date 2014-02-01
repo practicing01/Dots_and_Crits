@@ -98,9 +98,14 @@
     <ScriptObject
         Card_Slot_Position="328 50"
         Module_ID_Card="Module_Card_Black_Hole" />
-
     <ScriptObject
         Card_Slot_Position="278 50"
         Module_ID_Card="Module_Card_Toggle_Projectile" />
+    <ScriptObject
+        Card_Slot_Position="228 50"
+        Module_ID_Card="Module_Card_Toggle_Triangle_Object" />
+    <ScriptObject
+        Card_Slot_Position="228 0"
+        Module_ID_Card="Module_Card_BodyType_Object" />
 </SimSet>
 

@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Card_Toggle_Triangle_Object"
+	Type="Card"
+	VersionId="1"
+	Description="Toggle Triangle Object Card"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>
