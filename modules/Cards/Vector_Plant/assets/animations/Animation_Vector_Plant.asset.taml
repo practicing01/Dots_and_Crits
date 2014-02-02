@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_Vector_Plant"
+    Image="@asset=Module_Card_Vector_Plant:Image_Vector_Plant"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
