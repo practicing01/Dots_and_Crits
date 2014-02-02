@@ -37,7 +37,7 @@ if (%Target_Player==0){return;}
 
 %String_Vectors="";
 
-%Int_Max_Shape_Branches=getRandom(0,mPow(4,2));
+%Int_Max_Shape_Branches=getRandom(0,mPow(4,3));
 
 %Int_Max_Shape_Leaves=getRandom(0,4);
 

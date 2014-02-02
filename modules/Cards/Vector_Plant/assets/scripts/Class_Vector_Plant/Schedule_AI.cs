@@ -11,7 +11,7 @@ if ($Bool_A_I_Token_Bearer)
 if (%this.Plant_Parent!=-1)
 {
 
-if (%this.Plant_Parent.Int_Branch_Count>%this.Plant_Parent.Int_Max_Shape_Branches){return;}
+if (%this.Get_Root_Branch_Count()>%this.Plant_Parent.Int_Max_Shape_Branches){return;}
 
 commandToServer('Relay_Module_Function',Module_Card_Vector_Plant,"Action_Grow",
 %this.Game_Connection_Handle,%this.Object_Index,-1,-1,0,%this.Module_ID_Parent.Vector_Plant_Count);
