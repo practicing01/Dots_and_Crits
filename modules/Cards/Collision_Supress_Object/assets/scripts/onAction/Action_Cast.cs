@@ -1,4 +1,4 @@
-function Module_Card_Delete_Object::Action_Cast(%this,%Player_Information,
+function Module_Card_Collision_Supress_Object::Action_Cast(%this,%Player_Information,
 %Bool_Type_Of_Object,
 %Player_Game_Connection_Or_Object_Module_ID,
 %Object_Game_Connection,
@@ -10,8 +10,6 @@ function Module_Card_Delete_Object::Action_Cast(%this,%Player_Information,
 
 if (!%Bool_Type_Of_Object)//Player
 {
-
-return;//Naughty to delete a player :>
 
 for (%x=0;%x<Module_Player_Class.Simset_Player_Data.getCount();%x++)
 {
@@ -58,9 +56,7 @@ break;
 
 if (%Scene_Object==0){return;}
 
-%Player_Game_Connection_Or_Object_Module_ID.Simset_Objects.remove(%Scene_Object);
-
-%Scene_Object.safeDelete();
+%Scene_Object.setCollisionSuppress(!%Scene_Object.getCollisionSuppress());
 
 }
 

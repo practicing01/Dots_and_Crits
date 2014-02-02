@@ -7,7 +7,7 @@ function Module_Map_Deus_Ex_Telum::Gui_Radar_Spawn(%this)
 HorizSizing="relative";
 VertSizing="relative";
 Extent="64 64";
-Position="211 326";
+Position=Scale_Vector_To_Resolution_By_Resolution("211 326","800 480",$Resolution);
 Profile="GuiDefaultProfile";
 isContainer="1";
 canSaveDynamicFields="1";
