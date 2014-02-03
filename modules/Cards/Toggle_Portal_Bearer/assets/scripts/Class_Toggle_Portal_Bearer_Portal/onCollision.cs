@@ -151,7 +151,7 @@ return;
 //if (%Colliding_Object.class!$="Class_Toggle_Portal_Bearer_Projectile")
 //{
 
-%Colliding_Object.cancelMoveTo(true);
+//%Colliding_Object.cancelMoveTo(true);
 
 %Colliding_Object_Size=0;
 
@@ -164,7 +164,7 @@ else {%Colliding_Object_Size=%Colliding_Object.size.Y;}
 
 %Colliding_Object.Position=%Vector_2D_Offset;
 
-%Colliding_Object.onMoveToComplete();
+//%Colliding_Object.onMoveToComplete();
 
 //}
 
