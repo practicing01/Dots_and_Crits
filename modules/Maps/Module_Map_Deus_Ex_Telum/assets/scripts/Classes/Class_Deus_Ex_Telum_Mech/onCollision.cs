@@ -19,7 +19,7 @@ if (%this.Direction.Y==1)
 
 %this.Direction.Y=-1;
 
-%this.setLinearVelocityY(%this.Direction.Y*%this.Current_Speed);
+%this.setLinearVelocity(%this.Direction.X*%this.Current_Speed,%this.Direction.Y*%this.Current_Speed);
 
 if (%this.Image$="Module_Map_Deus_Ex_Telum:Image_Mech")
 {
@@ -85,7 +85,7 @@ else
 
 %this.Direction.Y=1;
 
-%this.setLinearVelocityY(%this.Direction.Y*%this.Current_Speed);
+%this.setLinearVelocity(%this.Direction.X*%this.Current_Speed,%this.Direction.Y*%this.Current_Speed);
 
 if (%this.Image$="Module_Map_Deus_Ex_Telum:Image_Mech")
 {
@@ -156,7 +156,7 @@ if (%this.Direction.X==1)
 
 %this.Direction.X=-1;
 
-%this.setLinearVelocityX(%this.Direction.X*%this.Current_Speed);
+%this.setLinearVelocity(%this.Direction.X*%this.Current_Speed,%this.Direction.Y*%this.Current_Speed);
 
 if (%this.Image$="Module_Map_Deus_Ex_Telum:Image_Mech")
 {
@@ -222,7 +222,7 @@ else
 
 %this.Direction.X=1;
 
-%this.setLinearVelocityX(%this.Direction.X*%this.Current_Speed);
+%this.setLinearVelocity(%this.Direction.X*%this.Current_Speed,%this.Direction.Y*%this.Current_Speed);
 
 if (%this.Image$="Module_Map_Deus_Ex_Telum:Image_Mech")
 {

@@ -87,7 +87,7 @@ Scene_Dots_and_Crits.add(%Sprite_Mushroom);
 {
 
 Position=%Vector_2D_Position;
-Size=Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Rain_Drops);
+Size=Scale_Ass_Size_Vector_To_Camera(%this.Ass_Image_Rain_Drops)*5;
 Image="Module_Card_Mushroom:Image_Rain_Drops";
 Animation="Module_Card_Mushroom:Animation_Rain_Drops";
 class="Class_Mushroom";

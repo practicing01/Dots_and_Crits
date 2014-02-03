@@ -1,7 +1,7 @@
 <ImageAsset
     AssetName="Image_Icon"
     ImageFile="Card_Icon.png"
-	CellCountX="1"
+	CellCountX="2"
     CellCountY="1"
     CellWidth="50"
     CellHeight="50"

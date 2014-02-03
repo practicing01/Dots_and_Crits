@@ -200,7 +200,7 @@ Object_Index=%x+%Object_Count;
 
 Health=100;
 
-Direction="-1 1";//-1=Left/Up, 1=Right/Down
+Direction="-1 -1";//-1=Left/Down, 1=Right/Up
 
 Base_Speed=5;
 

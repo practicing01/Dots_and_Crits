@@ -1,13 +1,13 @@
 <SimSet>
     <ScriptObject
         Card_Slot_Position="278 430"
-        Module_ID_Card="Module_Card_Teleport" />
+        Module_ID_Card="Module_Card_Position_Object" />
     <ScriptObject
         Card_Slot_Position="328 430"
-        Module_ID_Card="Module_Card_Stealth" />
+        Module_ID_Card="Module_Card_Rotate_Object" />
     <ScriptObject
         Card_Slot_Position="378 430"
-        Module_ID_Card="Module_Card_Flashlight" />
+        Module_ID_Card="Module_Card_Scale_Object" />
     <ScriptObject
         Card_Slot_Position="428 430"
         Module_ID_Card="Module_Card_Heal" />
@@ -19,7 +19,7 @@
         Module_ID_Card="Module_Card_Speedboof" />
     <ScriptObject
         Card_Slot_Position="578 430"
-        Module_ID_Card="Module_Card_Scale_Object" />
+        Module_ID_Card="Module_Card_Flashlight" />
     <ScriptObject
         Card_Slot_Position="628 430"
         Module_ID_Card="Module_Card_Deathball" />
@@ -91,10 +91,10 @@
         Module_ID_Card="Module_Card_Toggle_Wall_Tile" />
     <ScriptObject
         Card_Slot_Position="428 50"
-        Module_ID_Card="Module_Card_Rotate_Object" />
+        Module_ID_Card="Module_Card_Stealth" />
     <ScriptObject
         Card_Slot_Position="378 50"
-        Module_ID_Card="Module_Card_Position_Object" />
+        Module_ID_Card="Module_Card_Teleport" />
     <ScriptObject
         Card_Slot_Position="328 50"
         Module_ID_Card="Module_Card_Black_Hole" />
