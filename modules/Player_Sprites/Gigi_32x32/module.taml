@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Player_Sprite_Gigi_32x32"
+	Type="Player_Sprite"
+	VersionId="1"
+	Description="Gigi_32x32"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>
