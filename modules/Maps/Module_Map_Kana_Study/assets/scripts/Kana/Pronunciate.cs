@@ -96,7 +96,7 @@ for (%x=0;%x<%Simset_Individual_Chars.getCount();%x++)
 if (%ScriptObject_Individual_Char.String_Pronunciation$="っ"||%ScriptObject_Individual_Char.String_Pronunciation$="ッ")
 {
 
-echo("found sokuon");
+//echo("found sokuon");
 
 if (%x+1>=%Simset_Individual_Chars.getCount()){break;}//Weird shit where a sokuon would be last.
 
@@ -110,17 +110,27 @@ else if (%ScriptObject_Individual_Char.String_Pronunciation$="ゃ"||%ScriptObjec
 
 echo("found ya");
 
+//if (%x-1<0){break;}//Weird shit where a youon would be first.
+
+//%ScriptObject_Individual_Char_Previous=%Simset_Individual_Chars.getObject(%x-1);
+
+%ScriptObject_Individual_Char.String_Pronunciation="a";//getSubStr(%ScriptObject_Individual_Char_Next.String_Pronunciation,0,2) @ "a";
+
 }
 else if (%ScriptObject_Individual_Char.String_Pronunciation$="ゅ"||%ScriptObject_Individual_Char.String_Pronunciation$="ュ")//yu
 {
 
 echo("found yu");
 
+%ScriptObject_Individual_Char.String_Pronunciation="u";
+
 }
 else if (%ScriptObject_Individual_Char.String_Pronunciation$="ょ"||%ScriptObject_Individual_Char.String_Pronunciation$="ョ")//yo
 {
 
 echo("found yo");
+
+%ScriptObject_Individual_Char.String_Pronunciation="o";
 
 }
 
