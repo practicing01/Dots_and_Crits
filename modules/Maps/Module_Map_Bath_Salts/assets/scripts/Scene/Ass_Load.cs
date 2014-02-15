@@ -1,7 +1,7 @@
 function Module_Map_Bath_Salts::Ass_Load(%this)
 {
 
-%this.Ass_Image_Antique_Chairs=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Antique_Chairs");
+//%this.Ass_Image_Antique_Chairs=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Antique_Chairs");
 
 %this.Ass_Image_Barrel=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Barrel");
 

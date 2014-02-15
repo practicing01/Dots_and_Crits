@@ -1,0 +1,67 @@
+<Scene>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 75"
+        Position="-55 0"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -37.5</Point>
+                <Point>5 37.5</Point>
+                <Point>-5 37.5</Point>
+                <Point>-5 -37.5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="0 42.5"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 75"
+        Position="55 0"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -37.5</Point>
+                <Point>5 37.5</Point>
+                <Point>-5 37.5</Point>
+                <Point>-5 -37.5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="0 -42.5"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        class="Class_Portal_Spawn"
+        Size="10 10"
+        Position="0 0"
+        BodyType="Static"/>
+</Scene>

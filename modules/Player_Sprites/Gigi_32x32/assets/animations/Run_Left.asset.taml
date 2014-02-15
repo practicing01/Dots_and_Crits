@@ -3,4 +3,4 @@
     Image="@asset=Module_Player_Sprite_Gigi_32x32:Image_Gigi_32x32_Run_Left"
     AnimationFrames="0 1 2 3 2 1"
     AnimationCycle="true"
-	AnimationTime="0.5" />
+	AnimationTime="0.75" />

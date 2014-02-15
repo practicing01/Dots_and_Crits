@@ -5,7 +5,7 @@ function Module_Map_Bath_Salts::Initialize_DWO(%this)
 
 %Simset_DWO_Tiles=new SimSet();
 
-%Script_Object_DWO_Tile=new ScriptObject()
+/*%Script_Object_DWO_Tile=new ScriptObject()
 {
 
 String_Asset_ID="Module_Map_Bath_Salts:Image_Antique_Chairs";
@@ -15,7 +15,7 @@ Handle_Asset=%this.Ass_Image_Antique_Chairs;
 };
 
 %Simset_DWO_Tiles.add(%Script_Object_DWO_Tile);
-
+*/
 ////////////////////////////////////////////////////////////////////////////////
 
 %Script_Object_DWO_Tile=new ScriptObject()

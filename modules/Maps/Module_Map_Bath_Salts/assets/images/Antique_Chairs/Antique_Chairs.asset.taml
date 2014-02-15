@@ -1,8 +1,0 @@
-<ImageAsset
-    AssetName="Image_Antique_Chairs"
-    ImageFile="Antique_Chairs.png"
-	CellCountX="4"
-    CellCountY="2"
-    CellWidth="512"
-    CellHeight="512"
-	Optimal_Resolution="1280 800"/>
