@@ -3,11 +3,11 @@ function Module_Map_Kana_Study::Random_Char_Get(%this)
 
 %ScriptObject_Char=%this.Simset_Dictionary.getObject(getRandom(0,%this.Simset_Dictionary.getCount()-1));
 
-echo("kana or kanji" SPC %ScriptObject_Char.String_Kanji_Or_Kana);
+//echo("kana or kanji" SPC %ScriptObject_Char.String_Kanji_Or_Kana);
 
-echo("kana" SPC %ScriptObject_Char.String_Kana);
+echo("Kana:" SPC %ScriptObject_Char.String_Kana);
 
-echo("definition" SPC %ScriptObject_Char.String_Definition);
+echo("Definition:" SPC %ScriptObject_Char.String_Definition);
 
 %Kana_Temp=0;
 
