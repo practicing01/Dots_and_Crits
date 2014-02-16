@@ -72,7 +72,7 @@ break;
 
 %Simset_Individual_Chars.add(%ScriptObject_Individual_Char);
 
-%Sprite_Object=new Sprite()
+/*%Sprite_Object=new Sprite()
 {
 
 Position=getRandom(-50,50) SPC getRandom(-50,50);
@@ -83,7 +83,7 @@ Frame=%Kana_Char.Frame;
 };
 
 Scene_Dots_and_Crits.add(%Sprite_Object);
-
+*/
 }
 
 for (%x=0;%x<%Simset_Individual_Chars.getCount();%x++)
@@ -108,7 +108,7 @@ if (%x+1>=%Simset_Individual_Chars.getCount()){break;}//Weird shit where a sokuo
 else if (%ScriptObject_Individual_Char.String_Pronunciation$="ゃ"||%ScriptObject_Individual_Char.String_Pronunciation$="ャ")//ya
 {
 
-echo("found ya");
+//echo("found ya");
 
 //if (%x-1<0){break;}//Weird shit where a youon would be first.
 
@@ -120,7 +120,7 @@ echo("found ya");
 else if (%ScriptObject_Individual_Char.String_Pronunciation$="ゅ"||%ScriptObject_Individual_Char.String_Pronunciation$="ュ")//yu
 {
 
-echo("found yu");
+//echo("found yu");
 
 %ScriptObject_Individual_Char.String_Pronunciation="u";
 
@@ -128,14 +128,20 @@ echo("found yu");
 else if (%ScriptObject_Individual_Char.String_Pronunciation$="ょ"||%ScriptObject_Individual_Char.String_Pronunciation$="ョ")//yo
 {
 
-echo("found yo");
+//echo("found yo");
 
 %ScriptObject_Individual_Char.String_Pronunciation="o";
 
 }
 
-echo(%ScriptObject_Individual_Char.String_Pronunciation);
+//echo(%ScriptObject_Individual_Char.String_Pronunciation);
 
 }
+
+return %Simset_Individual_Chars;
+
+%Simset_Individual_Chars.deleteObjects();
+
+%Simset_Individual_Chars.delete();
 
 }

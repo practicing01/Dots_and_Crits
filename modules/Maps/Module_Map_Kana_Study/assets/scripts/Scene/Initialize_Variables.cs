@@ -37,4 +37,10 @@ class="Class_Kana_Study_Input_Controller";
 
 Window_Dots_and_Crits.addInputListener(%this.Script_Object_Input_Controller);
 
+/***********************************************************************/
+
+%this.ScriptObject_Kana_Fields=0;
+
+/***********************************************************************/
+
 }

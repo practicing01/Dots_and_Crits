@@ -32,6 +32,6 @@ GlobalActionMap.bindCmd(keyboard,"g",
 
 %this.Load_Pronunciations();
 
-%this.Random_Char_Get();
+%this.Kana_Fields_Generate();
 
 }
