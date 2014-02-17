@@ -84,6 +84,23 @@ else
 
 %SimSet_Pronunciation=%this.Pronunciate(%String_Kana);
 
+%Int_Pronunciation_String_Length_Half=0;
+
+for (%x=0;%x<%SimSet_Pronunciation.getCount();%x++)
+{
+
+%ScriptObject_Individual_Char=%SimSet_Pronunciation.getObject(%x);
+
+%Int_Pronunciation_String_Length_Half+=strlen(%ScriptObject_Individual_Char.String_Pronunciation);
+
+}
+
+%Int_Pronunciation_String_Length_Half=%Int_Pronunciation_String_Length_Half/2;
+
+%Int_Previous_String_Length=0;
+
+%Int_Char_Size="2 2";
+
 for (%x=0;%x<%SimSet_Pronunciation.getCount();%x++)
 {
 
@@ -93,9 +110,14 @@ for (%x=0;%x<%SimSet_Pronunciation.getCount();%x++)
 
 %ImageFont_Char.Image="Dots_and_Crits:Font";
 
-%ImageFont_Char.Position=((-(%SimSet_Pronunciation.getCount()/2))+(4*%x)) SPC ($Camera_Size.Y/2)-4;
+//Bugged, fix.
 
-%ImageFont_Char.FontSize="2 2";
+%ImageFont_Char.Position=%Int_Previous_String_Length*%Int_Char_Size.X
+SPC ($Camera_Size.Y/2)-(%Int_Char_Size.Y*2);
+
+%Int_Previous_String_Length+=strlen(%ScriptObject_Individual_Char.String_Pronunciation);
+
+%ImageFont_Char.FontSize=%Int_Char_Size;
 
 %ImageFont_Char.TextAlignment="Center";
 
