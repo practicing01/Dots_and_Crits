@@ -104,17 +104,26 @@ if (%x+1>=%Simset_Individual_Chars.getCount()){break;}//Weird shit where a sokuo
 
 %ScriptObject_Individual_Char.String_Pronunciation=getSubStr(%ScriptObject_Individual_Char_Next.String_Pronunciation,0,1);
 
+}//Choonpu
+else if (%ScriptObject_Individual_Char.String_Pronunciation$="ー")
+{
+
+//echo("found choonpu");
+
+if (%x-1<0){break;}//Weird shit where a choonpu would be first.
+
+%ScriptObject_Individual_Char_Previous=%Simset_Individual_Chars.getObject(%x-1);
+
+%ScriptObject_Individual_Char.String_Pronunciation=getSubStr(%ScriptObject_Individual_Char_Previous.String_Pronunciation,
+strlen(%ScriptObject_Individual_Char_Previous.String_Pronunciation)-1,1);
+
 }//Youons
 else if (%ScriptObject_Individual_Char.String_Pronunciation$="ゃ"||%ScriptObject_Individual_Char.String_Pronunciation$="ャ")//ya
 {
 
 //echo("found ya");
 
-//if (%x-1<0){break;}//Weird shit where a youon would be first.
-
-//%ScriptObject_Individual_Char_Previous=%Simset_Individual_Chars.getObject(%x-1);
-
-%ScriptObject_Individual_Char.String_Pronunciation="a";//getSubStr(%ScriptObject_Individual_Char_Next.String_Pronunciation,0,2) @ "a";
+%ScriptObject_Individual_Char.String_Pronunciation="a";
 
 }
 else if (%ScriptObject_Individual_Char.String_Pronunciation$="ゅ"||%ScriptObject_Individual_Char.String_Pronunciation$="ュ")//yu

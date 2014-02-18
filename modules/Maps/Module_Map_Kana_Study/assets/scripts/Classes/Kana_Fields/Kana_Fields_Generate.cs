@@ -112,7 +112,7 @@ for (%x=0;%x<%SimSet_Pronunciation.getCount();%x++)
 
 //Bugged, fix.
 
-%ImageFont_Char.Position=%Int_Previous_String_Length*%Int_Char_Size.X
+%ImageFont_Char.Position=((%Int_Previous_String_Length*%Int_Char_Size.X*1.5) + ((strlen(%ScriptObject_Individual_Char.String_Pronunciation)/2)*%Int_Char_Size.X*1.5))-%Int_Pronunciation_String_Length_Half*%Int_Char_Size.X*1.5
 SPC ($Camera_Size.Y/2)-(%Int_Char_Size.Y*2);
 
 %Int_Previous_String_Length+=strlen(%ScriptObject_Individual_Char.String_Pronunciation);
