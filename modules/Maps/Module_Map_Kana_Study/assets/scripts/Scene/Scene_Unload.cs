@@ -31,4 +31,38 @@ echo("Deleting katakana characters.");
 
 %this.Simset_Map_Katakana.delete();
 
+if (isObject(%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition))
+{
+
+%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition.deleteObject();
+
+%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition.delete();
+
+}
+
+if (isObject(%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Pronunciation_Chars))
+{
+
+%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Pronunciation_Chars.deleteObjects();
+
+%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Pronunciation_Chars.delete();
+
+}
+
+if (isObject(%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars))
+{
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars.deleteObjects();
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars.delete();
+
+}
+
+if (isObject(%this.ScriptObject_Kana_Fields))
+{
+
+%this.ScriptObject_Kana_Fields.delete();
+
+}
+
 }

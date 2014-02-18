@@ -23,9 +23,6 @@ if (%Object.class$="Class_Portal_Spawn")
 
 }
 
-GlobalActionMap.bindCmd(keyboard,"g",
-"Module_Map_Kana_Study.Random_Char_Get();","");
-
 %this.Load_Characters();
 
 %this.Load_Dictionary();

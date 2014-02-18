@@ -19,7 +19,7 @@ Scene_Dots_and_Crits.setDebugOn("aabb");
 Scene_Dots_and_Crits.setDebugOn("oobb");
 //Scene_Dots_and_Crits.setDebugOn("sleep");
 Scene_Dots_and_Crits.setDebugOn("collision");
-Scene_Dots_and_Crits.setDebugOn("position");
+//Scene_Dots_and_Crits.setDebugOn("position");
 //Scene_Dots_and_Crits.setDebugOn("sort");
 //Scene_Dots_and_Crits.setDebugOn("controllers");
 
