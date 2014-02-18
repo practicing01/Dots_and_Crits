@@ -149,8 +149,4 @@ else if (%ScriptObject_Individual_Char.String_Pronunciation$="ょ"||%ScriptObjec
 
 return %Simset_Individual_Chars;
 
-%Simset_Individual_Chars.deleteObjects();
-
-%Simset_Individual_Chars.delete();
-
 }

@@ -37,6 +37,8 @@ SimSet_ImageFont_Definition=0;
 
 SimSet_ImageFont_Pronunciation_Chars=0;
 
+SimSet_Kana_Slots=0;
+
 SimSet_Kana_Chars=0;
 
 };
@@ -55,6 +57,8 @@ SimSet_Kana_Chars=0;
 
 /**********************************************************/
 
+//Create definition ImageFont.
+
 %ScriptObject_Char=%this.Random_Char_Get();
 
 %Int_Definition_String_Length=strlen(%ScriptObject_Char.String_Definition);
@@ -66,7 +70,7 @@ for (%x=0;%x<%Int_Definition_String_Length/($Camera_Size.X/2);%x++)
 
 %ImageFont_Definition.Image="Dots_and_Crits:Font";
 
-%ImageFont_Definition.Position="0" SPC (($Camera_Size.Y/2)-(%Int_Char_Size.Y/2))-((%x*%Int_Char_Size.Y)*%Int_Char_Size.Y);
+%ImageFont_Definition.Position="0" SPC (($Camera_Size.Y/2)-(%Int_Char_Size.Y/2))-((%x*%Int_Char_Size.Y)*2);
 
 %Vector_2D_Last_Position=%ImageFont_Definition.Position;
 
@@ -83,6 +87,8 @@ Scene_Dots_and_Crits.add(%ImageFont_Definition);
 }
 
 /**********************************************************/
+
+//Create pronunciation segments and Kana characters.
 
 %String_Kana=0;
 
@@ -126,7 +132,7 @@ for (%x=0;%x<%SimSet_Pronunciation.getCount();%x++)
 %ImageFont_Char.Image="Dots_and_Crits:Font";
 
 %ImageFont_Char.Position=((%Int_Previous_String_Length*%Int_Char_Size.X*%Int_Char_Size.X) + ((strlen(%ScriptObject_Individual_Char.String_Pronunciation)/2)*%Int_Char_Size.X*%Int_Char_Size.X))-%Int_Pronunciation_String_Length_Half*%Int_Char_Size.X*%Int_Char_Size.X
-SPC %ImageFont_Definition.Position.Y-%Int_Char_Size.Y*%Int_Char_Size.Y;
+SPC %ImageFont_Definition.Position.Y-%Int_Char_Size.Y*2;
 
 %Int_Previous_String_Length+=strlen(%ScriptObject_Individual_Char.String_Pronunciation);
 
@@ -139,6 +145,114 @@ SPC %ImageFont_Definition.Position.Y-%Int_Char_Size.Y*%Int_Char_Size.Y;
 Scene_Dots_and_Crits.add(%ImageFont_Char);
 
 %this.ScriptObject_Kana_Fields.SimSet_ImageFont_Pronunciation_Chars.add(%ImageFont_Char);
+
+/*********************************************************************************************************/
+
+//Create Kana slot for this pronunciation segment.
+
+%Shape_Vector_Kana_Slot=new ShapeVector()
+{
+
+Size=%Int_Char_Size.X/2 SPC %Int_Char_Size.Y/2;
+class="Class_Vector_Shape_Kana_Slot";
+CollisionCallback="true";
+SceneLayer=16;
+
+SceneGroup=26;//Dynamic world objects.
+
+Module_ID_Parent=%this;
+
+Char_Character=%ScriptObject_Char.Char_Character;
+
+};
+
+%Shape_Vector_Kana_Slot.setPolyCustom(4,"-1 1 1 1 1 -1 -1 -1");
+
+%Shape_Vector_Kana_Slot.setLineColor("0.0 0.25 0.25 1");
+
+%Shape_Vector_Kana_Slot.setFillColor("0.0 0.5 0.5 1");
+
+%Shape_Vector_Kana_Slot.setFillMode(true);
+
+%Shape_Vector_Kana_Slot.setCollisionGroups(0,25,26,30);
+
+%Collision_Shape_Index=%Shape_Vector_Kana_Slot.createPolygonBoxCollisionShape(%Int_Char_Size);
+
+%Shape_Vector_Kana_Slot.Position=%ImageFont_Char.Position;
+
+%Shape_Vector_Kana_Slot.Position.Y-=%Int_Char_Size.Y*2;
+
+Scene_Dots_and_Crits.add(%Shape_Vector_Kana_Slot);
+
+/*********************************************************************************************************/
+
+//Kana sprite.
+
+/*******************************************************/
+
+//Find Kana.
+
+%Bool_Found_Hiragana=false;
+
+%Kana_Char=0;
+
+%Bool_Found_Katakana=false;
+
+for (%y=0;%y<%this.Simset_Map_Hiragana.getCount();%y++)
+{
+
+%Kana_Char=%this.Simset_Map_Hiragana.getObject(%y);
+
+if (%Kana_Char.Unicode_Character$=%ScriptObject_Individual_Char.Char_Character)
+{
+
+%Bool_Found_Hiragana=true;
+
+break;
+
+}
+
+}
+
+if (!%Bool_Found_Hiragana)
+{
+
+for (%y=0;%y<%this.Simset_Map_Katakana.getCount();%y++)
+{
+
+%Kana_Char=%this.Simset_Map_Katakana.getObject(%y);
+
+if (%Kana_Char.Unicode_Character$=%ScriptObject_Individual_Char.Char_Character)
+{
+
+%Bool_Found_Katakana=true;
+
+break;
+
+}
+
+}
+
+}
+
+/*******************************************************/
+
+%Sprite_Kana_Char=new Sprite()
+{
+
+Position=getRandom(-50-%Int_Char_Size.X,50-%Int_Char_Size.X)
+SPC getRandom(0,-($Camera_Size.Y/2));
+Size=%Int_Char_Size;
+Image=%Kana_Char.Image_Asset;
+Frame=%Kana_Char.Frame;
+
+class="Class_Sprite_Kana_Char";
+
+};
+
+Scene_Dots_and_Crits.add(%Sprite_Kana_Char);
+
+/*********************************************************************************************************/
 
 }
 

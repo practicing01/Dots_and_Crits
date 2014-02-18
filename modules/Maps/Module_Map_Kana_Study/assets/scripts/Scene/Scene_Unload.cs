@@ -58,6 +58,15 @@ if (isObject(%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars))
 
 }
 
+if (isObject(%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots))
+{
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots.deleteObjects();
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots.delete();
+
+}
+
 if (isObject(%this.ScriptObject_Kana_Fields))
 {
 
