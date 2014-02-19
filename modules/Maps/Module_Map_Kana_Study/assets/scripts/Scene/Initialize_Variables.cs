@@ -41,6 +41,10 @@ Window_Dots_and_Crits.addInputListener(%this.Script_Object_Input_Controller);
 
 %this.ScriptObject_Kana_Fields=0;
 
+%this.Object_Count=0;
+
+%this.Simset_Objects=new SimSet();
+
 /***********************************************************************/
 
 }

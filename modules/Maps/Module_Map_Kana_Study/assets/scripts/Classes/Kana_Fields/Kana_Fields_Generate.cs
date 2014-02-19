@@ -43,6 +43,19 @@ SimSet_Kana_Chars=0;
 
 };
 
+%this.Object_Count=0;
+
+if (isObject(%this.Simset_Objects))
+{
+
+%this.Simset_Objects.deleteObjects();
+
+%this.Simset_Objects.delete();
+
+}
+
+%this.Simset_Objects=new SimSet();
+
 /**********************************************************/
 
 %this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition=new SimSet();
@@ -50,6 +63,8 @@ SimSet_Kana_Chars=0;
 %this.ScriptObject_Kana_Fields.SimSet_ImageFont_Pronunciation_Chars=new SimSet();
 
 %this.ScriptObject_Kana_Fields.SimSet_Kana_Chars=new SimSet();
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots=new SimSet();
 
 %Int_Char_Size="2 2";
 
@@ -162,15 +177,23 @@ SceneGroup=26;//Dynamic world objects.
 
 Module_ID_Parent=%this;
 
-Char_Character=%ScriptObject_Char.Char_Character;
+Game_Connection_Handle=-$GameConnection_Serverside_Connection;
+
+Object_Index=%this.Object_Count;
+
+Char_Character=%ScriptObject_Individual_Char.Char_Character;
+
+Char_Mounted_Character="";
 
 };
 
+%this.Simset_Objects.add(%Shape_Vector_Kana_Slot);
+
 %Shape_Vector_Kana_Slot.setPolyCustom(4,"-1 1 1 1 1 -1 -1 -1");
 
-%Shape_Vector_Kana_Slot.setLineColor("0.0 0.25 0.25 1");
+%Shape_Vector_Kana_Slot.setLineColor("0.50 0.50 0.50 1");
 
-%Shape_Vector_Kana_Slot.setFillColor("0.0 0.5 0.5 1");
+%Shape_Vector_Kana_Slot.setFillColor("0.25 0.25 0.25 1");
 
 %Shape_Vector_Kana_Slot.setFillMode(true);
 
@@ -183,6 +206,8 @@ Char_Character=%ScriptObject_Char.Char_Character;
 %Shape_Vector_Kana_Slot.Position.Y-=%Int_Char_Size.Y*2;
 
 Scene_Dots_and_Crits.add(%Shape_Vector_Kana_Slot);
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots.add(%Shape_Vector_Kana_Slot);
 
 /*********************************************************************************************************/
 
@@ -246,11 +271,31 @@ Size=%Int_Char_Size;
 Image=%Kana_Char.Image_Asset;
 Frame=%Kana_Char.Frame;
 
+FixedAngle=true;
+
+SceneGroup=26;//Dynamic world objects.
+
+Module_ID_Parent=%this;
+
+Game_Connection_Handle=-$GameConnection_Serverside_Connection;
+
+Object_Index=%this.Object_Count+1;
+
 class="Class_Sprite_Kana_Char";
+
+Char_Character=%ScriptObject_Individual_Char.Char_Character;
 
 };
 
+%this.Object_Count+=2;
+
+%this.Simset_Objects.add(%Sprite_Kana_Char);
+
+%Collision_Shape_Index=%Sprite_Kana_Char.createPolygonBoxCollisionShape(%Int_Char_Size);
+
 Scene_Dots_and_Crits.add(%Sprite_Kana_Char);
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars.add(%Sprite_Kana_Char);
 
 /*********************************************************************************************************/
 
