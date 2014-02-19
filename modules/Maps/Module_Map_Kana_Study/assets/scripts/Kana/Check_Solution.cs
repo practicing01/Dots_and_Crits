@@ -53,7 +53,11 @@ SPC getRandom(0,-($Camera_Size.Y/2));
 else if (%Bool_Finished)
 {
 
-//next char
+//Next phrase.
+
+//schedule(0,0,"Module_Map_Kana_Study::Load_Dictionary",%this);
+
+//schedule(1,0,"Module_Map_Kana_Study::Kana_Fields_Generate",%this);
 
 }
 

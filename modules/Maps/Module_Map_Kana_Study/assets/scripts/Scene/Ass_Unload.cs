@@ -1,8 +1,8 @@
 function Module_Map_Kana_Study::Ass_Unload(%this)
 {
 
-//AssetDatabase.releaseAsset(%this.Ass_Name.getAssetId());
+AssetDatabase.releaseAsset(%this.Image_Asset_ID_Hiragana.getAssetId());
 
-//AssetDatabase.releaseAsset(%this.Ass_Audio_Torque_Wrench.getAssetId());
+AssetDatabase.releaseAsset(%this.Image_Asset_ID_Katakana.getAssetId());
 
 }

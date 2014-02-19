@@ -1,6 +1,15 @@
 function Module_Map_Kana_Study::Load_Dictionary(%this)
 {
 
+if (isObject(%this.Simset_Dictionary))
+{
+
+%this.Simset_Dictionary.deleteObjects();
+
+%this.Simset_Dictionary.delete();
+
+}
+
 %this.Simset_Dictionary=new SimSet();
 
 %FileObject_File=new FileStreamObject();

@@ -3,7 +3,7 @@ function Module_Map_Kana_Study::Load_Characters(%this)
 
 //Load Hiragana.
 
-%this.Image_Asset_Object_Hiragana=new ImageAsset()
+/*%this.Image_Asset_Object_Hiragana=new ImageAsset()
 {
 
 ExplicitMode=true;
@@ -13,7 +13,7 @@ ExplicitMode=true;
 %this.Image_Asset_Object_Hiragana.setImageFile("./../../images/Kana/Hiragana_0.png");
 
 %this.Image_Asset_ID_Hiragana=AssetDatabase.addPrivateAsset(%this.Image_Asset_Object_Hiragana);
-
+*/
 /***************************************************************************/
 
 %this.Simset_Map_Hiragana=new SimSet();
@@ -185,16 +185,17 @@ if (%Word!$="")
 
 /***********************************************/
 
-%ScriptObject_Char.Image_Asset=%this.Image_Asset_ID_Hiragana;
+%ScriptObject_Char.Image_Asset="Module_Map_Kana_Study:Image_Hiragana_0";//%this.Image_Asset_ID_Hiragana;
 
-%this.Image_Asset_Object_Hiragana.addExplicitCell
+//%this.Image_Asset_Object_Hiragana.addExplicitCell
+/*%this.Image_Asset_ID_Hiragana.addExplicitCell
 (
 %ScriptObject_Char.Vector_2D_Texture_Position.X,
 %ScriptObject_Char.Vector_2D_Texture_Position.Y,
 %ScriptObject_Char.Vector_2D_Size.X,
 %ScriptObject_Char.Vector_2D_Size.Y,
 ""
-);
+);*/
 
 %ScriptObject_Char.Frame=%Int_Frame_Counter;
 
@@ -216,7 +217,7 @@ if (%FileObject_File.isEOF()){break;}
 
 //Load Katakana.
 
-%this.Image_Asset_Object_Katakana=new ImageAsset()
+/*%this.Image_Asset_Object_Katakana=new ImageAsset()
 {
 
 ExplicitMode=true;
@@ -226,7 +227,7 @@ ExplicitMode=true;
 %this.Image_Asset_Object_Katakana.setImageFile("./../../images/Kana/Katakana_0.png");
 
 %this.Image_Asset_ID_Katakana=AssetDatabase.addPrivateAsset(%this.Image_Asset_Object_Katakana);
-
+*/
 /*****************************************************************/
 
 %this.Simset_Map_Katakana=new SimSet();
@@ -396,16 +397,18 @@ if (%Word!$="")
 
 /***********************************************/
 
-%ScriptObject_Char.Image_Asset=%this.Image_Asset_ID_Katakana;
+%ScriptObject_Char.Image_Asset="Module_Map_Kana_Study:Image_Hiragana_0";//%this.Image_Asset_ID_Katakana;
 
-%this.Image_Asset_Object_Katakana.addExplicitCell
+
+//%this.Image_Asset_Object_Katakana.addExplicitCell
+/*%this.Image_Asset_ID_Katakana.addExplicitCell
 (
 %ScriptObject_Char.Vector_2D_Texture_Position.X,
 %ScriptObject_Char.Vector_2D_Texture_Position.Y,
 %ScriptObject_Char.Vector_2D_Size.X,
 %ScriptObject_Char.Vector_2D_Size.Y,
 ""
-);
+);*/
 
 %ScriptObject_Char.Frame=%Int_Frame_Counter;
 

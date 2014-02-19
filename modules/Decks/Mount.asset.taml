@@ -1,5 +1,5 @@
 <SimSet>
     <ScriptObject
-        Card_Slot_Position="350 430"
+        Card_Slot_Position="375 430"
         Module_ID_Card="Module_Card_Grab" />
 </SimSet>

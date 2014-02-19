@@ -6,7 +6,7 @@ function Module_Map_Kana_Study::Kana_Fields_Generate(%this)
 if (isObject(%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition))
 {
 
-%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition.deleteObject();
+%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition.deleteObjects();
 
 %this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition.delete();
 
@@ -21,12 +21,28 @@ if (isObject(%this.ScriptObject_Kana_Fields.SimSet_ImageFont_Pronunciation_Chars
 
 }
 
+if (isObject(%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots))
+{
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots.deleteObjects();
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Slots.delete();
+
+}
+
 if (isObject(%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars))
 {
 
 %this.ScriptObject_Kana_Fields.SimSet_Kana_Chars.deleteObjects();
 
 %this.ScriptObject_Kana_Fields.SimSet_Kana_Chars.delete();
+
+}
+
+if (isObject(%this.ScriptObject_Kana_Fields))
+{
+
+%this.ScriptObject_Kana_Fields.delete();
 
 }
 
@@ -43,8 +59,6 @@ SimSet_Kana_Chars=0;
 
 };
 
-%this.Object_Count=0;
-
 if (isObject(%this.Simset_Objects))
 {
 
@@ -56,15 +70,17 @@ if (isObject(%this.Simset_Objects))
 
 %this.Simset_Objects=new SimSet();
 
+%this.Object_Count=0;
+
 /**********************************************************/
 
 %this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition=new SimSet();
 
 %this.ScriptObject_Kana_Fields.SimSet_ImageFont_Pronunciation_Chars=new SimSet();
 
-%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars=new SimSet();
-
 %this.ScriptObject_Kana_Fields.SimSet_Kana_Slots=new SimSet();
+
+%this.ScriptObject_Kana_Fields.SimSet_Kana_Chars=new SimSet();
 
 %Int_Char_Size="2 2";
 
@@ -106,6 +122,8 @@ Scene_Dots_and_Crits.add(%ImageFont_Definition);
 //Create pronunciation segments and Kana characters.
 
 %String_Kana=0;
+
+%ScriptObject_Individual_Char=0;
 
 if (%ScriptObject_Char.String_Kana!$="")
 {

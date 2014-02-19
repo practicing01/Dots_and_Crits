@@ -72,18 +72,6 @@ break;
 
 %Simset_Individual_Chars.add(%ScriptObject_Individual_Char);
 
-/*%Sprite_Object=new Sprite()
-{
-
-Position=getRandom(-50,50) SPC getRandom(-50,50);
-Size="5 5";
-Image=%Kana_Char.Image_Asset;
-Frame=%Kana_Char.Frame;
-
-};
-
-Scene_Dots_and_Crits.add(%Sprite_Object);
-*/
 }
 
 for (%x=0;%x<%Simset_Individual_Chars.getCount();%x++)

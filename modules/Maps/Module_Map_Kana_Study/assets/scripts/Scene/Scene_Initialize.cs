@@ -3,11 +3,15 @@ function Module_Map_Kana_Study::Scene_Initialize(%this)
 
 echo("Kana Study initialized.");
 
+Canvas.popDialog(Gui_Chat_Box);
+
 %this.Keyboard_Bind();
 
 %this.Gui_Scroll_Arrows_Spawn();
 
 %this.Gui_Move_Arrows_Spawn();
+
+%this.Gui_Next_Kana_Spawn();
 
 for (%x=0;%x<Scene_Dots_and_Crits.getCount();%x++)
 {
