@@ -82,7 +82,7 @@ if (isObject(%this.Simset_Objects))
 
 %this.ScriptObject_Kana_Fields.SimSet_Kana_Chars=new SimSet();
 
-%Int_Char_Size="2 2";
+%Int_Char_Size="4 4";
 
 %Vector_2D_Last_Position="0 0";
 
@@ -94,7 +94,8 @@ if (isObject(%this.Simset_Objects))
 
 %Int_Definition_String_Length=strlen(%ScriptObject_Char.String_Definition);
 
-for (%x=0;%x<%Int_Definition_String_Length/($Camera_Size.X/2);%x++)
+//for (%x=0;%x<%Int_Definition_String_Length/($Camera_Size.X/2);%x++)
+for (%x=0;%x<%Int_Definition_String_Length/($Camera_Size.X/%Int_Char_Size.X);%x++)
 {
 
 %ImageFont_Definition=new ImageFont();
@@ -109,7 +110,8 @@ for (%x=0;%x<%Int_Definition_String_Length/($Camera_Size.X/2);%x++)
 
 %ImageFont_Definition.TextAlignment="Center";
 
-%ImageFont_Definition.Text=getSubStr(%ScriptObject_Char.String_Definition,%x*($Camera_Size.X/2),($Camera_Size.X/2));
+//%ImageFont_Definition.Text=getSubStr(%ScriptObject_Char.String_Definition,%x*($Camera_Size.X/2),($Camera_Size.X/2));
+%ImageFont_Definition.Text=getSubStr(%ScriptObject_Char.String_Definition,%x*($Camera_Size.X/%Int_Char_Size.X),($Camera_Size.X/%Int_Char_Size.X));
 
 %this.ScriptObject_Kana_Fields.SimSet_ImageFont_Definition.add(%ImageFont_Definition);
 
@@ -163,8 +165,10 @@ for (%x=0;%x<%SimSet_Pronunciation.getCount();%x++)
 %ImageFont_Char=new ImageFont();
 
 %ImageFont_Char.Image="Dots_and_Crits:Font";
-
+/*
 %ImageFont_Char.Position=((%Int_Previous_String_Length*%Int_Char_Size.X*%Int_Char_Size.X) + ((strlen(%ScriptObject_Individual_Char.String_Pronunciation)/2)*%Int_Char_Size.X*%Int_Char_Size.X))-%Int_Pronunciation_String_Length_Half*%Int_Char_Size.X*%Int_Char_Size.X
+*/
+%ImageFont_Char.Position=((%Int_Previous_String_Length*(%Int_Char_Size.X*1.1)) + ((strlen(%ScriptObject_Individual_Char.String_Pronunciation)/2)*(%Int_Char_Size.X*1.1)))-%Int_Pronunciation_String_Length_Half*(%Int_Char_Size.X*1.1)
 SPC %ImageFont_Definition.Position.Y-%Int_Char_Size.Y*2;
 
 %Int_Previous_String_Length+=strlen(%ScriptObject_Individual_Char.String_Pronunciation);
@@ -283,8 +287,8 @@ break;
 %Sprite_Kana_Char=new Sprite()
 {
 
-Position=getRandom(-50-%Int_Char_Size.X,50-%Int_Char_Size.X)
-SPC getRandom(0,-($Camera_Size.Y/2));
+Position=getRandom(-(($Camera_Size.X/2)-%Int_Char_Size.X),($Camera_Size.X/2)-%Int_Char_Size.X)
+SPC getRandom(0-%Int_Char_Size.Y,-(($Camera_Size.Y/2)-%Int_Char_Size.Y));
 Size=%Int_Char_Size;
 Image=%Kana_Char.Image_Asset;
 Frame=%Kana_Char.Frame;

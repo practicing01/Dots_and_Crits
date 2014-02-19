@@ -3,8 +3,6 @@ function Module_Map_Kana_Study::Scene_Initialize(%this)
 
 echo("Kana Study initialized.");
 
-Canvas.popDialog(Gui_Chat_Box);
-
 %this.Keyboard_Bind();
 
 %this.Gui_Scroll_Arrows_Spawn();
