@@ -5,7 +5,7 @@ function Module_Map_Bath_Salts::Ass_Load(%this)
 
 %this.Ass_Image_Barrel=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Barrel");
 
-%this.Ass_Image_Bed=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Bed");
+//%this.Ass_Image_Bed=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Bed");
 
 %this.Ass_Image_Clock=AssetDatabase.acquireAsset("Module_Map_Bath_Salts:Image_Clock");
 

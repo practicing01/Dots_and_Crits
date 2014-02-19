@@ -5,7 +5,7 @@ function Module_Map_Bath_Salts::Ass_Unload(%this)
 
 AssetDatabase.releaseAsset(%this.Ass_Image_Barrel.getAssetId());
 
-AssetDatabase.releaseAsset(%this.Ass_Image_Bed.getAssetId());
+//AssetDatabase.releaseAsset(%this.Ass_Image_Bed.getAssetId());
 
 AssetDatabase.releaseAsset(%this.Ass_Image_Clock.getAssetId());
 

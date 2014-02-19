@@ -31,7 +31,7 @@ Handle_Asset=%this.Ass_Image_Barrel;
 
 ////////////////////////////////////////////////////////////////////////////////
 
-%Script_Object_DWO_Tile=new ScriptObject()
+/*%Script_Object_DWO_Tile=new ScriptObject()
 {
 
 String_Asset_ID="Module_Map_Bath_Salts:Image_Bed";
@@ -40,7 +40,7 @@ Handle_Asset=%this.Ass_Image_Bed;
 
 };
 
-%Simset_DWO_Tiles.add(%Script_Object_DWO_Tile);
+%Simset_DWO_Tiles.add(%Script_Object_DWO_Tile);*/
 
 ////////////////////////////////////////////////////////////////////////////////
 
