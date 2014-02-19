@@ -397,7 +397,7 @@ if (%Word!$="")
 
 /***********************************************/
 
-%ScriptObject_Char.Image_Asset="Module_Map_Kana_Study:Image_Hiragana_0";//%this.Image_Asset_ID_Katakana;
+%ScriptObject_Char.Image_Asset="Module_Map_Kana_Study:Image_Katakana_0";//%this.Image_Asset_ID_Katakana;
 
 
 //%this.Image_Asset_Object_Katakana.addExplicitCell
