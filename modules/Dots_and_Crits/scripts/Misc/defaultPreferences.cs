@@ -36,7 +36,7 @@ $pref::Dots_and_Crits::sleepOption     = false;
 $pref::Dots_and_Crits::collisionOption = false;
 $pref::Dots_and_Crits::positionOption  = false;
 $pref::Dots_and_Crits::sortOption      = false;
-$pref::Dots_and_Crits::cameraMouseZoomRate = 0.1;
+$pref::Dots_and_Crits::cameraMouseZoomRate = 0.01;
 $pref::Dots_and_Crits::cameraTouchZoomRate = 0.001;
 
 /// iOS

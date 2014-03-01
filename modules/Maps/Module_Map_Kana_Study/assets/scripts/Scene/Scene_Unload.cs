@@ -11,6 +11,8 @@ cancel(%this.Camera_Move_Schedule.Schedule_Handle);
 
 %this.Player_Move_Schedule.delete();
 
+Window_Dots_and_Crits.removeInputListener(%this.Script_Object_Input_Controller);
+
 %this.Script_Object_Input_Controller.delete();
 
 echo("Deleting dictionary.");

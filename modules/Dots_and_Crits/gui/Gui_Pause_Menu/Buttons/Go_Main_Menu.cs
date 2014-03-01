@@ -17,6 +17,8 @@ $Simset_ModuleID_Player_Sprites.deleteObjects();
 
 }
 
+$Module_ID_Map_Loaded.Scene_Unload();
+
 $Module_ID_Map_Loaded=0;
 
 for (%x=0;%x<$Simset_Cards_To_Load.getCount();%x++)

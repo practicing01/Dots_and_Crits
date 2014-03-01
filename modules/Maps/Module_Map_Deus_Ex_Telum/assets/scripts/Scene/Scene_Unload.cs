@@ -21,6 +21,8 @@ cancel(%this.Schedule_Handle_Radiate_Visible);
 
 %this.Simset_Goal_Spawn_Vectors.delete();
 
+Window_Dots_and_Crits.removeInputListener(%this.Script_Object_Input_Controller);
+
 %this.Script_Object_Input_Controller.delete();
 
 }
