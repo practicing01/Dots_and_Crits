@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="Animation_LiquidFun_Object"
+    Image="@asset=Module_Card_LiquidFun_Object:Image_LiquidFun_Object"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
